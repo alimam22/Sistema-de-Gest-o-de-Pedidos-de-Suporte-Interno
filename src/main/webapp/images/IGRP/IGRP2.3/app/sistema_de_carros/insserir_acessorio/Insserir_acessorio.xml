@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/sistema_de_carros/insserir_acessorio/Insserir_acessorio.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Insserir_acessorio</page>
+    <app>sistema_de_carros</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_de_carros.pages</package_db>
+        <package_html>Insserir_acessorio</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=107</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Insserir Acessorio</title>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <marca_do_carro name="p_marca_do_carro" type="lookup" action="index" page="Carro_lookup_" app="sistema_de_carros" field_param="" lookup_eraser="true" lookup_type="LOOKUP" class="primary" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Marca do Carro</label>
+                    <value/>
+                    <lookup>../images/IGRP/IGRP2.3/app/sistema_de_carros/carro_lookup_/Carro_lookup_.xml</lookup>
+                    <lookupParams>
+                        <param field-target="p_marca_do_carro">marca</param>
+                        <param field-target="p_modelo">modelo</param>
+                        <param field-target="p_data_registro">data_registro</param>
+                        <param field-target="p_id_carro">id_carro</param>
+                    </lookupParams>
+                </marca_do_carro>
+                <modelo name="p_modelo" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Modelo</label>
+                    <value>Omnis ipsum laudantium natus labore</value>
+                </modelo>
+                <data_registro name="p_data_registro" type="date" range="false" disableWeekends="false" disabledBeforetoday="false" daysoff="false" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" tooltip="false" disable_copy_paste="false" class="primary">
+                    <label>Data Registro</label>
+                    <value>08-05-2011</value>
+                </data_registro>
+                <hidden name="p_id_carro" type="hidden" maxlength="250" java-type="" tooltip="false" disable_copy_paste="false" tag="id_carro"/>
+            </fields>
+        </form_1>
+        <separatorlist_1 type="separatorlist" xml-type="separatorlist" gen-clean="true" gen-type="container" gen-group="true">
+            <fields>
+                <nome_acessorio name="p_nome_acessorio" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" right="false" desc="true">
+                    <label>Nome Acessorio</label>
+                    <value>Magna stract mollit accusantium totam</value>
+                </nome_acessorio>
+                <preco name="p_preco" type="number" min="" max="" calculation="false" mathcal="" numberformat="" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="" desc="true">
+                    <label>Preco</label>
+                    <value>47</value>
+                </preco>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <nome_acessorio name="p_nome_acessorio" desc="true">Sit deserunt dolor consectetur mollit</nome_acessorio>
+                        <nome_acessorio_check name="p_nome_acessorio_check">Sit deserunt dolor consectetur mollit</nome_acessorio_check>
+                        <preco name="p_preco" desc="true">132</preco>
+                        <preco_check name="p_preco_check">132</preco_check>
+                    </row>
+                    <row>
+                        <nome_acessorio name="p_nome_acessorio" desc="true">Amet adipiscing ipsum unde totam</nome_acessorio>
+                        <nome_acessorio_check name="p_nome_acessorio_check">Amet adipiscing ipsum unde totam</nome_acessorio_check>
+                        <preco name="p_preco" desc="true">110</preco>
+                        <preco_check name="p_preco_check">110</preco_check>
+                    </row>
+                    <row>
+                        <nome_acessorio name="p_nome_acessorio" desc="true">Perspiciatis accusantium sit aperiam sed</nome_acessorio>
+                        <nome_acessorio_check name="p_nome_acessorio_check">Perspiciatis accusantium sit aperiam sed</nome_acessorio_check>
+                        <preco name="p_preco" desc="true">247</preco>
+                        <preco_check name="p_preco_check">247</preco_check>
+                    </row>
+                    <row>
+                        <nome_acessorio name="p_nome_acessorio" desc="true">Lorem perspiciatis omnis totam magna</nome_acessorio>
+                        <nome_acessorio_check name="p_nome_acessorio_check">Lorem perspiciatis omnis totam magna</nome_acessorio_check>
+                        <preco name="p_preco" desc="true">103</preco>
+                        <preco_check name="p_preco_check">103</preco_check>
+                    </row>
+                    <row>
+                        <nome_acessorio name="p_nome_acessorio" desc="true">Dolor ut iste perspiciatis anim</nome_acessorio>
+                        <nome_acessorio_check name="p_nome_acessorio_check">Dolor ut iste perspiciatis anim</nome_acessorio_check>
+                        <preco name="p_preco" desc="true">40</preco>
+                        <preco_check name="p_preco_check">40</preco_check>
+                    </row>
+                </value>
+            </table>
+        </separatorlist_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="salvar" refresh_components="">
+                <title>Salvar</title>
+                <app>sistema_de_carros</app>
+                <page>Parametrizacao_marcas</page>
+                <link>index</link>
+                <target>submit_form</target>
+                <img>success|fa-angle-right</img>
+                <preview>../images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_marcas/Parametrizacao_marcas.xml</preview>
+            </item>
+        </toolsbar_1>
+    </content>
+    <blockly>
+        <imports>
+            <import type="save_separator">separatorlist_1</import>
+            <import type="dao">TblAcessorio</import>
+            <import type="dao">TblCarro</import>
+        </imports>
+        <xml>
+            <block type="controller" id="controller" x="63" y="13">
+                <statement name="index">
+                    <block type="set_model" id="#wakOGjhf-:w7@Gm3_M0">
+                        <field name="set_model">String::id_carro</field>
+                        <value name="value1">
+                            <block type="core_get_param" id="VvTcNTCw8v2ahWRrr=:+">
+                                <field name="param">id_carro</field>
+                            </block>
+                        </value>
+                    </block>
+                </statement>
+                <statement name="salvar">
+                    <block type="save_sepator_separatorlist_1" id="MUCXkF%t#}+dm/b+f6;;" inline="true">
+                        <field name="dao">TblAcessorio</field>
+                        <value name="edited">
+                            <block type="get_row_sep_separatorlist_1" id="~c|t].ysxO?eoR]QrcsJ">
+                                <field name="get_row_sep">String::id_rrow_separatorlist_1</field>
+                            </block>
+                        </value>
+                        <statement name="value2">
+                            <block type="set-dao-TblAcessorio" id=".[n7cTuiM^]I8E-4D9N+" inline="true">
+                                <mutation hover_type="TblCarro_FK#::idCarroFk"></mutation>
+                                <field name="DAO_FIELD">TblCarro_FK#::idCarroFk</field>
+                                <value name="value1">
+                                    <block type="get_model" id="qya:Kb{oH*+-Ss^GeG+o">
+                                        <field name="get_model">String::id_carro</field>
+                                    </block>
+                                </value>
+                                <next>
+                                    <block type="set-dao-TblAcessorio" id="K{sg_d*{kqFlTuvV~trW" inline="false">
+                                        <mutation hover_type="String::nomeAcessorio"></mutation>
+                                        <field name="DAO_FIELD">String::nomeAcessorio</field>
+                                        <value name="value1">
+                                            <block type="get_row_sep_separatorlist_1" id="zBbQc]y(-p=j*yxEowSM">
+                                                <field name="get_row_sep">String::nome_acessorio</field>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="set-dao-TblAcessorio" id="U:b5uxPh49aqn+a@bd:a" inline="false">
+                                                <mutation hover_type="Integer::preco"></mutation>
+                                                <field name="DAO_FIELD">Integer::preco</field>
+                                                <value name="value1">
+                                                    <block type="get_row_sep_separatorlist_1" id="]ArUx4PRVZbU{Mo{}*+H">
+                                                        <field name="get_row_sep">Integer::preco</field>
+                                                    </block>
+                                                </value>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </next>
+                            </block>
+                        </statement>
+                    </block>
+                </statement>
+            </block>
+        </xml>
+    </blockly>
+</rows>

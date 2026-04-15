@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/sistema_de_carros/dashboard/Dashboard.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Dashboard</page>
+    <app>sistema_de_carros</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_de_carros.pages</package_db>
+        <package_html>Dashboard</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=96</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>DashBoard</title>
+        <form_1 type="form" xml-type="form" title="Monitorização de Venda" gen-type="container" gen-group="">
+            <fields>
+                <intervalo_de_data name="p_intervalo_de_data" type="date" range="true" disableWeekends="false" disabledBeforetoday="false" daysoff="false" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" tooltip="false" disable_copy_paste="false" class="primary">
+                    <label>Intervalo de Data</label>
+                    <value>04-08-2014</value>
+                </intervalo_de_data>
+            </fields>
+            <tools-bar>
+                <item id="button_352c_de95" type="form" code="" class="primary" rel="filtro" refresh_components="chart_1,chart_2">
+                    <title>Filtro</title>
+                    <app>sistema_de_carros</app>
+                    <page>Parametrizacao_marcas</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_marcas/Parametrizacao_marcas.xml?</parameter>
+                    <target>submit_ajax</target>
+                    <img>primary|fa-filter</img>
+                    <preview>../images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_marcas/Parametrizacao_marcas.xml</preview>
+                </item>
+            </tools-bar>
+        </form_1>
+        <chart_1 type="chart" xml-type="chart" title="Carros Vendido por Modelo" gen-type="container" gen-group="">
+            <caption/>
+            <chart_type>column</chart_type>
+            <xaxys>Eixo de X</xaxys>
+            <yaxys>Eixo de Y</yaxys>
+            <url>#</url>
+            <label>
+                <col>Ano</col>
+                <col>X1</col>
+                <col>X2</col>
+                <col>X3</col>
+                <col>X4</col>
+            </label>
+            <value>
+                <row>
+                    <col>2010</col>
+                    <col>514</col>
+                    <col>846</col>
+                    <col>77</col>
+                    <col>122</col>
+                </row>
+                <row>
+                    <col>2009</col>
+                    <col>758</col>
+                    <col>968</col>
+                    <col>180</col>
+                    <col>693</col>
+                </row>
+                <row>
+                    <col>2015</col>
+                    <col>1010</col>
+                    <col>486</col>
+                    <col>660</col>
+                    <col>581</col>
+                </row>
+            </value>
+            <colors>
+                <col>#d234cb</col>
+                <col>#c22ada</col>
+                <col>#1485fa</col>
+                <col>#0ed73d</col>
+            </colors>
+        </chart_1>
+        <chart_2 type="chart" xml-type="chart" title="Marca mais produzida" gen-type="container" gen-group="">
+            <caption/>
+            <chart_type>pie</chart_type>
+            <xaxys>Eixo de X</xaxys>
+            <yaxys>Eixo de Y</yaxys>
+            <url>#</url>
+            <label>
+                <col>Ano</col>
+                <col>X1</col>
+                <col>X2</col>
+                <col>X3</col>
+                <col>X4</col>
+            </label>
+            <value>
+                <row>
+                    <col>2010</col>
+                    <col>477</col>
+                    <col>434</col>
+                    <col>695</col>
+                    <col>461</col>
+                </row>
+                <row>
+                    <col>2009</col>
+                    <col>827</col>
+                    <col>188</col>
+                    <col>8</col>
+                    <col>241</col>
+                </row>
+                <row>
+                    <col>2015</col>
+                    <col>1010</col>
+                    <col>142</col>
+                    <col>815</col>
+                    <col>131</col>
+                </row>
+            </value>
+            <colors>
+                <col>#e89111</col>
+                <col>#6e4733</col>
+                <col>#083021</col>
+                <col>#8f3115</col>
+            </colors>
+        </chart_2>
+    </content>
+    <blockly>
+        <imports>
+            <import type="grafico">chart_1</import>
+            <import type="grafico">chart_2</import>
+            <import type="dao">TblCarro</import>
+            <import type="dao">TblModelo</import>
+            <import type="dao">TblMarca</import>
+            <import type="fields">LocalDate</import>
+        </imports>
+        <xml>
+            <block type="controller" id="controller" x="313" y="13">
+                <statement name="index">
+                    <block type="grafico_chart_1" id="/V^xd~v)G,|n*-G08+E[" inline="true">
+                        <mutation order="null" operation="null" limit="null" collectors="null" crud="null" statistdrop="null" ajax="null" count="2" mutation-1="andWhere" mutation-2="andWhereBetween"></mutation>
+                        <field name="dao">TblCarro</field>
+                        <field name="ADD1FILTER">andWhere</field>
+                        <field name="ADD1WHERE">WHERE_EQ</field>
+                        <field name="ADD2FILTER">andWhereBetween</field>
+                        <field name="ADD2WHERE">WHERE_EQ</field>
+                        <value name="groupby">
+                            <block type="get-dao-TblCarro" id=")uNUl;XH^#V*M522QUga">
+                                <mutation hover_type="TblModelo_FK#::idModeloFk"></mutation>
+                                <field name="DAO_FIELD">TblModelo_FK#::idModeloFk</field>
+                                <value name="dao_rela">
+                                    <block type="get-dao-TblModelo" id="mhjw7`CENi7J*n+d7V)d">
+                                        <mutation hover_type="Integer_PK#::idModelo"></mutation>
+                                        <field name="DAO_FIELD">Integer_PK#::idModelo</field>
+                                    </block>
+                                </value>
+                            </block>
+                        </value>
+                        <value name="statistics">
+                            <block type="get-dao-TblCarro" id="wBeH/ow%zDQ}y8e/!uX?">
+                                <mutation hover_type="TblModelo_FK#::idModeloFk"></mutation>
+                                <field name="DAO_FIELD">TblModelo_FK#::idModeloFk</field>
+                                <value name="dao_rela">
+                                    <block type="get-dao-TblModelo" id="UG1NR!-hF#I-L4aYBGjV">
+                                        <mutation hover_type="Integer_PK#::idModelo"></mutation>
+                                        <field name="DAO_FIELD">Integer_PK#::idModelo</field>
+                                    </block>
+                                </value>
+                            </block>
+                        </value>
+                        <statement name="value2">
+                            <block type="EixoX" id="j}`69k.FjCj,0n~z5_p:">
+                                <value name="eixo">
+                                    <block type="get-dao-TblCarro" id="U5i)ZudT#0x@#~iV}N3z">
+                                        <mutation hover_type="TblModelo_FK#::idModeloFk"></mutation>
+                                        <field name="DAO_FIELD">TblModelo_FK#::idModeloFk</field>
+                                        <value name="dao_rela">
+                                            <block type="get-dao-TblModelo" id="ZFus.jD]J:ak6l8ov+W9">
+                                                <mutation hover_type="String::nomeModelo"></mutation>
+                                                <field name="DAO_FIELD">String::nomeModelo</field>
+                                            </block>
+                                        </value>
+                                    </block>
+                                </value>
+                                <next>
+                                    <block type="EixoY" id="PL0O)2k.J~IMUBDCvK,1">
+                                        <value name="eixo">
+                                            <block type="get-dao-TblCarro" id="Wq3.y-BzcI-`F^AxlW3s">
+                                                <mutation hover_type="TblModelo_FK#::idModeloFk"></mutation>
+                                                <field name="DAO_FIELD">TblModelo_FK#::idModeloFk</field>
+                                                <value name="dao_rela">
+                                                    <block type="get-dao-TblModelo" id="tl9?2Z+bF1*9({lzAgs^">
+                                                        <mutation hover_type="TblMarca_FK#::idMarcaFk"></mutation>
+                                                        <field name="DAO_FIELD">TblMarca_FK#::idMarcaFk</field>
+                                                        <value name="dao_rela">
+                                                            <block type="get-dao-TblMarca" id="))8P,O:X@nA/S7h^T.rW">
+                                                                <mutation hover_type="String::nomeMarca"></mutation>
+                                                                <field name="DAO_FIELD">String::nomeMarca</field>
+                                                            </block>
+                                                        </value>
+                                                    </block>
+                                                </value>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="EixoZ" id="529Z`vzrLBEYka(cYtFl">
+                                                <field name="collectors">counting</field>
+                                                <value name="eixo">
+                                                    <block type="get-dao-TblCarro" id="9En3Q!`um/D9n}8y=%:F">
+                                                        <mutation hover_type="TblModelo_FK#::idModeloFk"></mutation>
+                                                        <field name="DAO_FIELD">TblModelo_FK#::idModeloFk</field>
+                                                        <value name="dao_rela">
+                                                            <block type="get-dao-TblModelo" id="f8-q60BNIDOiInql~]f_">
+                                                                <mutation hover_type="Integer_PK#::idModelo"></mutation>
+                                                                <field name="DAO_FIELD">Integer_PK#::idModelo</field>
+                                                            </block>
+                                                        </value>
+                                                    </block>
+                                                </value>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </next>
+                            </block>
+                        </statement>
+                        <value name="ADD1">
+                            <block type="get-dao-TblCarro" id="^-eX5Cy.U`}M}(jmWuti">
+                                <mutation hover_type="Boolean::vendido"></mutation>
+                                <field name="DAO_FIELD">Boolean::vendido</field>
+                            </block>
+                        </value>
+                        <value name="ADD1STATE2">
+                            <block type="logic_boolean" id="ysos#/Vf8VH#-Xb!0_[B">
+                                <field name="BOOL">TRUE</field>
+                            </block>
+                        </value>
+                        <value name="ADD2">
+                            <block type="get-dao-TblCarro" id="Ho}Jagqj^fXx1_RI](#T">
+                                <mutation hover_type="LocalDate::dataRegistro"></mutation>
+                                <field name="DAO_FIELD">LocalDate::dataRegistro</field>
+                            </block>
+                        </value>
+                        <value name="ADD2STATE2">
+                            <block type="get_model" id="1ehP,CBI`#]BBz=#.Xdz">
+                                <field name="get_model">String::intervalo_de_data//range</field>
+                            </block>
+                        </value>
+                        <value name="ADD2STATE3">
+                            <block type="get_model" id="i}1tEDl+I:)F^)WVwfT8">
+                                <field name="get_model">String::intervalo_de_data//range</field>
+                            </block>
+                        </value>
+                        <next>
+                            <block type="grafico_chart_2" id="HQOEA9w.LW]VL|q02)eP" inline="true">
+                                <mutation order="null" operation="null" limit="null" collectors="null" crud="null" statistdrop="null" ajax="null" count="1" mutation-1="andWhereBetween"></mutation>
+                                <field name="dao">TblCarro</field>
+                                <field name="ADD1FILTER">andWhereBetween</field>
+                                <field name="ADD1WHERE">WHERE_EQ</field>
+                                <value name="groupby">
+                                    <block type="get-dao-TblCarro" id="C?pD9!_12@MIQLX}0^yL">
+                                        <mutation hover_type="TblModelo_FK#::idModeloFk"></mutation>
+                                        <field name="DAO_FIELD">TblModelo_FK#::idModeloFk</field>
+                                        <value name="dao_rela">
+                                            <block type="get-dao-TblModelo" id="5PV|0iG(1RL~f(=1)_p{">
+                                                <mutation hover_type="TblMarca_FK#::idMarcaFk"></mutation>
+                                                <field name="DAO_FIELD">TblMarca_FK#::idMarcaFk</field>
+                                                <value name="dao_rela">
+                                                    <block type="get-dao-TblMarca" id="B{DEGb%cQs|XoIxYA_Jl">
+                                                        <mutation hover_type="String::nomeMarca"></mutation>
+                                                        <field name="DAO_FIELD">String::nomeMarca</field>
+                                                    </block>
+                                                </value>
+                                            </block>
+                                        </value>
+                                    </block>
+                                </value>
+                                <value name="statistics">
+                                    <block type="get-dao-TblCarro" id="B1;c6tlnsoj0B.xOo:~l">
+                                        <mutation hover_type="TblModelo_FK#::idModeloFk"></mutation>
+                                        <field name="DAO_FIELD">TblModelo_FK#::idModeloFk</field>
+                                        <value name="dao_rela">
+                                            <block type="get-dao-TblModelo" id=")l,{qoqt*2Dj;l[TU^-i">
+                                                <mutation hover_type="TblMarca_FK#::idMarcaFk"></mutation>
+                                                <field name="DAO_FIELD">TblMarca_FK#::idMarcaFk</field>
+                                                <value name="dao_rela">
+                                                    <block type="get-dao-TblMarca" id="eskFV?!F*Um{v=.enR|:">
+                                                        <mutation hover_type="String::nomeMarca"></mutation>
+                                                        <field name="DAO_FIELD">String::nomeMarca</field>
+                                                    </block>
+                                                </value>
+                                            </block>
+                                        </value>
+                                    </block>
+                                </value>
+                                <statement name="value2">
+                                    <block type="EixoX" id="7y/%jtjZyhg08|i]QKhZ">
+                                        <value name="eixo">
+                                            <block type="get-dao-TblCarro" id="Mse]Ep12Z:CVhRnHX!J?">
+                                                <mutation hover_type="TblModelo_FK#::idModeloFk"></mutation>
+                                                <field name="DAO_FIELD">TblModelo_FK#::idModeloFk</field>
+                                                <value name="dao_rela">
+                                                    <block type="get-dao-TblModelo" id="QDNT6A+qRU4r0n|HbS0U">
+                                                        <mutation hover_type="TblMarca_FK#::idMarcaFk"></mutation>
+                                                        <field name="DAO_FIELD">TblMarca_FK#::idMarcaFk</field>
+                                                        <value name="dao_rela">
+                                                            <block type="get-dao-TblMarca" id="XyD_8_LqPdim-Xq-whze">
+                                                                <mutation hover_type="String::nomeMarca"></mutation>
+                                                                <field name="DAO_FIELD">String::nomeMarca</field>
+                                                            </block>
+                                                        </value>
+                                                    </block>
+                                                </value>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="EixoY_Z" id="so%b-dedGEl9B*J4]VwW">
+                                                <field name="collectors">counting</field>
+                                                <value name="eixo">
+                                                    <block type="get-dao-TblCarro" id="DS8`)v(Gl_tRbMTWC%X]">
+                                                        <mutation hover_type="TblModelo_FK#::idModeloFk"></mutation>
+                                                        <field name="DAO_FIELD">TblModelo_FK#::idModeloFk</field>
+                                                        <value name="dao_rela">
+                                                            <block type="get-dao-TblModelo" id="1?``tnDD;xt:lC;iOWZ]">
+                                                                <mutation hover_type="TblMarca_FK#::idMarcaFk"></mutation>
+                                                                <field name="DAO_FIELD">TblMarca_FK#::idMarcaFk</field>
+                                                                <value name="dao_rela">
+                                                                    <block type="get-dao-TblMarca" id="TKI.}6(i554W6:XcHvVa">
+                                                                        <mutation hover_type="String::nomeMarca"></mutation>
+                                                                        <field name="DAO_FIELD">String::nomeMarca</field>
+                                                                    </block>
+                                                                </value>
+                                                            </block>
+                                                        </value>
+                                                    </block>
+                                                </value>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </statement>
+                                <value name="ADD1">
+                                    <block type="get-dao-TblCarro" id=".;?Rf6W~**k1knkh:3*x">
+                                        <mutation hover_type="LocalDate::dataRegistro"></mutation>
+                                        <field name="DAO_FIELD">LocalDate::dataRegistro</field>
+                                    </block>
+                                </value>
+                                <value name="ADD1STATE2">
+                                    <block type="get_model" id="lgMeqEgG+P6owkc:cVtS">
+                                        <field name="get_model">String::intervalo_de_data//range</field>
+                                    </block>
+                                </value>
+                                <value name="ADD1STATE3">
+                                    <block type="get_model" id="reS!@1uP75+#CpJjuUZ~">
+                                        <field name="get_model">String::intervalo_de_data//range</field>
+                                    </block>
+                                </value>
+                            </block>
+                        </next>
+                    </block>
+                </statement>
+            </block>
+        </xml>
+    </blockly>
+</rows>

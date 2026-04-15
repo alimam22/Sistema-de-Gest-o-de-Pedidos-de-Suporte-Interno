@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/detalheshistorico/Detalheshistorico.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>DetalhesHistórico</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+    </site>
+    <page>Detalheshistorico</page>
+    <app>gestao_de_pedidos_de_suporte_</app>
+    <plsql>
+        <action>index</action>
+        <package_db>nosi.webapps.gestao_de_pedidos_de_suporte_.pages</package_db>
+        <package_html>Detalheshistorico</package_html>
+    </plsql>
+    <content>
+        <title>DetalhesHistórico</title>
+        <form_1 type="form" xml-type="form" title="Informações gerais do pedido" gen-type="container" gen-group="">
+            <fields>
+                <n_do_pedido name="p_n_do_pedido" type="text" maxlength="250" required="false" change="false" readonly="true" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Nº do pedido</label>
+                </n_do_pedido>
+                <data_de_abertura name="p_data_de_abertura" type="text" maxlength="250" required="false" change="false" readonly="true" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Data de abertura</label>
+                </data_de_abertura>
+                <estado name="p_estado" type="text" maxlength="250" required="false" change="false" readonly="true" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Estado</label>
+                </estado>
+                <departamento name="p_departamento" type="text" maxlength="250" required="false" change="false" readonly="true" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Departamento</label>
+                </departamento>
+                <categoria name="p_categoria" type="text" maxlength="250" required="false" change="false" readonly="true" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Categoria</label>
+                </categoria>
+            </fields>
+        </form_1>
+        <table_1 type="table" xml-type="table" title="Histórico de atendimento" gen-type="container" gen-group="true">
+            <fields>
+                <datahora name="p_datahora" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Data/hora</label>
+                </datahora>
+                <tecnico name="p_tecnico" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Técnico</label>
+                </tecnico>
+                <estado_anterior name="p_estado_anterior" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Estado anterior</label>
+                </estado_anterior>
+                <novo_estado name="p_novo_estado" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Novo estado</label>
+                </novo_estado>
+                <observacao name="p_observacao" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Observação</label>
+                </observacao>
+                <tbi_historico_id name="p_tbi_historico_id" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="tbi_historico_id"/>
+            </fields>
+        </table_1>
+        <form_2 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <nova_interacao__resolucao name="p_nova_interacao__resolucao" type="textarea" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Nova interação / resolução</label>
+                </nova_interacao__resolucao>
+            </fields>
+            <tools-bar>
+                <item id="button_b759_591a" type="form" code="" class="info" rel="assumir_pedido" refresh_components="">
+                    <title>Assumir pedido</title>
+                    <app>gestao_de_pedidos_de_suporte_</app>
+                    <page>Detalheshistorico</page>
+                    <link>index</link>
+                    <target>mpsubmit|refresh</target>
+                    <img>info|fa-pencil</img>
+                </item>
+                <item id="button_288b_0a0b" type="form" code="" class="success" rel="finalizar_pedido" refresh_components="">
+                    <title>Finalizar pedido</title>
+                    <app>gestao_de_pedidos_de_suporte_</app>
+                    <page>Detalheshistorico</page>
+                    <link>index</link>
+                    <target>mpsubmit|refresh</target>
+                    <img>success|fa-check</img>
+                </item>
+            </tools-bar>
+        </form_2>
+        <form_3 type="form" xml-type="form" title="Gerenciamento de Comentário" gen-type="container" gen-group="">
+            <fields>
+                <adicionar_comentario name="p_adicionar_comentario" type="textarea" maxlength="2000" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="Digite seu comentário aqui..." desclabel="false" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Adicionar comentário:</label>
+                </adicionar_comentario>
+                <hidden name="p_comentario_editar_id" type="hidden" maxlength="250" java-type="" tooltip="false" disable_copy_paste="false" tag="comentario_editar_id"/>
+                <hidden name="p_pedido_id" type="hidden" maxlength="250" java-type="" tooltip="false" disable_copy_paste="false" tag="pedido_id"/>
+            </fields>
+            <tools-bar>
+                <item id="button_25e2_85a6" type="form" code="" class="info" rel="publicar_comentario" refresh_components="form_3,table_2">
+                    <title>Publicar Comentário</title>
+                    <app>gestao_de_pedidos_de_suporte_</app>
+                    <page>Detalheshistorico</page>
+                    <link>index</link>
+                    <target>mpsubmit|refresh</target>
+                    <img>info|fa-plus-circle</img>
+                </item>
+            </tools-bar>
+        </form_3>
+        <table_2 type="table" xml-type="table" title="Lista de comentários" gen-type="container" gen-group="true">
+            <fields>
+                <historico_de_comentario name="p_historico_de_comentario" type="text" maxlength="2000" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Comentário</label>
+                </historico_de_comentario>
+                <hidden name="p_tbl_comentario_id" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="tbl_comentario_id"/>
+            </fields>
+            <context-menu>
+                <item id="button_6f8e_de77" type="specific" code="" class="warning" rel="editar" refresh_components="form_3">
+                    <title>Editar</title>
+                    <app>gestao_de_pedidos_de_suporte_</app>
+                    <page>Detalheshistorico</page>
+                    <link>index</link>
+                    <target>mpsubmit|refresh</target>
+                    <img>warning|fa-edit</img>
+                </item>
+                <item id="button_dc3d_9c63" type="specific" code="" class="danger" rel="eliminar" refresh_components="table_2" labelConfirm="Deseja realmente excluir este comentário?">
+                    <title>Eliminar</title>
+                    <app>gestao_de_pedidos_de_suporte_</app>
+                    <page>Detalheshistorico</page>
+                    <link>index</link>
+                    <target>confirm</target>
+                    <img>danger|fa-trash</img>
+                </item>
+            </context-menu>
+        </table_2>
+    </content>
+</rows>

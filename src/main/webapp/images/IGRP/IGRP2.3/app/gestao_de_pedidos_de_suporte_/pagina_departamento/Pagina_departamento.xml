@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/pagina_departamento/Pagina_departamento.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Pagina_departamento</page>
+    <app>gestao_de_pedidos_de_suporte_</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_de_pedidos_de_suporte_.pages</package_db>
+        <package_html>Pagina_departamento</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=133</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Pagina departamento</title>
+        <form_1 type="form" xml-type="form" title="Formulário Departamento" gen-type="container" gen-group="">
+            <fields>
+                <nome name="p_nome" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Nome</label>
+                    <value>Unde rem sit dolor sed</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </nome>
+                <siglas name="p_siglas" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Siglas</label>
+                    <value>Ipsum accusantium deserunt anim iste</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </siglas>
+                <activos name="p_activos" type="radiolist" domain="" maxlength="250" required="true" change="false" readonly="false" disabled="false" child_size="12" right="false" java-type="" tooltip="false" disable_copy_paste="false">
+                    <label>Activos</label>
+                    <list>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </activos>
+                <data name="p_data" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="date" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Data</label>
+                    <value>Mollit sit laudantium doloremque lorem</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </data>
+                <hidden name="p_editar_dados_id" type="hidden" maxlength="250" java-type="" tooltip="false" disable_copy_paste="false" tag="editar_dados_id"/>
+            </fields>
+            <tools-bar>
+                <item id="button_5e4a_44f7" type="form" code="" class="success" rel="adicionar" refresh_components="">
+                    <title>Adicionar</title>
+                    <app>gestao_de_pedidos_de_suporte_</app>
+                    <page>Criar_pedido</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/criar_pedido/Criar_pedido.xml?</parameter>
+                    <target>submit_form</target>
+                    <img>success|fa-plus-square</img>
+                    <preview>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/criar_pedido/Criar_pedido.xml</preview>
+                </item>
+            </tools-bar>
+        </form_1>
+        <table_1 type="table" xml-type="table" title="Lista de departamento" gen-type="container" gen-group="true">
+            <fields>
+                <nome_departamento name="p_nome_departamento" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Nome</label>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </nome_departamento>
+                <siglas_departamento name="p_siglas_departamento" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Siglas</label>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </siglas_departamento>
+                <activo_departamento name="p_activo_departamento" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Activo</label>
+                </activo_departamento>
+                <data_departamento name="p_data_departamento" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Data</label>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </data_departamento>
+                <tbl_departamento_id name="p_tbl_departamento_id" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="tbl_departamento_id">
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </tbl_departamento_id>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome_departamento name="p_nome_departamento">Elit officia sit ut deserunt</nome_departamento>
+                        <siglas_departamento name="p_siglas_departamento">Unde elit aperiam lorem amet</siglas_departamento>
+                        <activo_departamento name="p_activo_departamento">Adipiscing consectetur unde om</activo_departamento>
+                        <data_departamento name="p_data_departamento">Doloremque sit ut consectetur</data_departamento>
+                        <tbl_departamento_id name="p_tbl_departamento_id" tag="tbl_departamento_id">hidden-cc6a_ae23</tbl_departamento_id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome_departamento name="p_nome_departamento">Accusantium laudantium accusan</nome_departamento>
+                        <siglas_departamento name="p_siglas_departamento">Consectetur mollit aperiam acc</siglas_departamento>
+                        <activo_departamento name="p_activo_departamento">Sed magna labore unde rem</activo_departamento>
+                        <data_departamento name="p_data_departamento">Sit amet omnis mollit lorem</data_departamento>
+                        <tbl_departamento_id name="p_tbl_departamento_id" tag="tbl_departamento_id">hidden-675c_1f15</tbl_departamento_id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome_departamento name="p_nome_departamento">Mollit ipsum sit dolor mollit</nome_departamento>
+                        <siglas_departamento name="p_siglas_departamento">Sit lorem aperiam stract omnis</siglas_departamento>
+                        <activo_departamento name="p_activo_departamento">Consectetur rem amet magna und</activo_departamento>
+                        <data_departamento name="p_data_departamento">Aperiam consectetur sit sed la</data_departamento>
+                        <tbl_departamento_id name="p_tbl_departamento_id" tag="tbl_departamento_id">hidden-43e6_a9a6</tbl_departamento_id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome_departamento name="p_nome_departamento">Doloremque elit sit officia mo</nome_departamento>
+                        <siglas_departamento name="p_siglas_departamento">Natus ut sit aperiam iste</siglas_departamento>
+                        <activo_departamento name="p_activo_departamento">Aperiam totam unde natus totam</activo_departamento>
+                        <data_departamento name="p_data_departamento">Mollit ut ipsum lorem ut</data_departamento>
+                        <tbl_departamento_id name="p_tbl_departamento_id" tag="tbl_departamento_id">hidden-2035_82ef</tbl_departamento_id>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome_departamento name="p_nome_departamento">Doloremque stract voluptatem d</nome_departamento>
+                        <siglas_departamento name="p_siglas_departamento">Mollit voluptatem totam aliqua</siglas_departamento>
+                        <activo_departamento name="p_activo_departamento">Omnis rem officia consectetur</activo_departamento>
+                        <data_departamento name="p_data_departamento">Rem omnis magna unde iste</data_departamento>
+                        <tbl_departamento_id name="p_tbl_departamento_id" tag="tbl_departamento_id">hidden-49ae_b5f8</tbl_departamento_id>
+                    </row>
+                </value>
+                <context-menu>
+                    <item id="button_bebf_aef0" type="specific" code="" class="warning" rel="editar" refresh_components="">
+                        <title>Editar</title>
+                        <app>gestao_de_pedidos_de_suporte_</app>
+                        <page>Pagina_departamento</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/pagina_departamento/Pagina_departamento.xml?</parameter>
+                        <target>mpsubmit|refresh</target>
+                        <img>warning|fa-edit</img>
+                        <preview>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/pagina_departamento/Pagina_departamento.xml</preview>
+                    </item>
+                    <item id="button_323f_7a1d" type="specific" code="" class="danger" rel="eliminar" refresh_components="" labelConfirm="Deseja realmente realizar esta operação?">
+                        <title>Eliminar</title>
+                        <app>gestao_de_pedidos_de_suporte_</app>
+                        <page>Pagina_departamento</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/pagina_departamento/Pagina_departamento.xml?</parameter>
+                        <target>confirm</target>
+                        <img>danger|fa-trash</img>
+                        <preview>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/pagina_departamento/Pagina_departamento.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="toolsbar_1_button_1" refresh_components="">
+                <title>Button</title>
+                <app/>
+                <page/>
+                <link/>
+                <target>_blank</target>
+                <img>primary|fa-angle-right</img>
+                <preview/>
+            </item>
+        </toolsbar_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

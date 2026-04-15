@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/detalheshistorico/Detalheshistorico.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Detalheshistorico</page>
+    <app>gestao_de_pedidos_de_suporte_</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_de_pedidos_de_suporte_.pages</package_db>
+        <package_html>Detalheshistorico</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=140</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>DetalhesHistórico</title>
+        <form_1 type="form" xml-type="form" title="Informações gerais do pedido" gen-type="container" gen-group="">
+            <fields>
+                <n_do_pedido name="p_n_do_pedido" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Nº do pedido</label>
+                    <value>Unde anim consectetur magna iste</value>
+                </n_do_pedido>
+                <data_de_abertura name="p_data_de_abertura" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Data de abertura</label>
+                    <value>Accusantium doloremque rem unde doloremque</value>
+                </data_de_abertura>
+                <estado name="p_estado" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Estado</label>
+                    <value>Laudantium sit mollit natus laudantium</value>
+                </estado>
+                <departamento name="p_departamento" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Departamento</label>
+                    <value>Perspiciatis accusantium amet sit sit</value>
+                </departamento>
+                <categoria name="p_categoria" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Categoria</label>
+                    <value>Natus stract aperiam accusantium dolor</value>
+                </categoria>
+                <hidden name="p_form_1_hidden_1" type="hidden" maxlength="250" java-type="" tooltip="false" disable_copy_paste="false" tag="form_1_hidden_1"/>
+            </fields>
+        </form_1>
+        <table_1 type="table" xml-type="table" title="Histórico de atendimento" gen-type="container" gen-group="true">
+            <fields>
+                <datahora name="p_datahora" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Data/hora</label>
+                </datahora>
+                <tecnico name="p_tecnico" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Técnico</label>
+                </tecnico>
+                <estado_anterior name="p_estado_anterior" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Estado anterior</label>
+                </estado_anterior>
+                <novo_estado name="p_novo_estado" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Novo estado</label>
+                </novo_estado>
+                <observacao name="p_observacao" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Observação</label>
+                </observacao>
+                <tbi_historico_id name="p_tbi_historico_id" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="tbi_historico_id"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <datahora name="p_datahora">Laudantium ipsum totam rem omn</datahora>
+                        <tecnico name="p_tecnico">Sit deserunt sit amet consecte</tecnico>
+                        <estado_anterior name="p_estado_anterior">Consectetur perspiciatis offic</estado_anterior>
+                        <novo_estado name="p_novo_estado">Ut magna lorem voluptatem natu</novo_estado>
+                        <observacao name="p_observacao">Stract amet laudantium omnis s</observacao>
+                        <tbi_historico_id name="p_tbi_historico_id" tag="tbi_historico_id">hidden-3834_ee03</tbi_historico_id>
+                    </row>
+                    <row>
+                        <datahora name="p_datahora">Stract sit sit ipsum officia</datahora>
+                        <tecnico name="p_tecnico">Mollit stract officia deserunt</tecnico>
+                        <estado_anterior name="p_estado_anterior">Aliqua ipsum perspiciatis adip</estado_anterior>
+                        <novo_estado name="p_novo_estado">Deserunt totam adipiscing lore</novo_estado>
+                        <observacao name="p_observacao">Accusantium sit elit adipiscin</observacao>
+                        <tbi_historico_id name="p_tbi_historico_id" tag="tbi_historico_id">hidden-6aa8_be31</tbi_historico_id>
+                    </row>
+                    <row>
+                        <datahora name="p_datahora">Totam laudantium labore aliqua</datahora>
+                        <tecnico name="p_tecnico">Ipsum labore sit stract elit</tecnico>
+                        <estado_anterior name="p_estado_anterior">Sed rem iste ipsum mollit</estado_anterior>
+                        <novo_estado name="p_novo_estado">Accusantium elit omnis perspic</novo_estado>
+                        <observacao name="p_observacao">Aperiam magna aperiam ut sit</observacao>
+                        <tbi_historico_id name="p_tbi_historico_id" tag="tbi_historico_id">hidden-7dc5_9c3b</tbi_historico_id>
+                    </row>
+                    <row>
+                        <datahora name="p_datahora">Sit doloremque natus aliqua co</datahora>
+                        <tecnico name="p_tecnico">Aperiam ipsum lorem unde anim</tecnico>
+                        <estado_anterior name="p_estado_anterior">Omnis dolor ut amet sed</estado_anterior>
+                        <novo_estado name="p_novo_estado">Sed deserunt elit dolor unde</novo_estado>
+                        <observacao name="p_observacao">Aperiam sit stract ipsum totam</observacao>
+                        <tbi_historico_id name="p_tbi_historico_id" tag="tbi_historico_id">hidden-5d5e_1bcf</tbi_historico_id>
+                    </row>
+                    <row>
+                        <datahora name="p_datahora">Stract consectetur iste sed ip</datahora>
+                        <tecnico name="p_tecnico">Totam perspiciatis lorem accus</tecnico>
+                        <estado_anterior name="p_estado_anterior">Adipiscing totam ut labore rem</estado_anterior>
+                        <novo_estado name="p_novo_estado">Ipsum aperiam voluptatem accus</novo_estado>
+                        <observacao name="p_observacao">Stract sed dolor ipsum elit</observacao>
+                        <tbi_historico_id name="p_tbi_historico_id" tag="tbi_historico_id">hidden-6305_8af2</tbi_historico_id>
+                    </row>
+                </value>
+            </table>
+        </table_1>
+        <form_2 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <nova_interacao__resolucao name="p_nova_interacao__resolucao" type="textarea" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Nova interação / resolução</label>
+                    <value>Ut stract amet officia elit deserunt iste adipiscing perspiciatis anim aperiam accusantium mollit amet omnis</value>
+                </nova_interacao__resolucao>
+            </fields>
+            <tools-bar>
+                <item id="button_b759_591a" type="form" code="" class="info" rel="assumir_pedido" refresh_components="">
+                    <title>Assumir pedido</title>
+                    <app>gestao_de_pedidos_de_suporte_</app>
+                    <page>Criar_pedido</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/criar_pedido/Criar_pedido.xml?</parameter>
+                    <target>_blank</target>
+                    <img>info|fa-pencil</img>
+                    <preview>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/criar_pedido/Criar_pedido.xml</preview>
+                </item>
+                <item id="button_288b_0a0b" type="form" code="" class="success" rel="finalizar_pedido" refresh_components="">
+                    <title>Finalizar pedido</title>
+                    <app>gestao_de_pedidos_de_suporte_</app>
+                    <page>Criar_pedido</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/criar_pedido/Criar_pedido.xml?</parameter>
+                    <target>_blank</target>
+                    <img>success|fa-check</img>
+                    <preview>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/criar_pedido/Criar_pedido.xml</preview>
+                </item>
+            </tools-bar>
+        </form_2>
+        <toolsbar_3 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group=""/>
+        <toolsbar_2 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group=""/>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group=""/>
+        <form_3 type="form" xml-type="form" title="Gerenciamento de Comentário" gen-type="container" gen-group="">
+            <fields>
+                <adicionar_comentario name="p_adicionar_comentario" type="textarea" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Adicionar comentário:</label>
+                    <value>Unde labore accusantium amet sit perspiciatis laudantium totam dolor doloremque natus ut unde adipiscing aperiam</value>
+                </adicionar_comentario>
+                <hidden name="p_comentario_editar_id" type="hidden" maxlength="250" java-type="" tooltip="false" disable_copy_paste="false" tag="comentario_editar_id"/>
+            </fields>
+            <tools-bar>
+                <item id="button_25e2_85a6" type="form" code="" class="info" rel="publicar_comentario" refresh_components="">
+                    <title>Publicar Comentário</title>
+                    <app>gestao_de_pedidos_de_suporte_</app>
+                    <page>Detalheshistorico</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/detalheshistorico/Detalheshistorico.xml?</parameter>
+                    <target>_blank</target>
+                    <img>info|fa-plus-circle</img>
+                    <preview>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/detalheshistorico/Detalheshistorico.xml</preview>
+                </item>
+            </tools-bar>
+        </form_3>
+        <toolsbar_4 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group=""/>
+        <table_2 type="table" xml-type="table" title="Lista de comentário" gen-type="container" gen-group="true">
+            <fields>
+                <historico_de_comentario name="p_historico_de_comentario" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Histórico de comentário</label>
+                </historico_de_comentario>
+                <hidden name="p_tbl_comentario_id" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="tbl_comentario_id"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <historico_de_comentario name="p_historico_de_comentario">Stract mollit sit laudantium n</historico_de_comentario>
+                        <hidden name="p_tbl_comentario_id" tag="tbl_comentario_id">hidden-8665_7b21</hidden>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <historico_de_comentario name="p_historico_de_comentario">Officia amet adipiscing lorem</historico_de_comentario>
+                        <hidden name="p_tbl_comentario_id" tag="tbl_comentario_id">hidden-4eb3_e4e5</hidden>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <historico_de_comentario name="p_historico_de_comentario">Laudantium aliqua officia sed</historico_de_comentario>
+                        <hidden name="p_tbl_comentario_id" tag="tbl_comentario_id">hidden-81e5_5dc5</hidden>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <historico_de_comentario name="p_historico_de_comentario">Iste voluptatem dolor consecte</historico_de_comentario>
+                        <hidden name="p_tbl_comentario_id" tag="tbl_comentario_id">hidden-9129_fa71</hidden>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <historico_de_comentario name="p_historico_de_comentario">Omnis rem labore magna unde</historico_de_comentario>
+                        <hidden name="p_tbl_comentario_id" tag="tbl_comentario_id">hidden-eb77_86ee</hidden>
+                    </row>
+                </value>
+                <context-menu>
+                    <item id="button_6f8e_de77" type="specific" code="" class="warning" rel="editar" refresh_components="">
+                        <title>Editar</title>
+                        <app>gestao_de_pedidos_de_suporte_</app>
+                        <page>Detalheshistorico</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/detalheshistorico/Detalheshistorico.xml?</parameter>
+                        <target>mpsubmit|refresh</target>
+                        <img>warning|fa-edit</img>
+                        <preview>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/detalheshistorico/Detalheshistorico.xml</preview>
+                    </item>
+                    <item id="button_dc3d_9c63" type="specific" code="" class="danger" rel="eliminar" refresh_components="" labelConfirm="Deseja realmente realizar esta operação?">
+                        <title>Eliminar</title>
+                        <app>gestao_de_pedidos_de_suporte_</app>
+                        <page>Criar_pedido</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/criar_pedido/Criar_pedido.xml?</parameter>
+                        <target>confirm</target>
+                        <img>danger|fa-trash</img>
+                        <preview>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/criar_pedido/Criar_pedido.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_2>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

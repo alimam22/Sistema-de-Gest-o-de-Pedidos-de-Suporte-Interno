@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_marcas/Parametrizacao_marcas.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Parametrizacao_marcas</page>
+    <app>sistema_de_carros</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_de_carros.pages</package_db>
+        <package_html>Parametrizacao_marcas</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=91</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Parametrizacão Marcas</title>
+        <form_1 type="form" xml-type="form" title="Resgistro de Marcas" gen-type="container" gen-group="">
+            <fields>
+                <marca name="p_marca" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Marca</label>
+                    <value>Omnis lorem magna aperiam mollit</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </marca>
+                <hidden name="p_id_marca" type="hidden" maxlength="250" java-type="" tooltip="false" disable_copy_paste="false" tag="id_marca"/>
+            </fields>
+            <tools-bar>
+                <item id="button_1e9f_7b4a" type="form" code="" class="primary" rel="salvar" refresh_components="">
+                    <title>Salvar</title>
+                    <app>sistema_de_carros</app>
+                    <page>Parametrizacao_marcas</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_marcas/Parametrizacao_marcas.xml?</parameter>
+                    <target>submit_form</target>
+                    <img>primary|fa-save</img>
+                    <preview>../images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_marcas/Parametrizacao_marcas.xml</preview>
+                </item>
+            </tools-bar>
+        </form_1>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <marca_tbl name="p_marca_tbl" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Marca</label>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </marca_tbl>
+                <id_marca_tbl name="p_id_marca_tbl" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="id_marca_tbl">
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </id_marca_tbl>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <marca_tbl name="p_marca_tbl">Stract laudantium aperiam elit</marca_tbl>
+                        <id_marca_tbl name="p_id_marca_tbl" tag="id_marca_tbl">hidden-7d23_5d14</id_marca_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <marca_tbl name="p_marca_tbl">Magna ipsum totam stract ut</marca_tbl>
+                        <id_marca_tbl name="p_id_marca_tbl" tag="id_marca_tbl">hidden-c047_09ec</id_marca_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <marca_tbl name="p_marca_tbl">Anim doloremque ipsum aperiam</marca_tbl>
+                        <id_marca_tbl name="p_id_marca_tbl" tag="id_marca_tbl">hidden-8cf0_e808</id_marca_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <marca_tbl name="p_marca_tbl">Sed sit unde deserunt doloremq</marca_tbl>
+                        <id_marca_tbl name="p_id_marca_tbl" tag="id_marca_tbl">hidden-b7ee_cce5</id_marca_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <marca_tbl name="p_marca_tbl">Aperiam voluptatem rem sed ist</marca_tbl>
+                        <id_marca_tbl name="p_id_marca_tbl" tag="id_marca_tbl">hidden-ed8b_1fc0</id_marca_tbl>
+                    </row>
+                </value>
+                <context-menu>
+                    <item id="button_5049_3820" type="specific" code="" class="warning" rel="editar" refresh_components="">
+                        <title>Editar</title>
+                        <app>sistema_de_carros</app>
+                        <page>Parametrizacao_marcas</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_marcas/Parametrizacao_marcas.xml?</parameter>
+                        <target>mpsubmit|refresh</target>
+                        <img>warning|fa-edit</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_marcas/Parametrizacao_marcas.xml</preview>
+                    </item>
+                    <item id="button_4cd9_9ca7" type="specific" code="" class="danger" rel="eliminar" refresh_components="" labelConfirm="Deseja realmente realizar esta operação?">
+                        <title>Eliminar</title>
+                        <app>sistema_de_carros</app>
+                        <page>Parametrizacao_marcas</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_marcas/Parametrizacao_marcas.xml?</parameter>
+                        <target>confirm</target>
+                        <img>danger|fa-trash</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_marcas/Parametrizacao_marcas.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+    </content>
+    <blockly>
+        <imports>
+            <import type="listar">Listar</import>
+            <import type="inserir_dao">Inserir Daos</import>
+            <import type="dao">TblMarca</import>
+        </imports>
+        <xml>
+            <block type="controller" id="controller" x="463" y="38">
+                <statement name="index">
+                    <block type="formuu_form_1" id="6YGf=]wLU.;{0XG7*LrH" inline="true">
+                        <mutation order="null" operation="null" limit="null" collectors="null" crud="null" statistdrop="null" ajax="null" count="NaN"></mutation>
+                        <field name="dao">TblMarca</field>
+                        <value name="get_pa">
+                            <block type="core_get_param" id="7J6!PywR|7i-EqJPpM72">
+                                <field name="param">id_marca_tbl</field>
+                            </block>
+                        </value>
+                        <statement name="value2">
+                            <block type="model_form_String::marca" id="CjX+BZLk#0W^u=PtBuy]">
+                                <value name="value1">
+                                    <block type="get-dao-TblMarca" id="#LPqO+9KfPwr(4Pk?d6.">
+                                        <mutation hover_type="String::nomeMarca"></mutation>
+                                        <field name="DAO_FIELD">String::nomeMarca</field>
+                                    </block>
+                                </value>
+                                <next>
+                                    <block type="model_form_String::id_marca" id="qEx9-bYS?1*(_1TPBmot">
+                                        <value name="value1">
+                                            <block type="get-dao-TblMarca" id="8;:P]kVu],%^DKLF{OV?">
+                                                <mutation hover_type="Integer_PK#::idMarca"></mutation>
+                                                <field name="DAO_FIELD">Integer_PK#::idMarca</field>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="add_isedit" id="p%:=d*^?f/:0XqK7k*}W">
+                                                <field name="button">salvar</field>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </next>
+                            </block>
+                        </statement>
+                        <next>
+                            <block type="listar_table_1" id="uH^.26bs~jBw_`;3{qVq" inline="true">
+                                <mutation order="" operation="null" limit="TODOSS" collectors="null" crud="null" statistdrop="null" ajax="null" count="NaN"></mutation>
+                                <field name="dao">TblMarca</field>
+                                <field name="FILL">FALSE</field>
+                                <field name="orderdrop"></field>
+                                <field name="find">TODOSS</field>
+                                <field name="limit"></field>
+                                <statement name="value2">
+                                    <block type="rowtableString::marca_tbl" id="kTrrjuUFyCrg`qG:xvO7">
+                                        <value name="fields_model">
+                                            <block type="get-dao-TblMarca" id="/9m_q]Sc[%auYpBGHi|W">
+                                                <mutation hover_type="String::nomeMarca"></mutation>
+                                                <field name="DAO_FIELD">String::nomeMarca</field>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="rowtableString::id_marca_tbl" id="c]Xs6*F3}MA{@AvJkwRD">
+                                                <value name="fields_model">
+                                                    <block type="get-dao-TblMarca" id="m~C[k_mB?E{AGQ5~m]b:">
+                                                        <mutation hover_type="Integer_PK#::idMarca"></mutation>
+                                                        <field name="DAO_FIELD">Integer_PK#::idMarca</field>
+                                                    </block>
+                                                </value>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </statement>
+                            </block>
+                        </next>
+                    </block>
+                </statement>
+                <statement name="salvar">
+                    <block type="save_formu_form_1" id="Yfwe#Dy1.eh@19N|NZe?" inline="true">
+                        <mutation count="NaN" pxchecked="true"></mutation>
+                        <field name="dao">TblMarca</field>
+                        <field name="EDIT">TRUE</field>
+                        <value name="param_id">
+                            <block type="core_get_param" id="2ZwY/4Ev^N3RCrWS7[Xd">
+                                <field name="param">id_marca</field>
+                            </block>
+                        </value>
+                        <statement name="value2">
+                            <block type="set-dao-TblMarca" id="!*|HBM`+hgGMkoMu/bQt" inline="false">
+                                <mutation hover_type="String::nomeMarca"></mutation>
+                                <field name="DAO_FIELD">String::nomeMarca</field>
+                                <value name="value1">
+                                    <block type="mod_formform_1" id="y-nBoe`e+Rc[?RIXMr7s">
+                                        <field name="get_model">String::marca</field>
+                                    </block>
+                                </value>
+                            </block>
+                        </statement>
+                    </block>
+                </statement>
+                <statement name="editar">
+                    <block type="enviar_p" id="yLk+%7zmvNbgThPLRiy8">
+                        <field name="iskey">id_marca_tbl</field>
+                        <next>
+                            <block type="editar_dao" id="Rpea6eiGnW,9#;a06l85"></block>
+                        </next>
+                    </block>
+                </statement>
+                <statement name="eliminar">
+                    <block type="apagar" id=",lbn:s*b@~,SX~2U(?]1" inline="true">
+                        <mutation order="null" operation="null" limit="null" collectors="null" crud="null" statistdrop="null" ajax="null" count="NaN"></mutation>
+                        <field name="dao">TblMarca</field>
+                        <field name="KEEP">FALSE</field>
+                        <value name="get_pa">
+                            <block type="core_get_param" id="-D{D{.BqPWH(M?M9t9X6">
+                                <field name="param">id_marca_tbl</field>
+                            </block>
+                        </value>
+                    </block>
+                </statement>
+            </block>
+        </xml>
+    </blockly>
+</rows>

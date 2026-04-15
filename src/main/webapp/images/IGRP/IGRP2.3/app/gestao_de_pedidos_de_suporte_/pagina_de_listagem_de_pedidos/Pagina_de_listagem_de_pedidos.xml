@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/pagina_de_listagem_de_pedidos/Pagina_de_listagem_de_pedidos.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Pagina_de_listagem_de_pedidos</page>
+    <app>gestao_de_pedidos_de_suporte_</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_de_pedidos_de_suporte_.pages</package_db>
+        <package_html>Pagina_de_listagem_de_pedidos</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=138</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Página de Listagem de Pedidos</title>
+        <form_1 type="form" xml-type="form" title="Filtros de Pesquisa" gen-type="container" gen-group="">
+            <fields>
+                <n_do_pedido name="p_n_do_pedido" type="text" maxlength="20" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Nº do pedido</label>
+                    <value></value>
+                </n_do_pedido>
+                <estado name="p_estado" type="select" multiple="false" tags="false" load_service_data="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="String" tooltip="false" disable_copy_paste="false">
+                    <label>Estado</label>
+                    <list>
+                        <option/>
+                        <option><text>Aberto</text><value>ABERTO</value></option>
+                        <option><text>Atribuído</text><value>ATRIBUIDO</value></option>
+                        <option><text>Em Análise</text><value>EM_ANALISE</value></option>
+                        <option><text>Em Execução</text><value>EM_EXECUCAO</value></option>
+                        <option><text>Rejeitado</text><value>REJEITADO</value></option>
+                        <option><text>Reaberto</text><value>REABERTO</value></option>
+                        <option><text>Concluído</text><value>CONCLUIDO</value></option>
+                        <option><text>Cancelado</text><value>CANCELADO</value></option>
+                    </list>
+                </estado>
+                <!-- ADICIONADO: Filtro de Departamento -->
+                <departamento name="p_departamento" type="select" multiple="false" tags="false" load_service_data="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="Integer" tooltip="false" disable_copy_paste="false">
+                    <label>Departamento</label>
+                    <list>
+                        <option/>
+                        <option><text>Dept 1</text><value>1</value></option>
+                    </list>
+                </departamento>
+                <!-- ADICIONADO: Filtro de Categoria -->
+                <categoria name="p_categoria" type="select" multiple="false" tags="false" load_service_data="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="Integer" tooltip="false" disable_copy_paste="false">
+                    <label>Categoria</label>
+                    <list>
+                        <option/>
+                        <option><text>Cat 1</text><value>1</value></option>
+                    </list>
+                </categoria>
+                <!-- ADICIONADO: Filtro de Prioridade -->
+                <prioridade_filtro name="p_prioridade_filtro" type="select" multiple="false" tags="false" load_service_data="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="String" tooltip="false" disable_copy_paste="false">
+                    <label>Prioridade</label>
+                    <list>
+                        <option/>
+                        <option><text>Baixa</text><value>BAIXA</value></option>
+                        <option><text>Média</text><value>MEDIA</value></option>
+                        <option><text>Alta</text><value>ALTA</value></option>
+                        <option><text>Urgente</text><value>URGENTE</value></option>
+                    </list>
+                </prioridade_filtro>
+            </fields>
+            <tools-bar>
+                <item id="button_2932_a08a" type="form" code="" class="black" rel="pesquisar" refresh_components="">
+                    <title>Pesquisar</title>
+                    <app>gestao_de_pedidos_de_suporte_</app>
+                    <page>Pagina_de_listagem_de_pedidos</page>
+                    <link>pesquisar</link>
+                    <target>submit</target>
+                    <img>black|fa-search</img>
+                </item>
+            </tools-bar>
+        </form_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group=""/>
+        <toolsbar_2 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="novo_pedido" refresh_components="">
+                <title>Novo pedido</title>
+                <app>gestao_de_pedidos_de_suporte_</app>
+                <page>Paginapedidos</page>
+                <link>index</link>
+                <target>_self</target>
+                <img>info|fa-plus-square</img>
+            </item>
+        </toolsbar_2>
+        <toolsbar_3 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group=""/>
+        <table_1 type="table" xml-type="table" title="Lista de pedidos" gen-type="container" gen-group="true">
+            <fields>
+                <n_do_pedido_tbl name="p_n_do_pedido_tbl" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Nº do pedido</label>
+                </n_do_pedido_tbl>
+                <assunto name="p_assunto" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Assunto</label>
+                </assunto>
+                <!-- ADICIONADO: Coluna Solicitante -->
+                <solicitante_tbl name="p_solicitante_tbl" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Solicitante</label>
+                </solicitante_tbl>
+                <!-- ADICIONADO: Coluna Técnico -->
+                <tecnico_tbl name="p_tecnico_tbl" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Técnico</label>
+                </tecnico_tbl>
+                <data_criacao name="p_data_criacao" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Data criação</label>
+                </data_criacao>
+                <!-- CORRIGIDO: De "prioridade" para "prioridade_tbl" para alinhar com a View Java -->
+                <prioridade_tbl name="p_prioridade_tbl" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Prioridade</label>
+                </prioridade_tbl>
+                <estado_tbl name="p_estado_tbl" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Estado</label>
+                </estado_tbl>
+                <hidden name="p_tbl_listapedido_id" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="tbl_listapedido_id"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                        </context-menu>
+                        <n_do_pedido_tbl name="p_n_do_pedido_tbl">SUP-2025-0001</n_do_pedido_tbl>
+                        <assunto name="p_assunto">Problema no login</assunto>
+                        <solicitante_tbl name="p_solicitante_tbl">Utilizador #1</solicitante_tbl>
+                        <tecnico_tbl name="p_tecnico_tbl">Não atribuído</tecnico_tbl>
+                        <data_criacao name="p_data_criacao">01-01-2025 10:00</data_criacao>
+                        <prioridade_tbl name="p_prioridade_tbl">ALTA</prioridade_tbl>
+                        <estado_tbl name="p_estado_tbl">ABERTO</estado_tbl>
+                        <hidden name="p_tbl_listapedido_id" tag="tbl_listapedido_id">1</hidden>
+                    </row>
+                </value>
+                <context-menu>
+                    <item id="button_ver" type="specific" code="" class="info" rel="ver" refresh_components="">
+                        <title>Ver</title>
+                        <app>gestao_de_pedidos_de_suporte_</app>
+                        <page>Detalheshistorico</page>
+                        <link>index</link>
+                        <target>mpsubmit|refresh</target>
+                        <img>info|fa-eye</img>
+                    </item>
+                    <item id="button_8c9a_f682" type="specific" code="" class="warning" rel="editar" refresh_components="">
+                        <title>Editar</title>
+                        <app>gestao_de_pedidos_de_suporte_</app>
+                        <page>Pagina_de_listagem_de_pedidos</page>
+                        <link>editar</link>
+                        <target>mpsubmit|refresh</target>
+                        <img>warning|fa-edit</img>
+                    </item>
+                    <item id="button_1b4f_cb93" type="specific" code="" class="danger" rel="eliminar" refresh_components="" labelConfirm="Deseja realmente eliminar este pedido?">
+                        <title>Eliminar</title>
+                        <app>gestao_de_pedidos_de_suporte_</app>
+                        <page>Pagina_de_listagem_de_pedidos</page>
+                        <link>eliminar</link>
+                        <target>confirm</target>
+                        <img>danger|fa-trash</img>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml></xml>
+    </blockly>
+</rows>

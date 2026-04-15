@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/dashboard/Dashboard.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Dashboard</page>
+    <app>gestao_de_pedidos_de_suporte_</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_de_pedidos_de_suporte_.pages</package_db>
+        <package_html>Dashboard</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=132</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Dashboard</title>
+        <stats_total type="statbox" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <stats_total_title name="p_stats_total_title" type="text" maxlength="4000">
+                    <label>Box Title</label>
+                    <value>Total de Pedidos</value>
+                </stats_total_title>
+                <stats_total_val name="p_stats_total_val" type="text" maxlength="4000">
+                    <label>Value</label>
+                    <value>259</value>
+                </stats_total_val>
+                <stats_total_txt name="p_stats_total_txt" type="text" maxlength="4000">
+                    <label>Url Text</label>
+                    <value>Read More...</value>
+                </stats_total_txt>
+                <stats_total_url name="p_stats_total_url" type="text" maxlength="4000">
+                    <label>Url</label>
+                    <value>http://www.example.com</value>
+                </stats_total_url>
+                <stats_total_bg name="p_stats_total_bg" type="text" maxlength="4000">
+                    <label>Background</label>
+                    <value>cp-cyan</value>
+                </stats_total_bg>
+                <stats_total_icn name="p_stats_total_icn" type="text" maxlength="4000" persist="true">
+                    <label>Icon</label>
+                    <value>fa-tasks</value>
+                </stats_total_icn>
+            </fields>
+        </stats_total>
+        <stats_abertos type="statbox" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <stats_abertos_title name="p_stats_abertos_title" type="text" maxlength="4000">
+                    <label>Box Title</label>
+                    <value>Pedidos Abertos</value>
+                </stats_abertos_title>
+                <stats_abertos_val name="p_stats_abertos_val" type="text" maxlength="4000">
+                    <label>Value</label>
+                    <value>636</value>
+                </stats_abertos_val>
+                <stats_abertos_txt name="p_stats_abertos_txt" type="text" maxlength="4000">
+                    <label>Url Text</label>
+                    <value>Read More...</value>
+                </stats_abertos_txt>
+                <stats_abertos_url name="p_stats_abertos_url" type="text" maxlength="4000">
+                    <label>Url</label>
+                    <value>http://www.example.com</value>
+                </stats_abertos_url>
+                <stats_abertos_bg name="p_stats_abertos_bg" type="text" maxlength="4000">
+                    <label>Background</label>
+                    <value>cp-yellow</value>
+                </stats_abertos_bg>
+                <stats_abertos_icn name="p_stats_abertos_icn" type="text" maxlength="4000" persist="true">
+                    <label>Icon</label>
+                    <value>fa-clock-o</value>
+                </stats_abertos_icn>
+            </fields>
+        </stats_abertos>
+        <stats_execucao type="statbox" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <stats_execucao_title name="p_stats_execucao_title" type="text" maxlength="4000">
+                    <label>Box Title</label>
+                    <value>Em Atendimento</value>
+                </stats_execucao_title>
+                <stats_execucao_val name="p_stats_execucao_val" type="text" maxlength="4000">
+                    <label>Value</label>
+                    <value>845</value>
+                </stats_execucao_val>
+                <stats_execucao_txt name="p_stats_execucao_txt" type="text" maxlength="4000">
+                    <label>Url Text</label>
+                    <value>Read More...</value>
+                </stats_execucao_txt>
+                <stats_execucao_url name="p_stats_execucao_url" type="text" maxlength="4000">
+                    <label>Url</label>
+                    <value>http://www.example.com</value>
+                </stats_execucao_url>
+                <stats_execucao_bg name="p_stats_execucao_bg" type="text" maxlength="4000">
+                    <label>Background</label>
+                    <value>cp-powder</value>
+                </stats_execucao_bg>
+                <stats_execucao_icn name="p_stats_execucao_icn" type="text" maxlength="4000" persist="true">
+                    <label>Icon</label>
+                    <value>fa-gears</value>
+                </stats_execucao_icn>
+            </fields>
+        </stats_execucao>
+        <stats_concluidos type="statbox" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <stats_concluidos_title name="p_stats_concluidos_title" type="text" maxlength="4000">
+                    <label>Box Title</label>
+                    <value>Concluídos</value>
+                </stats_concluidos_title>
+                <stats_concluidos_val name="p_stats_concluidos_val" type="text" maxlength="4000">
+                    <label>Value</label>
+                    <value>781</value>
+                </stats_concluidos_val>
+                <stats_concluidos_txt name="p_stats_concluidos_txt" type="text" maxlength="4000">
+                    <label>Url Text</label>
+                    <value>Read More...</value>
+                </stats_concluidos_txt>
+                <stats_concluidos_url name="p_stats_concluidos_url" type="text" maxlength="4000">
+                    <label>Url</label>
+                    <value>http://www.example.com</value>
+                </stats_concluidos_url>
+                <stats_concluidos_bg name="p_stats_concluidos_bg" type="text" maxlength="4000">
+                    <label>Background</label>
+                    <value>cp-electric</value>
+                </stats_concluidos_bg>
+                <stats_concluidos_icn name="p_stats_concluidos_icn" type="text" maxlength="4000" persist="true">
+                    <label>Icon</label>
+                    <value>fa-check-circle</value>
+                </stats_concluidos_icn>
+            </fields>
+        </stats_concluidos>
+        <chart_estado type="chart" xml-type="chart" title="Distribuição por Estado" gen-type="container" gen-group="">
+            <caption/>
+            <chart_type>line</chart_type>
+            <xaxys>Eixo de X</xaxys>
+            <yaxys>Eixo de Y</yaxys>
+            <url>#</url>
+            <label>
+                <col>Ano</col>
+                <col>X1</col>
+                <col>X2</col>
+                <col>X3</col>
+                <col>X4</col>
+            </label>
+            <value>
+                <row>
+                    <col>2010</col>
+                    <col>98</col>
+                    <col>938</col>
+                    <col>566</col>
+                    <col>809</col>
+                </row>
+                <row>
+                    <col>2009</col>
+                    <col>481</col>
+                    <col>4</col>
+                    <col>330</col>
+                    <col>187</col>
+                </row>
+                <row>
+                    <col>2015</col>
+                    <col>1010</col>
+                    <col>923</col>
+                    <col>729</col>
+                    <col>559</col>
+                </row>
+            </value>
+            <colors>
+                <col>#996b97</col>
+                <col>#565dd6</col>
+                <col>#349b46</col>
+                <col>#f303d2</col>
+            </colors>
+        </chart_estado>
+        <form_2 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <data_inicio name="p_data_inicio" type="date" range="false" disableWeekends="false" disabledBeforetoday="false" daysoff="false" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" tooltip="false" disable_copy_paste="false" class="primary">
+                    <label>Data inicio</label>
+                    <value>05-08-2012</value>
+                </data_inicio>
+                <data_fim name="p_data_fim" type="date" range="false" disableWeekends="false" disabledBeforetoday="false" daysoff="false" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" tooltip="false" disable_copy_paste="false" class="primary">
+                    <label>Data fim</label>
+                    <value>06-01-2014</value>
+                </data_fim>
+                <departamento name="p_departamento" type="select" multiple="false" tags="false" load_service_data="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="" tooltip="false" disable_copy_paste="false">
+                    <label>Departamento</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </departamento>
+            </fields>
+        </form_2>
+        <table_1 type="table" xml-type="table" title="Top Técnicos (Pedidos Resolvidos)" gen-type="container" gen-group="true">
+            <fields/>
+            <table>
+                <value/>
+            </table>
+        </table_1>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields/>
+            <tools-bar>
+                <item id="button_f785_ac76" type="form" code="" class="primary" rel="departamento_button" refresh_components="">
+                    <title>Departamento</title>
+                    <app>gestao_de_pedidos_de_suporte_</app>
+                    <page>Pagina_departamento</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/pagina_departamento/Pagina_departamento.xml?</parameter>
+                    <target>submit</target>
+                    <img>primary|fa-angle-right</img>
+                    <preview>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/pagina_departamento/Pagina_departamento.xml</preview>
+                </item>
+                <item id="button_9bb0_ef2c" type="form" code="" class="info" rel="categoria" refresh_components="">
+                    <title>Categoria</title>
+                    <app>gestao_de_pedidos_de_suporte_</app>
+                    <page>Criar_pedido</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/criar_pedido/Criar_pedido.xml?</parameter>
+                    <target>submit</target>
+                    <img>info|fa-angle-right</img>
+                    <preview>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/criar_pedido/Criar_pedido.xml</preview>
+                </item>
+                <item id="button_234e_5427" type="form" code="" class="purple" rel="pedidos" refresh_components="">
+                    <title>Pedidos</title>
+                    <app>gestao_de_pedidos_de_suporte_</app>
+                    <page>Criar_pedido</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/criar_pedido/Criar_pedido.xml?</parameter>
+                    <target>submit</target>
+                    <img>purple|fa-angle-right</img>
+                    <preview>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/criar_pedido/Criar_pedido.xml</preview>
+                </item>
+                <item id="button_6eae_2cd2" type="form" code="" class="grey" rel="lista_de_pedidos" refresh_components="">
+                    <title>Lista de pedidos</title>
+                    <app>gestao_de_pedidos_de_suporte_</app>
+                    <page>Criar_pedido</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/criar_pedido/Criar_pedido.xml?</parameter>
+                    <target>submit</target>
+                    <img>grey|fa-angle-right</img>
+                    <preview>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/criar_pedido/Criar_pedido.xml</preview>
+                </item>
+            </tools-bar>
+        </form_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

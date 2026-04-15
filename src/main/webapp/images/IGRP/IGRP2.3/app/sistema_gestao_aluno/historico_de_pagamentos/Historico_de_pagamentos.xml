@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/sistema_gestao_aluno/historico_de_pagamentos/Historico_de_pagamentos.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Historico_de_pagamentos</page>
+    <app>sistema_gestao_aluno</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_gestao_aluno.pages</package_db>
+        <package_html>Historico_de_pagamentos</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=105</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Histórico de Pagamentos</title>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <mes_de_referencia name="p_mes_de_referencia" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Mês de Referência</label>
+                    <value>Aperiam elit totam accusantium elit</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </mes_de_referencia>
+                <form_1_number_1 name="p_form_1_number_1" type="number" min="" max="" calculation="false" mathcal="" numberformat="" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="" tooltip="false" disable_copy_paste="false">
+                    <label>Number</label>
+                    <value>240</value>
+                </form_1_number_1>
+                <metodo_de_pagamento name="p_metodo_de_pagamento" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Método de Pagamento:</label>
+                    <value>Ut mollit omnis unde totam</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </metodo_de_pagamento>
+                <data name="p_data" type="date" range="false" disableWeekends="false" disabledBeforetoday="false" daysoff="false" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" tooltip="false" disable_copy_paste="false" class="primary">
+                    <label>Data</label>
+                    <value>06-07-2017</value>
+                </data>
+                <n_recibo name="p_n_recibo" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Nº Recibo</label>
+                    <value>Deserunt iste mollit omnis stract</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </n_recibo>
+            </fields>
+            <tools-bar>
+                <item id="button_2943_cf64" type="form" code="" class="success" rel="salvar" refresh_components="">
+                    <title>Salvar</title>
+                    <app>sistema_gestao_aluno</app>
+                    <page>Lista_de_alunos</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/sistema_gestao_aluno/lista_de_alunos/Lista_de_alunos.xml?</parameter>
+                    <target>_blank</target>
+                    <img>success|fa-save</img>
+                    <preview>../images/IGRP/IGRP2.3/app/sistema_gestao_aluno/lista_de_alunos/Lista_de_alunos.xml</preview>
+                </item>
+            </tools-bar>
+        </form_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

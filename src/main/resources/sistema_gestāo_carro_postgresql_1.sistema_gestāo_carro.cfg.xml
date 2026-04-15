@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration> 
+    <session-factory> 
+        <!-- hibernate.connection.driver_class,.url,.username,.password and .dialect now in sistema_gestāo_carro_postgresql_1.sistema_gestāo_carro.properties  -->  
+        <property name="hibernate.hbm2ddl.auto">update</property>  
+        <property name="hibernate.connection.isolation">2</property>  
+        <property name="hibernate.connection.autocommit">false</property>  
+        <property name="hibernate.hbm2ddl.jdbc_metadata_extraction_strategy">individually</property>  
+        <property name="hibernate.current_session_context_class">org.hibernate.context.internal.ThreadLocalSessionContext</property>  
+        <property name="hibernate.transaction.auto_close_session">DELAYED_ACQUISITION_AND_RELEASE_AFTER_TRANSACTION</property>  
+        <!-- Hikaricp configuration https://github.com/brettwooldridge/HikariCP#configuration-knobs-baby -->  
+        <property name="hibernate.connection.provider_class">org.hibernate.hikaricp.internal.HikariCPConnectionProvider</property>  
+        <property name="hibernate.hikari.minimumIdle">0</property>  
+        <property name="hibernate.hikari.maximumPoolSize">10</property>  
+        <property name="hibernate.hikari.idleTimeout">600000</property>  
+        <property name="hibernate.hikari.connectionTimeout">120000</property>  
+        <property name="hibernate.hikari.maxLifetime">1800000</property>  
+        <property name="hibernate.hikari.leakDetectionThreshold">0</property>  
+        <!-- Mapping your class here... 
+		Ex: <mapping class="nosi.webapps.sistema_gestāo_carro.dao.Employee"/> 		-->  
+        <mapping class="nosi.webapps.sistema_gestāo_carro.dao.TblCarro"/>
+        <mapping class="nosi.webapps.sistema_gestāo_carro.dao.TblModelo"/>
+        <mapping class="nosi.webapps.sistema_gestāo_carro.dao.TblMarca"/>
+        <mapping class="nosi.webapps.sistema_gestāo_carro.dao.TblSolicitacao"/>
+        <mapping class="nosi.webapps.sistema_gestāo_carro.dao.TblAcessorio"/>
+        <mapping class="nosi.webapps.sistema_gestāo_carro.dao.TblVenda"/>
+    </session-factory> 
+</hibernate-configuration>

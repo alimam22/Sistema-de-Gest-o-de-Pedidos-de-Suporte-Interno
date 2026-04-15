@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_de_modelo/Parametrizacao_de_modelo.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Parametrizacao_de_modelo</page>
+    <app>sistema_de_carros</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_de_carros.pages</package_db>
+        <package_html>Parametrizacao_de_modelo</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=94</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Parametrizacão de Modelo</title>
+        <form_1 type="form" xml-type="form" title="Resgistro de Modelo" gen-type="container" gen-group="">
+            <fields>
+                <marca name="p_marca" type="select" multiple="false" tags="false" load_service_data="false" domain="" maxlength="250" required="true" change="false" disabled="false" right="false" java-type="" tooltip="false" disable_copy_paste="false">
+                    <label>Marca</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </marca>
+                <modelo name="p_modelo" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Modelo</label>
+                    <value>Aliqua doloremque totam lorem dolor</value>
+                </modelo>
+                <hidden name="p_id_modelo" type="hidden" maxlength="250" java-type="" tooltip="false" disable_copy_paste="false" tag="id_modelo"/>
+            </fields>
+            <tools-bar>
+                <item id="button_1e9f_7b4a" type="form" code="" class="primary" rel="salvar" refresh_components="">
+                    <title>Salvar</title>
+                    <app>sistema_de_carros</app>
+                    <page>Parametrizacao_de_modelo</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_de_modelo/Parametrizacao_de_modelo.xml?</parameter>
+                    <target>submit_form</target>
+                    <img>primary|fa-save</img>
+                    <preview>../images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_de_modelo/Parametrizacao_de_modelo.xml</preview>
+                </item>
+            </tools-bar>
+        </form_1>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <marca_tbl name="p_marca_tbl" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Marca</label>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </marca_tbl>
+                <modelo_tbl name="p_modelo_tbl" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Modelo</label>
+                </modelo_tbl>
+                <id_modelo_tbl name="p_id_modelo_tbl" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="id_modelo_tbl"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <marca_tbl name="p_marca_tbl">Sit totam amet officia natus</marca_tbl>
+                        <modelo_tbl name="p_modelo_tbl">Perspiciatis ut mollit omnis u</modelo_tbl>
+                        <id_modelo_tbl name="p_id_modelo_tbl" tag="id_modelo_tbl">hidden-fea3_c038</id_modelo_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <marca_tbl name="p_marca_tbl">Magna aperiam voluptatem natus</marca_tbl>
+                        <modelo_tbl name="p_modelo_tbl">Deserunt magna totam aperiam m</modelo_tbl>
+                        <id_modelo_tbl name="p_id_modelo_tbl" tag="id_modelo_tbl">hidden-39b1_f59a</id_modelo_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <marca_tbl name="p_marca_tbl">Sit iste ut stract rem</marca_tbl>
+                        <modelo_tbl name="p_modelo_tbl">Sit lorem omnis sed officia</modelo_tbl>
+                        <id_modelo_tbl name="p_id_modelo_tbl" tag="id_modelo_tbl">hidden-7c9c_f11d</id_modelo_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <marca_tbl name="p_marca_tbl">Elit dolor omnis labore accusa</marca_tbl>
+                        <modelo_tbl name="p_modelo_tbl">Labore accusantium ipsum unde</modelo_tbl>
+                        <id_modelo_tbl name="p_id_modelo_tbl" tag="id_modelo_tbl">hidden-08b0_0ff0</id_modelo_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <marca_tbl name="p_marca_tbl">Omnis iste elit ipsum rem</marca_tbl>
+                        <modelo_tbl name="p_modelo_tbl">Anim sed unde sit sed</modelo_tbl>
+                        <id_modelo_tbl name="p_id_modelo_tbl" tag="id_modelo_tbl">hidden-8343_10d7</id_modelo_tbl>
+                    </row>
+                </value>
+                <context-menu>
+                    <item id="button_5049_3820" type="specific" code="" class="warning" rel="editar" refresh_components="">
+                        <title>Editar</title>
+                        <app>sistema_de_carros</app>
+                        <page>Parametrizacao_de_modelo</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_de_modelo/Parametrizacao_de_modelo.xml?</parameter>
+                        <target>mpsubmit</target>
+                        <img>warning|fa-edit</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_de_modelo/Parametrizacao_de_modelo.xml</preview>
+                    </item>
+                    <item id="button_4cd9_9ca7" type="specific" code="" class="danger" rel="eliminar" refresh_components="" labelConfirm="Deseja realmente realizar esta operação?">
+                        <title>Eliminar</title>
+                        <app>sistema_de_carros</app>
+                        <page>Parametrizacao_de_modelo</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_de_modelo/Parametrizacao_de_modelo.xml?</parameter>
+                        <target>confirm</target>
+                        <img>danger|fa-trash</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_de_modelo/Parametrizacao_de_modelo.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+    </content>
+    <blockly>
+        <imports>
+            <import type="listar">Listar</import>
+            <import type="inserir_dao">Inserir Daos</import>
+            <import type="combo_dao">Combo Dao</import>
+            <import type="dao">TblMarca</import>
+            <import type="dao">TblModelo</import>
+        </imports>
+        <xml>
+            <block type="controller" id="controller" x="13" y="13">
+                <statement name="index">
+                    <block type="combo_dao" id="cMRM};F#X|Y5Pc?aKRQ*" inline="true">
+                        <mutation order="null" operation="null" limit="null" collectors="null" crud="null" statistdrop="null" ajax="null" count="NaN"></mutation>
+                        <field name="selecao">marca</field>
+                        <field name="dao">TblMarca</field>
+                        <field name="selecionar">TRUE</field>
+                        <statement name="key_val">
+                            <block type="option_dao" id="xGFjZlsm*%^tL%(0tx1%" inline="true">
+                                <value name="key_val">
+                                    <block type="get-dao-TblMarca" id="@G-oa42?e|K|[(m.zZ?x">
+                                        <mutation hover_type="Integer_PK#::idMarca"></mutation>
+                                        <field name="DAO_FIELD">Integer_PK#::idMarca</field>
+                                    </block>
+                                </value>
+                                <value name="value_val">
+                                    <block type="get-dao-TblMarca" id="CHG,6CKPi+@0L1YEm9:V">
+                                        <mutation hover_type="String::nomeMarca"></mutation>
+                                        <field name="DAO_FIELD">String::nomeMarca</field>
+                                    </block>
+                                </value>
+                            </block>
+                        </statement>
+                        <next>
+                            <block type="formuu_form_1" id="Y|^`b+q{A/4ouE)|Qji3" inline="true">
+                                <mutation order="null" operation="null" limit="null" collectors="null" crud="null" statistdrop="null" ajax="null" count="NaN"></mutation>
+                                <field name="dao">TblModelo</field>
+                                <value name="get_pa">
+                                    <block type="core_get_param" id="lqT]m[)X0+O@H,V.onw=">
+                                        <field name="param">id_modelo_tbl</field>
+                                    </block>
+                                </value>
+                                <statement name="value2">
+                                    <block type="model_form_String::marca" id="uVC%TS{TQgx6[SwvB1fh">
+                                        <value name="value1">
+                                            <block type="get-dao-TblModelo" id="+co2#/cb}sHuctHPM3JO">
+                                                <mutation hover_type="TblMarca_FK#::idMarcaFk"></mutation>
+                                                <field name="DAO_FIELD">TblMarca_FK#::idMarcaFk</field>
+                                                <value name="dao_rela">
+                                                    <block type="get-dao-TblMarca" id="Mo[9togk+tK=Y!%C!dbW">
+                                                        <mutation hover_type="Integer_PK#::idMarca"></mutation>
+                                                        <field name="DAO_FIELD">Integer_PK#::idMarca</field>
+                                                    </block>
+                                                </value>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="model_form_String::modelo" id="iYJ]ls]6D~cpQsa}tnn,">
+                                                <value name="value1">
+                                                    <block type="get-dao-TblModelo" id="cNbCaX8)O.T9N0z^ypl9">
+                                                        <mutation hover_type="String::nomeModelo"></mutation>
+                                                        <field name="DAO_FIELD">String::nomeModelo</field>
+                                                    </block>
+                                                </value>
+                                                <next>
+                                                    <block type="model_form_String::id_modelo" id="lrH;aR0b;Cp##.O`N_3%">
+                                                        <value name="value1">
+                                                            <block type="get-dao-TblModelo" id=".Q-@X2DToEARZUiFu,SG">
+                                                                <mutation hover_type="Integer_PK#::idModelo"></mutation>
+                                                                <field name="DAO_FIELD">Integer_PK#::idModelo</field>
+                                                            </block>
+                                                        </value>
+                                                        <next>
+                                                            <block type="add_isedit" id="*[!yzR|cl;ktUzUQWydV">
+                                                                <field name="button">salvar</field>
+                                                            </block>
+                                                        </next>
+                                                    </block>
+                                                </next>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </statement>
+                                <next>
+                                    <block type="listar_table_1" id="F)c!mw#y(V*o@G}nD4o6" inline="true">
+                                        <mutation order="" operation="null" limit="TODOSS" collectors="null" crud="null" statistdrop="null" ajax="null" count="NaN"></mutation>
+                                        <field name="dao">TblModelo</field>
+                                        <field name="FILL">FALSE</field>
+                                        <field name="orderdrop"></field>
+                                        <field name="find">TODOSS</field>
+                                        <field name="limit"></field>
+                                        <statement name="value2">
+                                            <block type="rowtableString::marca_tbl" id="Y^i/Ec_;x1+g5ywkzybt">
+                                                <value name="fields_model">
+                                                    <block type="get-dao-TblModelo" id="(.TI[jUQdNoHlax^I%Mg">
+                                                        <mutation hover_type="TblMarca_FK#::idMarcaFk"></mutation>
+                                                        <field name="DAO_FIELD">TblMarca_FK#::idMarcaFk</field>
+                                                        <value name="dao_rela">
+                                                            <block type="get-dao-TblMarca" id="gT-3:@BzoOh4_c[c|Ve8">
+                                                                <mutation hover_type="String::nomeMarca"></mutation>
+                                                                <field name="DAO_FIELD">String::nomeMarca</field>
+                                                            </block>
+                                                        </value>
+                                                    </block>
+                                                </value>
+                                                <next>
+                                                    <block type="rowtableString::modelo_tbl" id="a~{Oz^L#*I(Z{jMdaSX4">
+                                                        <value name="fields_model">
+                                                            <block type="get-dao-TblModelo" id="5s;K2gP4Sv~xJ}`SYDT{">
+                                                                <mutation hover_type="String::nomeModelo"></mutation>
+                                                                <field name="DAO_FIELD">String::nomeModelo</field>
+                                                            </block>
+                                                        </value>
+                                                        <next>
+                                                            <block type="rowtableString::id_modelo_tbl" id="A}64{@@~g4J7Vm(102RH">
+                                                                <value name="fields_model">
+                                                                    <block type="get-dao-TblModelo" id="A.QKIve;Z~K~JeZa`w|u">
+                                                                        <mutation hover_type="Integer_PK#::idModelo"></mutation>
+                                                                        <field name="DAO_FIELD">Integer_PK#::idModelo</field>
+                                                                    </block>
+                                                                </value>
+                                                            </block>
+                                                        </next>
+                                                    </block>
+                                                </next>
+                                            </block>
+                                        </statement>
+                                    </block>
+                                </next>
+                            </block>
+                        </next>
+                    </block>
+                </statement>
+                <statement name="salvar">
+                    <block type="save_formu_form_1" id="`bhH108Zb49p7cH~8GP{" inline="true">
+                        <mutation count="NaN" pxchecked="true"></mutation>
+                        <field name="dao">TblModelo</field>
+                        <field name="EDIT">TRUE</field>
+                        <value name="param_id">
+                            <block type="get_model" id="Z]BWZ#n[:W8pba(Lp`?8">
+                                <field name="get_model">String::id_modelo</field>
+                            </block>
+                        </value>
+                        <statement name="value2">
+                            <block type="set-dao-TblModelo" id="XtNSDQsHcvKt0!t_u%-." inline="true">
+                                <mutation hover_type="TblMarca_FK#::idMarcaFk"></mutation>
+                                <field name="DAO_FIELD">TblMarca_FK#::idMarcaFk</field>
+                                <value name="value1">
+                                    <block type="get_model" id="Hg(hu4g}=Fzga]_FWpj?">
+                                        <field name="get_model">String::marca</field>
+                                    </block>
+                                </value>
+                                <next>
+                                    <block type="set-dao-TblModelo" id="(%t2=W]j2za~%a}XgQt[" inline="false">
+                                        <mutation hover_type="String::nomeModelo"></mutation>
+                                        <field name="DAO_FIELD">String::nomeModelo</field>
+                                        <value name="value1">
+                                            <block type="get_model" id="JU8U]aVIzH.#[kAb2xUO">
+                                                <field name="get_model">String::modelo</field>
+                                            </block>
+                                        </value>
+                                    </block>
+                                </next>
+                            </block>
+                        </statement>
+                    </block>
+                </statement>
+                <statement name="editar">
+                    <block type="enviar_p" id="[EG0ihn(NK6U#[MwXSop">
+                        <field name="iskey">id_modelo_tbl</field>
+                        <next>
+                            <block type="editar_dao" id="V^_l4YioB/4a(1a)iOvB"></block>
+                        </next>
+                    </block>
+                </statement>
+                <statement name="eliminar">
+                    <block type="apagar" id="`Hto1FF/8dQy4Z(i`5m~" inline="true">
+                        <mutation order="null" operation="null" limit="null" collectors="null" crud="null" statistdrop="null" ajax="null" count="NaN"></mutation>
+                        <field name="dao">TblModelo</field>
+                        <field name="KEEP">FALSE</field>
+                        <value name="get_pa">
+                            <block type="core_get_param" id="WN_OJ*yH/9yUUs0_z6sB">
+                                <field name="param">id_modelo_tbl</field>
+                            </block>
+                        </value>
+                    </block>
+                </statement>
+            </block>
+        </xml>
+    </blockly>
+</rows>

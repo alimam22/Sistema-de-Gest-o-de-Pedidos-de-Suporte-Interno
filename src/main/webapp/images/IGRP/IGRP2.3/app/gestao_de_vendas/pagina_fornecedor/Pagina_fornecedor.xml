@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/gestao_de_vendas/pagina_fornecedor/Pagina_fornecedor.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Pagina_fornecedor</page>
+    <app>gestao_de_vendas</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_de_vendas.pages</package_db>
+        <package_html>Pagina_fornecedor</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=118</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Pagina Fornecedor</title>
+        <table_1 type="table" xml-type="table" title="Fornecedor" gen-type="container" gen-group="true">
+            <fields>
+                <nome name="p_nome" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Nome</label>
+                </nome>
+                <telefone name="p_telefone" type="number" min="" max="" calculation="false" mathcal="" numberformat="" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" total_footer="false" group_in="" java-type="">
+                    <label>Telefone</label>
+                </telefone>
+                <email name="p_email" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Email</label>
+                </email>
+                <endereco name="p_endereco" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Endereco</label>
+                </endereco>
+                <id_tbl_fornecedor name="p_id_tbl_fornecedor" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="id_tbl_fornecedor"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Adipiscing deserunt ut sed acc</nome>
+                        <telefone name="p_telefone">6</telefone>
+                        <email name="p_email">Sed consectetur sed accusantiu</email>
+                        <endereco name="p_endereco">Doloremque amet ut accusantium</endereco>
+                        <id_tbl_fornecedor name="p_id_tbl_fornecedor" tag="id_tbl_fornecedor">hidden-198d_bf0a</id_tbl_fornecedor>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Aperiam consectetur rem adipis</nome>
+                        <telefone name="p_telefone">10</telefone>
+                        <email name="p_email">Amet lorem omnis rem magna</email>
+                        <endereco name="p_endereco">Deserunt totam anim officia pe</endereco>
+                        <id_tbl_fornecedor name="p_id_tbl_fornecedor" tag="id_tbl_fornecedor">hidden-1cb1_ab09</id_tbl_fornecedor>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Labore omnis dolor amet laudan</nome>
+                        <telefone name="p_telefone">24</telefone>
+                        <email name="p_email">Sit perspiciatis rem aliqua un</email>
+                        <endereco name="p_endereco">Natus consectetur amet dolor m</endereco>
+                        <id_tbl_fornecedor name="p_id_tbl_fornecedor" tag="id_tbl_fornecedor">hidden-a656_94c9</id_tbl_fornecedor>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Amet mollit stract elit rem</nome>
+                        <telefone name="p_telefone">8</telefone>
+                        <email name="p_email">Mollit sit mollit aliqua elit</email>
+                        <endereco name="p_endereco">Ipsum natus lorem sit stract</endereco>
+                        <id_tbl_fornecedor name="p_id_tbl_fornecedor" tag="id_tbl_fornecedor">hidden-454c_034a</id_tbl_fornecedor>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Officia natus magna totam adip</nome>
+                        <telefone name="p_telefone">9</telefone>
+                        <email name="p_email">Elit magna anim mollit laudant</email>
+                        <endereco name="p_endereco">Ut deserunt laudantium sed ist</endereco>
+                        <id_tbl_fornecedor name="p_id_tbl_fornecedor" tag="id_tbl_fornecedor">hidden-8abd_fb59</id_tbl_fornecedor>
+                    </row>
+                </value>
+                <context-menu>
+                    <item id="button_2a63_b924" type="specific" code="" class="warning" rel="editar" refresh_components="">
+                        <title>Editar</title>
+                        <app>gestao_de_vendas</app>
+                        <page>Pagina_fornecedor</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/gestao_de_vendas/pagina_fornecedor/Pagina_fornecedor.xml?</parameter>
+                        <target>mpsubmit</target>
+                        <img>warning|fa-edit</img>
+                        <preview>../images/IGRP/IGRP2.3/app/gestao_de_vendas/pagina_fornecedor/Pagina_fornecedor.xml</preview>
+                    </item>
+                    <item id="button_dc01_82a0" type="specific" code="" class="danger" rel="eliminar" refresh_components="" labelConfirm="Deseja realmente realizar esta operação?">
+                        <title>Eliminar</title>
+                        <app>gestao_de_vendas</app>
+                        <page>Pagina_fornecedor</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/gestao_de_vendas/pagina_fornecedor/Pagina_fornecedor.xml?</parameter>
+                        <target>confirm</target>
+                        <img>danger|fa-trash</img>
+                        <preview>../images/IGRP/IGRP2.3/app/gestao_de_vendas/pagina_fornecedor/Pagina_fornecedor.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/sistema_de_carros/vender_carro/Vender_carro.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Vender_carro</page>
+    <app>sistema_de_carros</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_de_carros.pages</package_db>
+        <package_html>Vender_carro</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=95</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Vender Carro</title>
+        <view_1 type="view" xml-type="view" title="Vender Carro" gen-type="container" gen-group="">
+            <fields>
+                <marca name="p_marca" type="text" maxlength="250" class="default" iconColor="#333" iconClass="" img="" showlabel="true">
+                    <label>Marca</label>
+                    <value>Officia perspiciatis labore sit accusantium</value>
+                </marca>
+                <modelo name="p_modelo" type="text" maxlength="250" class="default" iconColor="#333" iconClass="" img="" showlabel="true">
+                    <label>Modelo</label>
+                    <value>Aperiam sit totam officia ut</value>
+                </modelo>
+                <preco name="p_preco" type="number" min="" max="" calculation="false" mathcal="" numberformat="" maxlength="250" class="default" iconColor="#333" iconClass="" img="" showlabel="true">
+                    <label>Preço</label>
+                    <value>249</value>
+                </preco>
+                <manual name="p_manual" type="link" target="modal" request_fields="" target_fields="" closerefresh="false" refresh_components="" refresh_submit="false" adbcli="" action="index" page="Parametrizacao_marcas" app="sistema_de_carros" custom_action="" action_type="false" class="[object Object]" btnSize="" iconColor="#333" iconClass="" img="[object Object]" maxlength="250" showlabel="true">
+                    <label>Manual</label>
+                    <value>/IGRP/images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_marcas/Parametrizacao_marcas.xml</value>
+                </manual>
+                <view_1_img type="text" name="p_view_1_img" maxlength="300">
+                    <value>../images/IGRP/IGRP2.3/assets/img/jon_doe.jpg</value>
+                </view_1_img>
+            </fields>
+        </view_1>
+        <form_1 type="form" xml-type="form" title="" gen-type="container" gen-group="">
+            <fields>
+                <comprador name="p_comprador" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Comprador</label>
+                    <value>Labore sed labore perspiciatis amet</value>
+                </comprador>
+                <hidden name="p_id_carro" type="hidden" maxlength="250" java-type="" tooltip="false" disable_copy_paste="false" tag="id_carro"/>
+            </fields>
+        </form_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="venda" refresh_components="">
+                <title>Venda</title>
+                <app>sistema_de_carros</app>
+                <page>Parametrizacao_marcas</page>
+                <link>index</link>
+                <target>submit</target>
+                <img>info|fa-shopping-cart</img>
+                <preview>../images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_marcas/Parametrizacao_marcas.xml</preview>
+            </item>
+        </toolsbar_1>
+    </content>
+    <blockly>
+        <imports>
+            <import type="inserir_dao">Inserir Daos</import>
+            <import type="dao">TblCarro</import>
+            <import type="dao">TblModelo</import>
+            <import type="dao">TblMarca</import>
+            <import type="dao">TblVenda</import>
+            <import type="fields">LocalDate</import>
+        </imports>
+        <xml>
+            <block type="controller" id="controller" x="-12" y="13">
+                <statement name="index">
+                    <block type="vieww_view_1" id="fr;V%!B9Vd}[#*UFzgVa" inline="true">
+                        <mutation order="null" operation="null" limit="null" collectors="null" crud="null" statistdrop="null" ajax="null" count="NaN"></mutation>
+                        <field name="dao">TblCarro</field>
+                        <value name="get_pa">
+                            <block type="core_get_param" id="!H9`Z`Fa5xRhzG7dGj=l">
+                                <field name="param">id_carro_tbl</field>
+                            </block>
+                        </value>
+                        <statement name="value2">
+                            <block type="model_form_String::marca" id=".tRDl}H8QuBQL;`d*H9i">
+                                <value name="value1">
+                                    <block type="get-dao-TblCarro" id="]o8tl/_3(-5}mj1u)`gX">
+                                        <mutation hover_type="TblModelo_FK#::idModeloFk"></mutation>
+                                        <field name="DAO_FIELD">TblModelo_FK#::idModeloFk</field>
+                                        <value name="dao_rela">
+                                            <block type="get-dao-TblModelo" id="l@=W(x]3c@|PCP848Y}T">
+                                                <mutation hover_type="TblMarca_FK#::idMarcaFk"></mutation>
+                                                <field name="DAO_FIELD">TblMarca_FK#::idMarcaFk</field>
+                                                <value name="dao_rela">
+                                                    <block type="get-dao-TblMarca" id="8I.z2]lWyRtgK!2Y.2r#">
+                                                        <mutation hover_type="String::nomeMarca"></mutation>
+                                                        <field name="DAO_FIELD">String::nomeMarca</field>
+                                                    </block>
+                                                </value>
+                                            </block>
+                                        </value>
+                                    </block>
+                                </value>
+                                <next>
+                                    <block type="model_form_String::modelo" id="P]m6?;y!@0wmT,l8tZnQ">
+                                        <value name="value1">
+                                            <block type="get-dao-TblCarro" id="Z+N)ig*;`xx;Uhl,|EoM">
+                                                <mutation hover_type="TblModelo_FK#::idModeloFk"></mutation>
+                                                <field name="DAO_FIELD">TblModelo_FK#::idModeloFk</field>
+                                                <value name="dao_rela">
+                                                    <block type="get-dao-TblModelo" id="vGPWyQ,KKb/=k5Jdp,mf">
+                                                        <mutation hover_type="String::nomeModelo"></mutation>
+                                                        <field name="DAO_FIELD">String::nomeModelo</field>
+                                                    </block>
+                                                </value>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="model_form_Integer::preco" id="O*Q!V0`)e^`mkRc3:t+o">
+                                                <value name="value1">
+                                                    <block type="get-dao-TblCarro" id="pRJlp7zpNRQJ7]Z1N%wR">
+                                                        <mutation hover_type="Integer::preco"></mutation>
+                                                        <field name="DAO_FIELD">Integer::preco</field>
+                                                    </block>
+                                                </value>
+                                                <next>
+                                                    <block type="model_form_Link::manual" id="(T7dw/S2)eB;rMPAZt0,">
+                                                        <value name="value1">
+                                                            <block type="get-dao-TblCarro" id="txmbjh8aj@,6=2H`;G)W">
+                                                                <mutation hover_type="String::idManual"></mutation>
+                                                                <field name="DAO_FIELD">String::idManual</field>
+                                                            </block>
+                                                        </value>
+                                                        <next>
+                                                            <block type="model_form_Image_View::view_1_img" id="#?..xG0)ru`uno-Y`h6%">
+                                                                <value name="value1">
+                                                                    <block type="get-dao-TblCarro" id="Yjwu]i77?%vvl,-!Sn0D">
+                                                                        <mutation hover_type="String::idFoto"></mutation>
+                                                                        <field name="DAO_FIELD">String::idFoto</field>
+                                                                    </block>
+                                                                </value>
+                                                                <next>
+                                                                    <block type="model_form_String::id_carro" id="F]f]JmSs0Q:FU};oS?r]">
+                                                                        <value name="value1">
+                                                                            <block type="get-dao-TblCarro" id="Ww1N_Mnlz:5mbyKm8LHz">
+                                                                                <mutation hover_type="Integer_PK#::idCarro"></mutation>
+                                                                                <field name="DAO_FIELD">Integer_PK#::idCarro</field>
+                                                                            </block>
+                                                                        </value>
+                                                                    </block>
+                                                                </next>
+                                                            </block>
+                                                        </next>
+                                                    </block>
+                                                </next>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </next>
+                            </block>
+                        </statement>
+                    </block>
+                </statement>
+                <statement name="venda">
+                    <block type="update_simple_dao" id="{_))sP5sC|}0J`1tR`?/" inline="true">
+                        <mutation order="null" operation="null" limit="null" collectors="null" crud="null" statistdrop="null" ajax="null" count="NaN"></mutation>
+                        <field name="dao">TblCarro</field>
+                        <field name="KEEP">FALSE</field>
+                        <value name="get_pa">
+                            <block type="mod_formform_1" id="7R-=deGi:7d~A9).~CB7">
+                                <field name="get_model">String::id_carro</field>
+                            </block>
+                        </value>
+                        <statement name="value2">
+                            <block type="set-dao-TblCarro" id="Z6#6Izq,}gVf9QbGUqHL" inline="false">
+                                <mutation hover_type="Boolean::vendido"></mutation>
+                                <field name="DAO_FIELD">Boolean::vendido</field>
+                                <value name="value1">
+                                    <block type="logic_boolean" id="QR]@``ao]h_1{PjFZiTh">
+                                        <field name="BOOL">TRUE</field>
+                                    </block>
+                                </value>
+                                <next>
+                                    <block type="save_formu_form_1" id="r[dGivTGK6vpX{W/77zy" inline="true">
+                                        <mutation count="NaN" pxchecked="false"></mutation>
+                                        <field name="dao">TblVenda</field>
+                                        <field name="EDIT">FALSE</field>
+                                        <statement name="value2">
+                                            <block type="set-dao-TblVenda" id="aak7ji/M%pt_`{#|]wl5" inline="false">
+                                                <mutation hover_type="String::vendedor"></mutation>
+                                                <field name="DAO_FIELD">String::vendedor</field>
+                                                <value name="value1">
+                                                    <block type="core_fun_atual" id="DN.e.V8DV3/JxpddVo#z">
+                                                        <field name="CORE_FUNCTION">String::nome_utilizador_atual</field>
+                                                    </block>
+                                                </value>
+                                                <next>
+                                                    <block type="set-dao-TblVenda" id="#dk|K5[7utZj+#8bM:j/" inline="false">
+                                                        <mutation hover_type="String::comprador"></mutation>
+                                                        <field name="DAO_FIELD">String::comprador</field>
+                                                        <value name="value1">
+                                                            <block type="mod_formform_1" id="a*9_fYdd%ilN/f**yIQ/">
+                                                                <field name="get_model">String::comprador</field>
+                                                            </block>
+                                                        </value>
+                                                        <next>
+                                                            <block type="set-dao-TblVenda" id="}xr*FO=GI`HUrdJKl}G:" inline="false">
+                                                                <mutation hover_type="LocalDate::dataVenda"></mutation>
+                                                                <field name="DAO_FIELD">LocalDate::dataVenda</field>
+                                                                <value name="value1">
+                                                                    <block type="core_fun_atual" id="~I?/W~Fs!Kez@|3/2lwi">
+                                                                        <field name="CORE_FUNCTION">LocalDate::data_atual</field>
+                                                                    </block>
+                                                                </value>
+                                                                <next>
+                                                                    <block type="set-dao-TblVenda" id="~)eKCaWcy)gBDDf:;m{/" inline="true">
+                                                                        <mutation hover_type="TblCarro_FK#::idCarroFk"></mutation>
+                                                                        <field name="DAO_FIELD">TblCarro_FK#::idCarroFk</field>
+                                                                        <value name="value1">
+                                                                            <block type="mod_formform_1" id="D|@fOf[2adU[s2U+0F%z">
+                                                                                <field name="get_model">String::id_carro</field>
+                                                                            </block>
+                                                                        </value>
+                                                                    </block>
+                                                                </next>
+                                                            </block>
+                                                        </next>
+                                                    </block>
+                                                </next>
+                                            </block>
+                                        </statement>
+                                    </block>
+                                </next>
+                            </block>
+                        </statement>
+                    </block>
+                </statement>
+            </block>
+        </xml>
+    </blockly>
+</rows>

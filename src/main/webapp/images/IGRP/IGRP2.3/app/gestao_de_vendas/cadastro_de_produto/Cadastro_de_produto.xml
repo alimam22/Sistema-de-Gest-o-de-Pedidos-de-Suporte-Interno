@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/gestao_de_vendas/cadastro_de_produto/Cadastro_de_produto.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Cadastro_de_produto</page>
+    <app>gestao_de_vendas</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_de_vendas.pages</package_db>
+        <package_html>Cadastro_de_produto</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=115</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Cadastro de Produto</title>
+        <form_1 type="form" xml-type="form" title="Formulário produto" gen-type="container" gen-group="">
+            <fields>
+                <nome name="p_nome" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Nome</label>
+                    <value>Stract sit anim perspiciatis ut</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </nome>
+                <estoque name="p_estoque" type="number" min="" max="" calculation="false" mathcal="" numberformat="" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="" tooltip="false" disable_copy_paste="false">
+                    <label>Estoque</label>
+                    <value>91</value>
+                </estoque>
+                <preco_venda name="p_preco_venda" type="number" min="" max="" calculation="false" mathcal="" numberformat="" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="" tooltip="false" disable_copy_paste="false">
+                    <label>Preço venda</label>
+                    <value>45</value>
+                </preco_venda>
+                <preco_compra name="p_preco_compra" type="number" min="" max="" calculation="false" mathcal="" numberformat="" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="" tooltip="false" disable_copy_paste="false">
+                    <label>Preço compra</label>
+                    <value>91</value>
+                </preco_compra>
+                <categoria name="p_categoria" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Categoria</label>
+                    <value>Magna ipsum unde perspiciatis aliqua</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </categoria>
+            </fields>
+        </form_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="salva" refresh_components="">
+                <title>Salva</title>
+                <app>gestao_de_vendas</app>
+                <page>Cadastro_de_produto</page>
+                <link>index</link>
+                <target>submit_form</target>
+                <img>success|fa-save</img>
+                <preview>../images/IGRP/IGRP2.3/app/gestao_de_vendas/cadastro_de_produto/Cadastro_de_produto.xml</preview>
+            </item>
+        </toolsbar_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

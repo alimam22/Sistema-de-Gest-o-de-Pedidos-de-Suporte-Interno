@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/sistema_gestao_aluno/formulario_de_aluno/Formulario_de_aluno.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Formulario_de_aluno</page>
+    <app>sistema_gestao_aluno</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_gestao_aluno.pages</package_db>
+        <package_html>Formulario_de_aluno</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=103</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Formulário de aluno</title>
+        <form_1 type="form" xml-type="form" title="Registro de Aluno" gen-type="container" gen-group="">
+            <fields>
+                <nome name="p_nome" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Nome</label>
+                    <value>Doloremque perspiciatis stract sit iste</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </nome>
+                <apelido name="p_apelido" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Apelido</label>
+                    <value>Rem deserunt stract adipiscing totam</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </apelido>
+                <idade name="p_idade" type="number" min="" max="" calculation="false" mathcal="" numberformat="" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="" tooltip="false" disable_copy_paste="false">
+                    <label>Idade</label>
+                    <value>186</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </idade>
+                <curso name="p_curso" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Curso</label>
+                    <value>Officia totam lorem aliqua ut</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </curso>
+                <email name="p_email" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Email</label>
+                    <value>Accusantium sed labore ut aperiam</value>
+                </email>
+            </fields>
+            <tools-bar>
+                <item id="button_ead5_d09c" type="form" code="" class="primary" rel="guardar" refresh_components="">
+                    <title>Guardar</title>
+                    <app>sistema_gestao_aluno</app>
+                    <page>Formulario_de_aluno</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/sistema_gestao_aluno/formulario_de_aluno/Formulario_de_aluno.xml?</parameter>
+                    <target>submit_form</target>
+                    <img>primary|fa-save</img>
+                    <preview>../images/IGRP/IGRP2.3/app/sistema_gestao_aluno/formulario_de_aluno/Formulario_de_aluno.xml</preview>
+                </item>
+            </tools-bar>
+        </form_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

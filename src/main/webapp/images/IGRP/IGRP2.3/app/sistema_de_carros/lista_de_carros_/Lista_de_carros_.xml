@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/sistema_de_carros/lista_de_carros_/Lista_de_carros_.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Lista_de_carros_</page>
+    <app>sistema_de_carros</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_de_carros.pages</package_db>
+        <package_html>Lista_de_carros_</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=93</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Lista de Carros </title>
+        <sectionheader_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <sectionheader_1_text type="text" name="p_sectionheader_1_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[<p>Gest&atilde;o de Carro</p>
+]]>
+                    </value>
+                </sectionheader_1_text>
+            </fields>
+        </sectionheader_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="novo" refresh_components="">
+                <title>Novo</title>
+                <app>sistema_de_carros</app>
+                <page>Registro_de_carros_</page>
+                <link>index</link>
+                <target>modal|refresh</target>
+                <img>success|fa-plus-circle</img>
+                <preview>../images/IGRP/IGRP2.3/app/sistema_de_carros/registro_de_carros_/Registro_de_carros_.xml</preview>
+            </item>
+        </toolsbar_1>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <preco name="p_preco" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Preço</label>
+                    <value>Stract iste consectetur lorem voluptatem</value>
+                </preco>
+                <intervalo_de_data name="p_intervalo_de_data" type="date" range="true" disableWeekends="false" disabledBeforetoday="false" daysoff="false" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" tooltip="false" disable_copy_paste="false" class="primary">
+                    <label>Intervalo de Data</label>
+                    <value>03-04-2011</value>
+                </intervalo_de_data>
+            </fields>
+            <tools-bar>
+                <item id="button_b85c_7f3d" type="form" code="" class="primary" rel="pesquisar" custom_return="true" refresh_components="table_1">
+                    <title>Pesquisar</title>
+                    <app>sistema_de_carros</app>
+                    <page>Parametrizacao_marcas</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_marcas/Parametrizacao_marcas.xml?</parameter>
+                    <target>submit_ajax</target>
+                    <img>primary|fa-search</img>
+                    <preview>../images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_marcas/Parametrizacao_marcas.xml</preview>
+                </item>
+            </tools-bar>
+        </form_1>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <foto name="p_foto" type="img" persist="true" img="../images/IGRP/IGRP2.3/assets/img/jon_doe.jpg" width="" height="" croppie="false" rounded="false" autoupload="false" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Foto</label>
+                </foto>
+                <marca_tbl name="p_marca_tbl" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Marca</label>
+                </marca_tbl>
+                <preco_tbl name="p_preco_tbl" type="number" min="" max="" calculation="false" mathcal="" numberformat="" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" total_footer="false" group_in="" java-type="">
+                    <label>Preco</label>
+                </preco_tbl>
+                <modelo_tbl name="p_modelo_tbl" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Modelo</label>
+                </modelo_tbl>
+                <manual_tbl name="p_manual_tbl" type="link" target="_self" request_fields="" target_fields="" list_source="" closerefresh="false" refresh_components="" refresh_submit="false" adbcli="" action="index" page="Parametrizacao_marcas" app="sistema_de_carros" custom_action="" action_type="false" class="link" btnSize="" iconColor="#333" iconClass="" img="fa-link" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="" show_header="true" desc="true">
+                    <label>Manual_tbl</label>
+                </manual_tbl>
+                <data_resgistro_tbl name="p_data_resgistro_tbl" type="date" range="false" disableWeekends="false" disabledBeforetoday="false" daysoff="false" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Data_resgistro</label>
+                </data_resgistro_tbl>
+                <id_carro_tbl name="p_id_carro_tbl" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="id_carro_tbl"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <foto name="p_foto">../images/IGRP/IGRP2.3/assets/img/jon_doe.jpg</foto>
+                        <marca_tbl name="p_marca_tbl">Omnis elit anim omnis deserunt</marca_tbl>
+                        <preco_tbl name="p_preco_tbl">12</preco_tbl>
+                        <modelo_tbl name="p_modelo_tbl">Labore deserunt rem sit elit</modelo_tbl>
+                        <manual_tbl name="p_manual_tbl" desc="true">/IGRP/images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_marcas/Parametrizacao_marcas.xml</manual_tbl>
+                        <manual_tbl_check name="p_manual_tbl_check">Manual_tbl</manual_tbl_check>
+                        <data_resgistro_tbl name="p_data_resgistro_tbl">07-03-2014</data_resgistro_tbl>
+                        <id_carro_tbl name="p_id_carro_tbl" tag="id_carro_tbl">hidden-0a95_e73a</id_carro_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <foto name="p_foto">../images/IGRP/IGRP2.3/assets/img/jon_doe.jpg</foto>
+                        <marca_tbl name="p_marca_tbl">Dolor deserunt rem voluptatem</marca_tbl>
+                        <preco_tbl name="p_preco_tbl">7</preco_tbl>
+                        <modelo_tbl name="p_modelo_tbl">Deserunt perspiciatis voluptat</modelo_tbl>
+                        <manual_tbl name="p_manual_tbl" desc="true">/IGRP/images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_marcas/Parametrizacao_marcas.xml</manual_tbl>
+                        <manual_tbl_check name="p_manual_tbl_check">Manual_tbl</manual_tbl_check>
+                        <data_resgistro_tbl name="p_data_resgistro_tbl">02-08-2013</data_resgistro_tbl>
+                        <id_carro_tbl name="p_id_carro_tbl" tag="id_carro_tbl">hidden-f6fd_5ff2</id_carro_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <foto name="p_foto">../images/IGRP/IGRP2.3/assets/img/jon_doe.jpg</foto>
+                        <marca_tbl name="p_marca_tbl">Rem perspiciatis anim rem sit</marca_tbl>
+                        <preco_tbl name="p_preco_tbl">29</preco_tbl>
+                        <modelo_tbl name="p_modelo_tbl">Perspiciatis amet elit rem sed</modelo_tbl>
+                        <manual_tbl name="p_manual_tbl" desc="true">/IGRP/images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_marcas/Parametrizacao_marcas.xml</manual_tbl>
+                        <manual_tbl_check name="p_manual_tbl_check">Manual_tbl</manual_tbl_check>
+                        <data_resgistro_tbl name="p_data_resgistro_tbl">02-02-2010</data_resgistro_tbl>
+                        <id_carro_tbl name="p_id_carro_tbl" tag="id_carro_tbl">hidden-18ad_6929</id_carro_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <foto name="p_foto">../images/IGRP/IGRP2.3/assets/img/jon_doe.jpg</foto>
+                        <marca_tbl name="p_marca_tbl">Sit iste omnis mollit consecte</marca_tbl>
+                        <preco_tbl name="p_preco_tbl">9</preco_tbl>
+                        <modelo_tbl name="p_modelo_tbl">Elit lorem perspiciatis accusa</modelo_tbl>
+                        <manual_tbl name="p_manual_tbl" desc="true">/IGRP/images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_marcas/Parametrizacao_marcas.xml</manual_tbl>
+                        <manual_tbl_check name="p_manual_tbl_check">Manual_tbl</manual_tbl_check>
+                        <data_resgistro_tbl name="p_data_resgistro_tbl">07-02-2016</data_resgistro_tbl>
+                        <id_carro_tbl name="p_id_carro_tbl" tag="id_carro_tbl">hidden-0d32_acc2</id_carro_tbl>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <foto name="p_foto">../images/IGRP/IGRP2.3/assets/img/jon_doe.jpg</foto>
+                        <marca_tbl name="p_marca_tbl">Anim accusantium laudantium re</marca_tbl>
+                        <preco_tbl name="p_preco_tbl">12</preco_tbl>
+                        <modelo_tbl name="p_modelo_tbl">Amet laudantium aperiam sed de</modelo_tbl>
+                        <manual_tbl name="p_manual_tbl" desc="true">/IGRP/images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_marcas/Parametrizacao_marcas.xml</manual_tbl>
+                        <manual_tbl_check name="p_manual_tbl_check">Manual_tbl</manual_tbl_check>
+                        <data_resgistro_tbl name="p_data_resgistro_tbl">05-08-2010</data_resgistro_tbl>
+                        <id_carro_tbl name="p_id_carro_tbl" tag="id_carro_tbl">hidden-b047_ef03</id_carro_tbl>
+                    </row>
+                </value>
+                <context-menu>
+                    <item id="button_3e3b_2eed" type="specific" code="" class="grey" rel="vender_carro" refresh_components="">
+                        <title>Vender Carro</title>
+                        <app>sistema_de_carros</app>
+                        <page>Vender_carro</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_de_carros/vender_carro/Vender_carro.xml?</parameter>
+                        <target>mpsubmit|refresh</target>
+                        <img>grey|fa-shopping-cart</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_de_carros/vender_carro/Vender_carro.xml</preview>
+                    </item>
+                    <item id="button_8bb8_96c1" type="specific" code="" class="warning" rel="editar" refresh_components="">
+                        <title>Editar</title>
+                        <app>sistema_de_carros</app>
+                        <page>Registro_de_carros_</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_de_carros/registro_de_carros_/Registro_de_carros_.xml?</parameter>
+                        <target>mpsubmit|refresh</target>
+                        <img>warning|fa-edit</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_de_carros/registro_de_carros_/Registro_de_carros_.xml</preview>
+                    </item>
+                    <item id="button_4499_2110" type="specific" code="" class="danger" rel="eliminar" refresh_components="" labelConfirm="Deseja realmente realizar esta operação?">
+                        <title>Eliminar</title>
+                        <app>sistema_de_carros</app>
+                        <page>Parametrizacao_marcas</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_marcas/Parametrizacao_marcas.xml?</parameter>
+                        <target>confirm</target>
+                        <img>danger|fa-trash</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_marcas/Parametrizacao_marcas.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+    </content>
+    <blockly>
+        <imports>
+            <import type="listar">Listar</import>
+            <import type="dao">TblCarro</import>
+            <import type="dao">TblModelo</import>
+            <import type="dao">TblMarca</import>
+            <import type="fields">LocalDate</import>
+        </imports>
+        <xml>
+            <block type="controller" id="controller" x="-12" y="-62">
+                <statement name="index">
+                    <block type="listar_table_1" id="i5@?XC6x7{amu9bkCs4r" inline="true">
+                        <mutation order="" operation="null" limit="TODOSS" collectors="null" crud="null" statistdrop="null" ajax="null" count="3" mutation-1="andWhere" mutation-2="andWhereBetween" mutation-3="andWhere"></mutation>
+                        <field name="dao">TblCarro</field>
+                        <field name="FILL">FALSE</field>
+                        <field name="orderdrop"></field>
+                        <field name="find">TODOSS</field>
+                        <field name="limit"></field>
+                        <field name="ADD1FILTER">andWhere</field>
+                        <field name="ADD1WHERE">WHERE_EQ</field>
+                        <field name="ADD2FILTER">andWhereBetween</field>
+                        <field name="ADD2WHERE">WHERE_EQ</field>
+                        <field name="ADD3FILTER">andWhere</field>
+                        <field name="ADD3WHERE">WHERE_EQ</field>
+                        <statement name="value2">
+                            <block type="rowtableImage::foto" id="AE:HLw25T31k=dIi6Ng}">
+                                <value name="fields_model">
+                                    <block type="get-dao-TblCarro" id="`U}%y/H*.]*3Zz!W^=EH">
+                                        <mutation hover_type="String::idFoto"></mutation>
+                                        <field name="DAO_FIELD">String::idFoto</field>
+                                    </block>
+                                </value>
+                                <next>
+                                    <block type="rowtableString::marca_tbl" id="As)7O6G-c8VyBRWBwDW2">
+                                        <value name="fields_model">
+                                            <block type="get-dao-TblCarro" id="ehK|a+:s`vDv4Yj=c=YH">
+                                                <mutation hover_type="TblModelo_FK#::idModeloFk"></mutation>
+                                                <field name="DAO_FIELD">TblModelo_FK#::idModeloFk</field>
+                                                <value name="dao_rela">
+                                                    <block type="get-dao-TblModelo" id="uj)bBJ-TTAqy^~C4(aN,">
+                                                        <mutation hover_type="TblMarca_FK#::idMarcaFk"></mutation>
+                                                        <field name="DAO_FIELD">TblMarca_FK#::idMarcaFk</field>
+                                                        <value name="dao_rela">
+                                                            <block type="get-dao-TblMarca" id="1uF#G^0RD^EJ|.{y*Cx(">
+                                                                <mutation hover_type="String::nomeMarca"></mutation>
+                                                                <field name="DAO_FIELD">String::nomeMarca</field>
+                                                            </block>
+                                                        </value>
+                                                    </block>
+                                                </value>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="rowtableInteger::preco_tbl" id="d3Q(}]mV#w!7gv%4wh2z">
+                                                <value name="fields_model">
+                                                    <block type="get-dao-TblCarro" id="aftNpR4Ufx`q*Bxo%b]G">
+                                                        <mutation hover_type="Integer::preco"></mutation>
+                                                        <field name="DAO_FIELD">Integer::preco</field>
+                                                    </block>
+                                                </value>
+                                                <next>
+                                                    <block type="rowtableString::modelo_tbl" id="FdEJ_.sIYTU3sOzjvhzy">
+                                                        <value name="fields_model">
+                                                            <block type="get-dao-TblCarro" id=")G;LTE{@X,yg,?qA=TWE">
+                                                                <mutation hover_type="TblModelo_FK#::idModeloFk"></mutation>
+                                                                <field name="DAO_FIELD">TblModelo_FK#::idModeloFk</field>
+                                                                <value name="dao_rela">
+                                                                    <block type="get-dao-TblModelo" id="w,s.,7!Gm3J/`;(|XWbA">
+                                                                        <mutation hover_type="String::nomeModelo"></mutation>
+                                                                        <field name="DAO_FIELD">String::nomeModelo</field>
+                                                                    </block>
+                                                                </value>
+                                                            </block>
+                                                        </value>
+                                                        <next>
+                                                            <block type="rowtableLink::manual_tbl" id="!t`jZJN6hO7m^k4jYG/i">
+                                                                <value name="fields_model">
+                                                                    <block type="get-dao-TblCarro" id="XAqg9Qz-Rp:g9PNpN3Ie">
+                                                                        <mutation hover_type="String::idManual"></mutation>
+                                                                        <field name="DAO_FIELD">String::idManual</field>
+                                                                    </block>
+                                                                </value>
+                                                                <next>
+                                                                    <block type="rowtableString::data_resgistro_tbl" id="c_hw%v]gzB`-mcJ,%[#D">
+                                                                        <value name="fields_model">
+                                                                            <block type="get-dao-TblCarro" id="Z}KlYXx*Nae)^G7}@pRg">
+                                                                                <mutation hover_type="LocalDate::dataRegistro"></mutation>
+                                                                                <field name="DAO_FIELD">LocalDate::dataRegistro</field>
+                                                                            </block>
+                                                                        </value>
+                                                                        <next>
+                                                                            <block type="rowtableString::id_carro_tbl" id="OT1ya?0q_OQ#7BOjL/*`">
+                                                                                <value name="fields_model">
+                                                                                    <block type="get-dao-TblCarro" id="t4C2e25B{|5A4{z9en+N">
+                                                                                        <mutation hover_type="Integer_PK#::idCarro"></mutation>
+                                                                                        <field name="DAO_FIELD">Integer_PK#::idCarro</field>
+                                                                                    </block>
+                                                                                </value>
+                                                                            </block>
+                                                                        </next>
+                                                                    </block>
+                                                                </next>
+                                                            </block>
+                                                        </next>
+                                                    </block>
+                                                </next>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </next>
+                            </block>
+                        </statement>
+                        <value name="ADD1">
+                            <block type="get-dao-TblCarro" id="evjn{#dITit._x3;gu]B">
+                                <mutation hover_type="Integer::preco"></mutation>
+                                <field name="DAO_FIELD">Integer::preco</field>
+                            </block>
+                        </value>
+                        <value name="ADD1STATE2">
+                            <block type="mod_formform_1" id="M4;u*E[C.u?ZoCWdL_}R">
+                                <field name="get_model">String::preco</field>
+                            </block>
+                        </value>
+                        <value name="ADD2">
+                            <block type="get-dao-TblCarro" id="B{P/q:Pa![@P*85FHy(=">
+                                <mutation hover_type="LocalDate::dataRegistro"></mutation>
+                                <field name="DAO_FIELD">LocalDate::dataRegistro</field>
+                            </block>
+                        </value>
+                        <value name="ADD2STATE2">
+                            <block type="mod_formform_1" id="O|J}uOYrZI#z2oMJ,Hoi">
+                                <field name="get_model">String::intervalo_de_data//range</field>
+                            </block>
+                        </value>
+                        <value name="ADD2STATE3">
+                            <block type="mod_formform_1" id="ZOQ}4]Xb1H.Z-}bhIqG;">
+                                <field name="get_model">String::intervalo_de_data//range</field>
+                            </block>
+                        </value>
+                        <value name="ADD3">
+                            <block type="get-dao-TblCarro" id="o/#2E]hx9VtNCH/P)Q,Z">
+                                <mutation hover_type="Boolean::vendido"></mutation>
+                                <field name="DAO_FIELD">Boolean::vendido</field>
+                            </block>
+                        </value>
+                        <value name="ADD3STATE2">
+                            <block type="logic_boolean" id="Hls2lw*s-U0g{}a2bAxs">
+                                <field name="BOOL">FALSE</field>
+                            </block>
+                        </value>
+                    </block>
+                </statement>
+                <statement name="pesquisar">
+                    <block type="custombutton" id="Hs=b~}^I490.Mck-}z.]" inline="true">
+                        <field name="return">forward</field>
+                        <field name="page">Registro_de_carros_</field>
+                    </block>
+                </statement>
+                <statement name="vender_carro">
+                    <block type="enviar_p" id="y/Jz1}Vij_6Koq80~BV#">
+                        <field name="iskey">id_carro_tbl</field>
+                    </block>
+                </statement>
+                <statement name="editar">
+                    <block type="enviar_p" id="{l6mCpVvGZ:M7#fn1ziS">
+                        <field name="iskey">id_carro_tbl</field>
+                        <next>
+                            <block type="editar_dao" id="hH^NG!nU_UXl+tE!I_Gr"></block>
+                        </next>
+                    </block>
+                </statement>
+                <statement name="eliminar">
+                    <block type="apagar" id="tSo0|+Y5sxpFr_a1ra`~" inline="true">
+                        <mutation order="null" operation="null" limit="null" collectors="null" crud="null" statistdrop="null" ajax="null" count="NaN"></mutation>
+                        <field name="dao">TblCarro</field>
+                        <field name="KEEP">FALSE</field>
+                        <value name="get_pa">
+                            <block type="core_get_param" id=";s[4@v6c],AxNnXYYk27">
+                                <field name="param">id_carro_tbl</field>
+                            </block>
+                        </value>
+                    </block>
+                </statement>
+            </block>
+        </xml>
+    </blockly>
+</rows>

@@ -1,0 +1,24 @@
+{
+  "rows": [
+    {
+      "columns": [
+        {
+          "size": "col-md-12",
+          "containers": []
+        }
+      ]
+    }
+  ],
+  "plsql": {
+    "instance": "",
+    "table": "",
+    "package": "nosi.webapps.gestao_de_pedidos_de_suporte_.pages",
+    "html": "Todos_os_pedidos",
+    "replace": false,
+    "label": false,
+    "biztalk": false,
+    "subversionpath": ""
+  },
+  "css": "",
+  "js": ""
+}

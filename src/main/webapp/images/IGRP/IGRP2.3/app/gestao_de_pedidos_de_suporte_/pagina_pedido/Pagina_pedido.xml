@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/pagina_pedido/Pagina_pedido.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Pagina_pedido</page>
+    <app>gestao_de_pedidos_de_suporte_</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_de_pedidos_de_suporte_.pages</package_db>
+        <package_html>Pagina_pedido</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=136</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Pagina pedido</title>
+        <registrar_novo_pedido_de_suporte type="panels" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <registro_de_novo_pedido_de_suporte name="p_registro_de_novo_pedido_de_suporte" type="button" request_fields="" target_fields="" closerefresh="false" refresh_components="" refresh_submit="false" adbcli="" custom_return="false" notvalidatefields="false" iconColor="#333" iconClass="" img="fa-check" maxlength="50">
+                    <label>Registro de novo pedido de suporte</label>
+                    <value/>
+                </registro_de_novo_pedido_de_suporte>
+            </fields>
+        </registrar_novo_pedido_de_suporte>
+        <form_2 type="form" xml-type="form" title="Detalhe de pedido" gen-type="container" gen-group="">
+            <fields>
+                <assunto name="p_assunto" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Assunto</label>
+                    <value>Perspiciatis sit totam deserunt rem</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </assunto>
+                <departamento name="p_departamento" type="select" multiple="false" tags="false" load_service_data="false" domain="" maxlength="250" required="true" change="false" disabled="false" right="false" java-type="" tooltip="false" disable_copy_paste="false">
+                    <label>Departamento</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </departamento>
+                <categoria name="p_categoria" type="select" multiple="false" tags="false" load_service_data="false" domain="" maxlength="250" required="true" change="false" disabled="false" right="false" java-type="" tooltip="false" disable_copy_paste="false">
+                    <label>Categoria</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </categoria>
+                <propriedade name="p_propriedade" type="select" multiple="false" tags="false" load_service_data="false" domain="" maxlength="250" required="true" change="false" disabled="false" right="false" java-type="" tooltip="false" disable_copy_paste="false">
+                    <label>Propriedade</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </propriedade>
+                <estado name="p_estado" type="select" multiple="false" tags="false" load_service_data="false" domain="" maxlength="250" required="true" change="false" disabled="false" right="false" java-type="" tooltip="false" disable_copy_paste="false">
+                    <label>Estado</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </estado>
+                <descricao_detalhada name="p_descricao_detalhada" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Descrição detalhada</label>
+                    <value>Sed dolor amet rem labore</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </descricao_detalhada>
+                <numero_de_pedido name="p_numero_de_pedido" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Numero de pedido</label>
+                    <value>Deserunt magna adipiscing sit elit</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </numero_de_pedido>
+                <nota_de_observacao name="p_nota_de_observacao" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Nota de observação</label>
+                    <value>Aliqua lorem amet aperiam rem</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </nota_de_observacao>
+            </fields>
+            <tools-bar>
+                <item id="button_1bd0_71c3" type="form" code="" class="success" rel="submeter" refresh_components="">
+                    <title>Submeter</title>
+                    <app>gestao_de_pedidos_de_suporte_</app>
+                    <page>Criar_pedido</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/criar_pedido/Criar_pedido.xml?</parameter>
+                    <target>submit_form</target>
+                    <img>success|fa-check</img>
+                    <preview>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/criar_pedido/Criar_pedido.xml</preview>
+                </item>
+                <item id="button_b08e_2042" type="form" code="" class="grey" rel="cancelar" refresh_components="">
+                    <title>Cancelar</title>
+                    <app>gestao_de_pedidos_de_suporte_</app>
+                    <page>Criar_pedido</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/criar_pedido/Criar_pedido.xml?</parameter>
+                    <target>_close</target>
+                    <img>grey|fa-angle-right</img>
+                    <preview>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/criar_pedido/Criar_pedido.xml</preview>
+                </item>
+            </tools-bar>
+        </form_2>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group=""/>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml></xml>
+    </blockly>
+</rows>

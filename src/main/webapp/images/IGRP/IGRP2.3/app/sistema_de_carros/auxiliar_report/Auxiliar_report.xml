@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/sistema_de_carros/auxiliar_report/Auxiliar_report.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Auxiliar_report</page>
+    <app>sistema_de_carros</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_de_carros.pages</package_db>
+        <package_html>Auxiliar_report</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=98</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Auxiliar Report</title>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <comprador name="p_comprador" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Comprador</label>
+                    <value>Elit officia doloremque deserunt iste</value>
+                </comprador>
+                <data name="p_data" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Data</label>
+                    <value>Officia elit rem sed consectetur</value>
+                </data>
+                <vendedor name="p_vendedor" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Vendedor</label>
+                    <value>Deserunt elit ut totam doloremque</value>
+                </vendedor>
+                <marca name="p_marca" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Marca</label>
+                    <value>Sed elit ut laudantium ipsum</value>
+                </marca>
+            </fields>
+        </form_1>
+    </content>
+    <blockly>
+        <imports>
+            <import type="list_simple_dao">List Dao Import</import>
+            <import type="dao">TblVenda</import>
+            <import type="dao">TblCarro</import>
+            <import type="dao">TblModelo</import>
+            <import type="dao">TblMarca</import>
+            <import type="fields">LocalDate</import>
+        </imports>
+        <xml>
+            <block type="controller" id="controller" x="413" y="13">
+                <statement name="index">
+                    <block type="list_simple_dao" id="ImtwH_wxBxMLXm)+W{}T" inline="true">
+                        <mutation order="null" operation="null" limit="UMM" collectors="null" crud="null" statistdrop="null" ajax="null" count="NaN"></mutation>
+                        <field name="dao">TblVenda</field>
+                        <field name="checkbox">FALSE</field>
+                        <field name="find">UMM</field>
+                        <field name="removeTry">FALSE</field>
+                        <field name="limit"></field>
+                        <value name="get_pa">
+                            <block type="core_fun_get" id="T`:z3*)fzc2b2Mi`IT4%">
+                                <mutation hover_type="String::apanhar_parametro_report"></mutation>
+                                <field name="CORE_FUNCTION">String::apanhar_parametro_report</field>
+                                <field name="value1">id_venda</field>
+                                <field name="domaindrop"></field>
+                                <field name="value2">sistema_de_carros</field>
+                                <field name="value3">Parametrizacao_marcas</field>
+                                <field name="value4">name action</field>
+                            </block>
+                        </value>
+                        <statement name="value2">
+                            <block type="model_form_String::comprador" id="cR`7wN?zr?(#;I%Ib/l5">
+                                <value name="value1">
+                                    <block type="get-dao-TblVenda" id="t2v`)+|2hUqMg/]BAS.=">
+                                        <mutation hover_type="String::comprador"></mutation>
+                                        <field name="DAO_FIELD">String::comprador</field>
+                                    </block>
+                                </value>
+                                <next>
+                                    <block type="model_form_String::data" id="W*FthFN}2]3y11UDS3qq">
+                                        <value name="value1">
+                                            <block type="get-dao-TblVenda" id="BOFIHT]a9Z+y/UM~VHqs">
+                                                <mutation hover_type="LocalDate::dataVenda"></mutation>
+                                                <field name="DAO_FIELD">LocalDate::dataVenda</field>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="model_form_String::vendedor" id="bOMJ)YnB@z9yc=,M8Ke}">
+                                                <value name="value1">
+                                                    <block type="get-dao-TblVenda" id="+S[FKV]Gy29x}a`N!/rn">
+                                                        <mutation hover_type="String::vendedor"></mutation>
+                                                        <field name="DAO_FIELD">String::vendedor</field>
+                                                    </block>
+                                                </value>
+                                                <next>
+                                                    <block type="model_form_String::marca" id="J50B*m2Qs{5#uhs.,9CX">
+                                                        <value name="value1">
+                                                            <block type="get-dao-TblVenda" id="S=72)dnfH5n}a#1C`TDY">
+                                                                <mutation hover_type="TblCarro_FK#::idCarroFk"></mutation>
+                                                                <field name="DAO_FIELD">TblCarro_FK#::idCarroFk</field>
+                                                                <value name="dao_rela">
+                                                                    <block type="get-dao-TblCarro" id="mpq|l}8Z{}jV~lA#zKOf">
+                                                                        <mutation hover_type="TblModelo_FK#::idModeloFk"></mutation>
+                                                                        <field name="DAO_FIELD">TblModelo_FK#::idModeloFk</field>
+                                                                        <value name="dao_rela">
+                                                                            <block type="get-dao-TblModelo" id="aK(V5yKQ/F,g]RQ|BFQ{">
+                                                                                <mutation hover_type="TblMarca_FK#::idMarcaFk"></mutation>
+                                                                                <field name="DAO_FIELD">TblMarca_FK#::idMarcaFk</field>
+                                                                                <value name="dao_rela">
+                                                                                    <block type="get-dao-TblMarca" id="PM#CQ?H]c0fA!ERIDdGS">
+                                                                                        <mutation hover_type="String::nomeMarca"></mutation>
+                                                                                        <field name="DAO_FIELD">String::nomeMarca</field>
+                                                                                    </block>
+                                                                                </value>
+                                                                            </block>
+                                                                        </value>
+                                                                    </block>
+                                                                </value>
+                                                            </block>
+                                                        </value>
+                                                    </block>
+                                                </next>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </next>
+                            </block>
+                        </statement>
+                    </block>
+                </statement>
+            </block>
+        </xml>
+    </blockly>
+</rows>

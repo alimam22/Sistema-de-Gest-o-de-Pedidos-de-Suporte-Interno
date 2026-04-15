@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/sistema_gestao_aluno/pagina_matricula/Pagina_matricula.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Pagina_matricula</page>
+    <app>sistema_gestao_aluno</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_gestao_aluno.pages</package_db>
+        <package_html>Pagina_matricula</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=104</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Pagina_Matricula</title>
+        <form_1 type="form" xml-type="form" title="Matricula" gen-type="container" gen-group="">
+            <fields>
+                <form_1_lookup_1 name="p_form_1_lookup_1" type="lookup" action="index" page="Pagina_matricula" app="sistema_gestao_aluno" field_param="" lookup_eraser="true" lookup_type="LOOKUP" class="primary" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Lookup</label>
+                    <value/>
+                    <lookup>../images/IGRP/IGRP2.3/app/sistema_gestao_aluno/pagina_matricula/Pagina_matricula.xml</lookup>
+                    <lookupParams/>
+                </form_1_lookup_1>
+                <ano_letivo name="p_ano_letivo" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Ano Letivo</label>
+                    <value>Iste adipiscing perspiciatis mollit deserunt</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </ano_letivo>
+                <curso name="p_curso" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Curso</label>
+                    <value>Mollit dolor unde amet rem</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </curso>
+                <estado name="p_estado" type="radiolist" domain="" maxlength="250" required="true" change="false" readonly="false" disabled="false" child_size="12" right="false" java-type="int" tooltip="false" disable_copy_paste="false">
+                    <label>Estado</label>
+                    <list>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </estado>
+            </fields>
+            <tools-bar>
+                <item id="button_b12c_834a" type="form" code="" class="success" rel="salvar" refresh_components="">
+                    <title>Salvar</title>
+                    <app>sistema_gestao_aluno</app>
+                    <page>Lista_de_alunos</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/sistema_gestao_aluno/lista_de_alunos/Lista_de_alunos.xml?</parameter>
+                    <target>submit_form</target>
+                    <img>success|fa-save</img>
+                    <preview>../images/IGRP/IGRP2.3/app/sistema_gestao_aluno/lista_de_alunos/Lista_de_alunos.xml</preview>
+                </item>
+            </tools-bar>
+        </form_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

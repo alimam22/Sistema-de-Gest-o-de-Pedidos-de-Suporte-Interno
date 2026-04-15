@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/sistema_de_carros/carro_lookup_/Carro_lookup_.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Carro_lookup_</page>
+    <app>sistema_de_carros</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_de_carros.pages</package_db>
+        <package_html>Carro_lookup_</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=106</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Carro Lookup </title>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <marca name="p_marca" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="true" iskey="false" group_in="">
+                    <label>Marca</label>
+                </marca>
+                <modelo name="p_modelo" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="true" iskey="false" group_in="">
+                    <label>Modelo</label>
+                </modelo>
+                <data_registro name="p_data_registro" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="true" iskey="false" group_in="">
+                    <label>Data Registro</label>
+                </data_registro>
+                <id_carro name="p_id_carro" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="id_carro"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <marca name="p_marca">Perspiciatis anim laudantium c</marca>
+                        <modelo name="p_modelo">Unde rem natus sit doloremque</modelo>
+                        <data_registro name="p_data_registro">Dolor labore iste lorem ipsum</data_registro>
+                        <id_carro name="p_id_carro" tag="id_carro">hidden-f996_81cf</id_carro>
+                    </row>
+                    <row>
+                        <marca name="p_marca">Sed ut natus sit iste</marca>
+                        <modelo name="p_modelo">Anim unde elit voluptatem accu</modelo>
+                        <data_registro name="p_data_registro">Stract adipiscing totam offici</data_registro>
+                        <id_carro name="p_id_carro" tag="id_carro">hidden-ef9d_9b70</id_carro>
+                    </row>
+                    <row>
+                        <marca name="p_marca">Sit iste labore adipiscing mol</marca>
+                        <modelo name="p_modelo">Sit laudantium amet stract acc</modelo>
+                        <data_registro name="p_data_registro">Dolor labore consectetur unde</data_registro>
+                        <id_carro name="p_id_carro" tag="id_carro">hidden-65cf_a542</id_carro>
+                    </row>
+                    <row>
+                        <marca name="p_marca">Anim amet mollit doloremque re</marca>
+                        <modelo name="p_modelo">Adipiscing aliqua mollit dolor</modelo>
+                        <data_registro name="p_data_registro">Stract unde aliqua consectetur</data_registro>
+                        <id_carro name="p_id_carro" tag="id_carro">hidden-6db2_f05c</id_carro>
+                    </row>
+                    <row>
+                        <marca name="p_marca">Omnis perspiciatis sit totam u</marca>
+                        <modelo name="p_modelo">Unde natus aperiam sit consect</modelo>
+                        <data_registro name="p_data_registro">Adipiscing dolor voluptatem am</data_registro>
+                        <id_carro name="p_id_carro" tag="id_carro">hidden-9c99_5e99</id_carro>
+                    </row>
+                </value>
+            </table>
+        </table_1>
+    </content>
+    <blockly>
+        <imports>
+            <import type="listar">Listar</import>
+            <import type="dao">TblCarro</import>
+            <import type="dao">TblModelo</import>
+            <import type="dao">TblMarca</import>
+            <import type="fields">LocalDate</import>
+        </imports>
+        <xml>
+            <block type="controller" id="controller" x="288" y="13">
+                <statement name="index">
+                    <block type="listar_table_1" id="V#PEZ{dNAN)AUl3X:bb#" inline="true">
+                        <mutation order="" operation="null" limit="TODOSS" collectors="null" crud="null" statistdrop="null" ajax="null" count="NaN"></mutation>
+                        <field name="dao">TblCarro</field>
+                        <field name="FILL">FALSE</field>
+                        <field name="orderdrop"></field>
+                        <field name="find">TODOSS</field>
+                        <field name="limit"></field>
+                        <statement name="value2">
+                            <block type="rowtableString::marca" id="%t.`BcPK^};(@RPq;~x;">
+                                <value name="fields_model">
+                                    <block type="get-dao-TblCarro" id="4G6#d5=R1vktjz}0Mdl#">
+                                        <mutation hover_type="TblModelo_FK#::idModeloFk"></mutation>
+                                        <field name="DAO_FIELD">TblModelo_FK#::idModeloFk</field>
+                                        <value name="dao_rela">
+                                            <block type="get-dao-TblModelo" id="qP%+f6xh{?*;*tAtjVN2">
+                                                <mutation hover_type="TblMarca_FK#::idMarcaFk"></mutation>
+                                                <field name="DAO_FIELD">TblMarca_FK#::idMarcaFk</field>
+                                                <value name="dao_rela">
+                                                    <block type="get-dao-TblMarca" id="c7K1*1Q:GaFzM+6=V2:F">
+                                                        <mutation hover_type="String::nomeMarca"></mutation>
+                                                        <field name="DAO_FIELD">String::nomeMarca</field>
+                                                    </block>
+                                                </value>
+                                            </block>
+                                        </value>
+                                    </block>
+                                </value>
+                                <next>
+                                    <block type="rowtableString::modelo" id="1tI-9e[i_kLaIt9sd{U:">
+                                        <value name="fields_model">
+                                            <block type="get-dao-TblCarro" id="k5HdGD?}ZdKtm))(I5L=">
+                                                <mutation hover_type="TblModelo_FK#::idModeloFk"></mutation>
+                                                <field name="DAO_FIELD">TblModelo_FK#::idModeloFk</field>
+                                                <value name="dao_rela">
+                                                    <block type="get-dao-TblModelo" id="vQG:o=w`fmP9mFf.}UJ-">
+                                                        <mutation hover_type="String::nomeModelo"></mutation>
+                                                        <field name="DAO_FIELD">String::nomeModelo</field>
+                                                    </block>
+                                                </value>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="rowtableString::data_registro" id="H_Ww-tROi9!LMoRZlkxQ">
+                                                <value name="fields_model">
+                                                    <block type="get-dao-TblCarro" id=".,;:gOM:/]x,M,B)Sr00">
+                                                        <mutation hover_type="LocalDate::dataRegistro"></mutation>
+                                                        <field name="DAO_FIELD">LocalDate::dataRegistro</field>
+                                                    </block>
+                                                </value>
+                                                <next>
+                                                    <block type="rowtableString::id_carro" id=")lf~tsyHKvA2d#O_}-35">
+                                                        <value name="fields_model">
+                                                            <block type="get-dao-TblCarro" id="gJ,atV,Ww.bK:o~dxu4u">
+                                                                <mutation hover_type="Integer_PK#::idCarro"></mutation>
+                                                                <field name="DAO_FIELD">Integer_PK#::idCarro</field>
+                                                            </block>
+                                                        </value>
+                                                    </block>
+                                                </next>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </next>
+                            </block>
+                        </statement>
+                    </block>
+                </statement>
+            </block>
+        </xml>
+    </blockly>
+</rows>

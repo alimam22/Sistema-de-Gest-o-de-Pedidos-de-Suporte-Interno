@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/sistema_gestao_aluno/lista_de_alunos/Lista_de_alunos.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Lista_de_alunos</page>
+    <app>sistema_gestao_aluno</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_gestao_aluno.pages</package_db>
+        <package_html>Lista_de_alunos</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=102</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Lista de alunos</title>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields/>
+            <tools-bar>
+                <item id="button_fa4c_59a1" type="form" code="" class="success" rel="adicionar" refresh_components="">
+                    <title>Adicionar</title>
+                    <app>sistema_gestao_aluno</app>
+                    <page>Formulario_de_aluno</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/sistema_gestao_aluno/formulario_de_aluno/Formulario_de_aluno.xml?</parameter>
+                    <target>submit</target>
+                    <img>success|fa-address-book</img>
+                    <preview>../images/IGRP/IGRP2.3/app/sistema_gestao_aluno/formulario_de_aluno/Formulario_de_aluno.xml</preview>
+                </item>
+            </tools-bar>
+        </form_1>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <nome name="p_nome" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Nome</label>
+                </nome>
+                <apelido name="p_apelido" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Apelido</label>
+                </apelido>
+                <idade name="p_idade" type="number" min="" max="" calculation="false" mathcal="" numberformat="" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" total_footer="false" group_in="" java-type="">
+                    <label>Idade</label>
+                </idade>
+                <curso name="p_curso" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Curso</label>
+                </curso>
+                <email name="p_email" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Email</label>
+                </email>
+                <p_id_aluno name="p_p_id_aluno" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="p_id_aluno"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Iste unde accusantium stract a</nome>
+                        <apelido name="p_apelido">Aperiam labore magna deserunt</apelido>
+                        <idade name="p_idade">21</idade>
+                        <curso name="p_curso">Amet stract laudantium ut aper</curso>
+                        <email name="p_email">Sed totam amet adipiscing rem</email>
+                        <p_id_aluno name="p_p_id_aluno" tag="p_id_aluno">hidden-63d9_f816</p_id_aluno>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Dolor accusantium amet magna o</nome>
+                        <apelido name="p_apelido">Anim rem voluptatem ipsum natu</apelido>
+                        <idade name="p_idade">26</idade>
+                        <curso name="p_curso">Stract elit anim natus aperiam</curso>
+                        <email name="p_email">Ipsum stract deserunt aliqua a</email>
+                        <p_id_aluno name="p_p_id_aluno" tag="p_id_aluno">hidden-3cf9_902f</p_id_aluno>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Anim officia dolor iste sed</nome>
+                        <apelido name="p_apelido">Omnis elit unde amet sed</apelido>
+                        <idade name="p_idade">10</idade>
+                        <curso name="p_curso">Sit sed doloremque sit laudant</curso>
+                        <email name="p_email">Aperiam sit adipiscing iste ad</email>
+                        <p_id_aluno name="p_p_id_aluno" tag="p_id_aluno">hidden-9486_7221</p_id_aluno>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Amet sit adipiscing sit dolor</nome>
+                        <apelido name="p_apelido">Unde deserunt omnis doloremque</apelido>
+                        <idade name="p_idade">6</idade>
+                        <curso name="p_curso">Unde lorem accusantium volupta</curso>
+                        <email name="p_email">Deserunt ut deserunt magna lor</email>
+                        <p_id_aluno name="p_p_id_aluno" tag="p_id_aluno">hidden-350c_e82b</p_id_aluno>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Adipiscing officia aliqua tota</nome>
+                        <apelido name="p_apelido">Lorem sit accusantium deserunt</apelido>
+                        <idade name="p_idade">8</idade>
+                        <curso name="p_curso">Elit sit adipiscing rem dolore</curso>
+                        <email name="p_email">Sed elit iste ut accusantium</email>
+                        <p_id_aluno name="p_p_id_aluno" tag="p_id_aluno">hidden-75db_d25d</p_id_aluno>
+                    </row>
+                </value>
+                <context-menu>
+                    <item id="button_4017_5f1d" type="specific" code="" class="warning" rel="table_1_button_1" refresh_components="">
+                        <title>Button</title>
+                        <app>sistema_gestao_aluno</app>
+                        <page>Formulario_de_aluno</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_gestao_aluno/formulario_de_aluno/Formulario_de_aluno.xml?</parameter>
+                        <target>mpsubmit|refresh</target>
+                        <img>warning|fa-edit</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_gestao_aluno/formulario_de_aluno/Formulario_de_aluno.xml</preview>
+                    </item>
+                    <item id="button_b5f1_d3b9" type="specific" code="" class="danger" rel="eliminar" refresh_components="" labelConfirm="Deseja realmente realizar esta operação?">
+                        <title>Eliminar</title>
+                        <app>sistema_gestao_aluno</app>
+                        <page>Lista_de_alunos</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_gestao_aluno/lista_de_alunos/Lista_de_alunos.xml?</parameter>
+                        <target>confirm</target>
+                        <img>danger|fa-trash</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_gestao_aluno/lista_de_alunos/Lista_de_alunos.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml></xml>
+    </blockly>
+</rows>

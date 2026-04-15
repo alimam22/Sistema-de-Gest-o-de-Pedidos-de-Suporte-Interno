@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/sistema_de_carros/listar_carros_vendido/Listar_carros_vendido.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Listar_carros_vendido</page>
+    <app>sistema_de_carros</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_de_carros.pages</package_db>
+        <package_html>Listar_carros_vendido</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=97</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Listar Carros Vendido</title>
+        <table_1 type="table" xml-type="table" title="Lista de Carros Vendido" gen-type="container" gen-group="true">
+            <fields>
+                <marca name="p_marca" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Marca</label>
+                </marca>
+                <modelo name="p_modelo" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Modelo</label>
+                </modelo>
+                <comprador name="p_comprador" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Comprador</label>
+                </comprador>
+                <id_venda name="p_id_venda" type="hidden" maxlength="30" showLabel="true" iskey="false" group_in="" java-type="" tag="id_venda"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <marca name="p_marca">Officia doloremque laudantium</marca>
+                        <modelo name="p_modelo">Stract mollit omnis sit consec</modelo>
+                        <comprador name="p_comprador">Mollit adipiscing omnis labore</comprador>
+                        <id_venda name="p_id_venda" tag="id_venda">hidden-0f36_c3b4</id_venda>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <marca name="p_marca">Stract mollit stract adipiscin</marca>
+                        <modelo name="p_modelo">Stract labore aliqua aperiam m</modelo>
+                        <comprador name="p_comprador">Omnis deserunt voluptatem pers</comprador>
+                        <id_venda name="p_id_venda" tag="id_venda">hidden-5eff_fa38</id_venda>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <marca name="p_marca">Elit laudantium voluptatem sed</marca>
+                        <modelo name="p_modelo">Rem adipiscing aliqua elit lau</modelo>
+                        <comprador name="p_comprador">Aliqua sed sit sed doloremque</comprador>
+                        <id_venda name="p_id_venda" tag="id_venda">hidden-ffc2_2bc4</id_venda>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <marca name="p_marca">Deserunt magna lorem adipiscin</marca>
+                        <modelo name="p_modelo">Consectetur iste totam aperiam</modelo>
+                        <comprador name="p_comprador">Adipiscing doloremque iste dol</comprador>
+                        <id_venda name="p_id_venda" tag="id_venda">hidden-71bb_6f7d</id_venda>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <marca name="p_marca">Accusantium officia omnis tota</marca>
+                        <modelo name="p_modelo">Unde aliqua omnis magna sit</modelo>
+                        <comprador name="p_comprador">Lorem perspiciatis labore dolo</comprador>
+                        <id_venda name="p_id_venda" tag="id_venda">hidden-176d_7591</id_venda>
+                    </row>
+                </value>
+                <context-menu>
+                    <item id="button_6354_296f" type="specific" code="" class="danger" rel="emitir_relatorio" custom_return="true" refresh_components="">
+                        <title>Emitir Relatorio</title>
+                        <app>sistema_de_carros</app>
+                        <page>Parametrizacao_marcas</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_marcas/Parametrizacao_marcas.xml?</parameter>
+                        <target>_newtab</target>
+                        <img>danger|fa-address-card</img>
+                        <preview>../images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_marcas/Parametrizacao_marcas.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+        <paragraph_1 type="paragraph" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <paragraph_1_text type="text" name="p_paragraph_1_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[<p>Os carros vendido tem garantia de 3 anos</p>
+]]>
+                    </value>
+                </paragraph_1_text>
+            </fields>
+        </paragraph_1>
+    </content>
+    <blockly>
+        <imports>
+            <import type="listar">Listar</import>
+            <import type="report">Report</import>
+            <import type="dao">TblVenda</import>
+            <import type="dao">TblCarro</import>
+            <import type="dao">TblModelo</import>
+            <import type="dao">TblMarca</import>
+        </imports>
+        <xml>
+            <block type="controller" id="controller" x="138" y="38">
+                <statement name="index">
+                    <block type="listar_table_1" id="2#Q)I36w]oo##N1w1]^;" inline="true">
+                        <mutation order="" operation="null" limit="TODOSS" collectors="null" crud="null" statistdrop="null" ajax="null" count="NaN"></mutation>
+                        <field name="dao">TblVenda</field>
+                        <field name="FILL">FALSE</field>
+                        <field name="orderdrop"></field>
+                        <field name="find">TODOSS</field>
+                        <field name="limit"></field>
+                        <statement name="value2">
+                            <block type="rowtableString::marca" id="}aoELEje`g::HGB9dot[">
+                                <value name="fields_model">
+                                    <block type="get-dao-TblVenda" id="2=;H(YhYKT%3yK:q.sdC">
+                                        <mutation hover_type="TblCarro_FK#::idCarroFk"></mutation>
+                                        <field name="DAO_FIELD">TblCarro_FK#::idCarroFk</field>
+                                        <value name="dao_rela">
+                                            <block type="get-dao-TblCarro" id="JXp:;AXMaq7JWi;V:R=V">
+                                                <mutation hover_type="TblModelo_FK#::idModeloFk"></mutation>
+                                                <field name="DAO_FIELD">TblModelo_FK#::idModeloFk</field>
+                                                <value name="dao_rela">
+                                                    <block type="get-dao-TblModelo" id="H1([r+5vOJG}so!#XBc8">
+                                                        <mutation hover_type="TblMarca_FK#::idMarcaFk"></mutation>
+                                                        <field name="DAO_FIELD">TblMarca_FK#::idMarcaFk</field>
+                                                        <value name="dao_rela">
+                                                            <block type="get-dao-TblMarca" id="cj_#|Fu7?%2of,:ix7]L">
+                                                                <mutation hover_type="String::nomeMarca"></mutation>
+                                                                <field name="DAO_FIELD">String::nomeMarca</field>
+                                                            </block>
+                                                        </value>
+                                                    </block>
+                                                </value>
+                                            </block>
+                                        </value>
+                                    </block>
+                                </value>
+                                <next>
+                                    <block type="rowtableString::modelo" id="v3cL#QKjzq/1nNqxM:Ey">
+                                        <value name="fields_model">
+                                            <block type="get-dao-TblVenda" id=":E^kK5.6(SWjp=5uj^*7">
+                                                <mutation hover_type="TblCarro_FK#::idCarroFk"></mutation>
+                                                <field name="DAO_FIELD">TblCarro_FK#::idCarroFk</field>
+                                                <value name="dao_rela">
+                                                    <block type="get-dao-TblCarro" id="kVqJPz=:[N]Cff=RkLf7">
+                                                        <mutation hover_type="TblModelo_FK#::idModeloFk"></mutation>
+                                                        <field name="DAO_FIELD">TblModelo_FK#::idModeloFk</field>
+                                                        <value name="dao_rela">
+                                                            <block type="get-dao-TblModelo" id="S;fvb6r2XD!e@f|[mwMU">
+                                                                <mutation hover_type="String::nomeModelo"></mutation>
+                                                                <field name="DAO_FIELD">String::nomeModelo</field>
+                                                            </block>
+                                                        </value>
+                                                    </block>
+                                                </value>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="rowtableString::comprador" id=")W6#|%BN_+GEMChZ=K`i">
+                                                <value name="fields_model">
+                                                    <block type="get-dao-TblVenda" id="F5fKvI-AhZ[-?z?vV(;M">
+                                                        <mutation hover_type="String::comprador"></mutation>
+                                                        <field name="DAO_FIELD">String::comprador</field>
+                                                    </block>
+                                                </value>
+                                                <next>
+                                                    <block type="rowtableString::id_venda" id="CU`REfj?!@DFl]^ZY4R)">
+                                                        <value name="fields_model">
+                                                            <block type="get-dao-TblVenda" id="4Ro1-_lBFM4iHNAl1NS:">
+                                                                <mutation hover_type="Integer_PK#::idVenda"></mutation>
+                                                                <field name="DAO_FIELD">Integer_PK#::idVenda</field>
+                                                            </block>
+                                                        </value>
+                                                    </block>
+                                                </next>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </next>
+                            </block>
+                        </statement>
+                    </block>
+                </statement>
+                <statement name="emitir_relatorio">
+                    <block type="custombutReport" id="[Oau9}.jO`;:(_Mc~so(" inline="true">
+                        <mutation count="1"></mutation>
+                        <field name="codeReport">relatorio_compra</field>
+                        <field name="paramy1">id_venda</field>
+                        <value name="PARAM1">
+                            <block type="core_get_param" id="|3y;D}tT.:z*vz-zB@zo">
+                                <field name="param">id_venda</field>
+                            </block>
+                        </value>
+                    </block>
+                </statement>
+            </block>
+        </xml>
+    </blockly>
+</rows>

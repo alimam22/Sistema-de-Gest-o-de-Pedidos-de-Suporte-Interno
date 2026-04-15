@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/pagina_categorias/Pagina_categorias.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Pagina_categorias</page>
+    <app>gestao_de_pedidos_de_suporte_</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_de_pedidos_de_suporte_.pages</package_db>
+        <package_html>Pagina_categorias</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=134</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Pagina categorias</title>
+        <form_1 type="form" xml-type="form" title="Formulário Categoria" gen-type="container" gen-group="">
+            <fields>
+                <nome name="p_nome" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Nome</label>
+                    <value>Totam rem stract doloremque ipsum</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </nome>
+                <descricao name="p_descricao" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Descrição</label>
+                    <value>Ut iste amet sit omnis</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </descricao>
+                <activo name="p_activo" type="radiolist" domain="" maxlength="250" required="true" change="false" readonly="false" disabled="false" child_size="12" right="false" java-type="" tooltip="false" disable_copy_paste="false">
+                    <label>Activo</label>
+                    <list>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </activo>
+                <data_ name="p_data_" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Data </label>
+                    <value>Doloremque rem magna totam ut</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </data_>
+            </fields>
+            <tools-bar>
+                <item id="button_ca9a_064e" type="form" code="" class="success" rel="adicionar" refresh_components="">
+                    <title>Adicionar</title>
+                    <app>gestao_de_pedidos_de_suporte_</app>
+                    <page>Pagina_categorias</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/pagina_categorias/Pagina_categorias.xml?</parameter>
+                    <target>submit_form</target>
+                    <img>success|fa-plus-square</img>
+                    <preview>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/pagina_categorias/Pagina_categorias.xml</preview>
+                </item>
+            </tools-bar>
+        </form_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group=""/>
+        <table_1 type="table" xml-type="table" title="Lista categoria" gen-type="container" gen-group="true">
+            <fields>
+                <nome_categoria name="p_nome_categoria" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Nome </label>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </nome_categoria>
+                <descricao_categoria name="p_descricao_categoria" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Descrição</label>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </descricao_categoria>
+                <activo_categoria name="p_activo_categoria" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Activo</label>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </activo_categoria>
+                <data_categoria name="p_data_categoria" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Data</label>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </data_categoria>
+                <hidden name="p_tbl_categoria_id_fk" type="hidden" maxlength="30" showLabel="true" iskey="false" group_in="" java-type="" tag="tbl_categoria_id">
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </hidden>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome_categoria name="p_nome_categoria">Natus sed deserunt perspiciati</nome_categoria>
+                        <descricao_categoria name="p_descricao_categoria">Unde mollit deserunt lorem dol</descricao_categoria>
+                        <activo_categoria name="p_activo_categoria">Sit aliqua consectetur totam u</activo_categoria>
+                        <data_categoria name="p_data_categoria">Sed lorem aperiam ipsum aliqua</data_categoria>
+                        <hidden name="p_tbl_categoria_id_fk" tag="tbl_categoria_id">hidden-c3c6_103e</hidden>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome_categoria name="p_nome_categoria">Rem sed mollit rem mollit</nome_categoria>
+                        <descricao_categoria name="p_descricao_categoria">Sit aperiam adipiscing totam e</descricao_categoria>
+                        <activo_categoria name="p_activo_categoria">Anim perspiciatis iste dolor o</activo_categoria>
+                        <data_categoria name="p_data_categoria">Natus amet sed voluptatem magn</data_categoria>
+                        <hidden name="p_tbl_categoria_id_fk" tag="tbl_categoria_id">hidden-1777_09fc</hidden>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome_categoria name="p_nome_categoria">Dolor iste officia lorem volup</nome_categoria>
+                        <descricao_categoria name="p_descricao_categoria">Laudantium accusantium anim re</descricao_categoria>
+                        <activo_categoria name="p_activo_categoria">Rem adipiscing perspiciatis ma</activo_categoria>
+                        <data_categoria name="p_data_categoria">Sit perspiciatis laudantium vo</data_categoria>
+                        <hidden name="p_tbl_categoria_id_fk" tag="tbl_categoria_id">hidden-1929_15aa</hidden>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome_categoria name="p_nome_categoria">Dolor sed adipiscing stract si</nome_categoria>
+                        <descricao_categoria name="p_descricao_categoria">Aperiam iste voluptatem dolor</descricao_categoria>
+                        <activo_categoria name="p_activo_categoria">Mollit doloremque accusantium</activo_categoria>
+                        <data_categoria name="p_data_categoria">Perspiciatis natus doloremque</data_categoria>
+                        <hidden name="p_tbl_categoria_id_fk" tag="tbl_categoria_id">hidden-90d9_d715</hidden>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome_categoria name="p_nome_categoria">Anim dolor adipiscing laudanti</nome_categoria>
+                        <descricao_categoria name="p_descricao_categoria">Omnis sit natus dolor labore</descricao_categoria>
+                        <activo_categoria name="p_activo_categoria">Perspiciatis sit ipsum rem vol</activo_categoria>
+                        <data_categoria name="p_data_categoria">Unde anim accusantium sed volu</data_categoria>
+                        <hidden name="p_tbl_categoria_id_fk" tag="tbl_categoria_id">hidden-9603_5e7b</hidden>
+                    </row>
+                </value>
+                <context-menu>
+                    <item id="button_f15a_d70a" type="specific" code="" class="warning" rel="editar" refresh_components="">
+                        <title>Editar</title>
+                        <app>gestao_de_pedidos_de_suporte_</app>
+                        <page>Pagina_categorias</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/pagina_categorias/Pagina_categorias.xml?</parameter>
+                        <target>mpsubmit|refresh</target>
+                        <img>warning|fa-edit</img>
+                        <preview>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/pagina_categorias/Pagina_categorias.xml</preview>
+                    </item>
+                    <item id="button_bd7e_6d48" type="specific" code="" class="danger" rel="eliminar" refresh_components="" labelConfirm="Deseja realmente realizar esta operação?">
+                        <title>Eliminar</title>
+                        <app>gestao_de_pedidos_de_suporte_</app>
+                        <page>Pagina_categorias</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/pagina_categorias/Pagina_categorias.xml?</parameter>
+                        <target>submit_form</target>
+                        <img>danger|fa-trash</img>
+                        <preview>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/pagina_categorias/Pagina_categorias.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

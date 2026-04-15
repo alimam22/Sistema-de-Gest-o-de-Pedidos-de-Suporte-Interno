@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/gestao_de_vendas/cadastro_de_usuario/Cadastro_de_usuario.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Cadastro_de_usuario</page>
+    <app>gestao_de_vendas</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_de_vendas.pages</package_db>
+        <package_html>Cadastro_de_usuario</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=120</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Cadastro de usuario</title>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="guardar" refresh_components="">
+                <title>Guardar</title>
+                <app>gestao_de_vendas</app>
+                <page>Pagina_fornecedor</page>
+                <link>index</link>
+                <target>submit</target>
+                <img>success|fa-plus-square</img>
+                <preview>../images/IGRP/IGRP2.3/app/gestao_de_vendas/pagina_fornecedor/Pagina_fornecedor.xml</preview>
+            </item>
+        </toolsbar_1>
+        <form_1 type="form" xml-type="form" title="Formulario" gen-type="container" gen-group="">
+            <fields>
+                <nome_de_usuario name="p_nome_de_usuario" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Nome de usuario</label>
+                    <value>Labore accusantium officia voluptatem sit</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </nome_de_usuario>
+                <ativo name="p_ativo" type="radiolist" domain="" maxlength="250" required="true" change="false" readonly="false" disabled="false" child_size="12" right="false" java-type="int" tooltip="false" disable_copy_paste="false">
+                    <label>Ativo</label>
+                    <list>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </ativo>
+                <perfil_de_usuario name="p_perfil_de_usuario" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Perfil de usuario</label>
+                    <value>Stract consectetur labore consectetur laudantium</value>
+                </perfil_de_usuario>
+                <email_de_usuario name="p_email_de_usuario" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Email de usuario</label>
+                    <value>Rem natus consectetur voluptatem totam</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </email_de_usuario>
+                <senha_de_usuario name="p_senha_de_usuario" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" inputmask="" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Senha de usuario</label>
+                    <value>Unde labore accusantium totam ipsum</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </senha_de_usuario>
+            </fields>
+        </form_1>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <nome name="p_nome" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Nome</label>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </nome>
+                <email name="p_email" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Email</label>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </email>
+                <senha name="p_senha" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Senha</label>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </senha>
+                <perfil name="p_perfil" type="plaintext" disable_output_escaping="false" html_class="" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Perfil</label>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </perfil>
+                <ativo_usuario name="p_ativo_usuario" type="checkbox" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="" java-type="int" switch="false" check="true" desc="true">
+                    <label>Ativo</label>
+                </ativo_usuario>
+                <id_tbl_usuario name="p_id_tbl_usuario" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="id_tbl_usuario">
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </id_tbl_usuario>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Laudantium iste elit doloremqu</nome>
+                        <email name="p_email">Iste mollit anim unde sit</email>
+                        <senha name="p_senha">Aliqua sit lorem magna aperiam</senha>
+                        <perfil name="p_perfil">Lorem unde anim stract dolor s</perfil>
+                        <ativo_usuario name="p_ativo_usuario" check="true" desc="true">1</ativo_usuario>
+                        <ativo_usuario_check name="p_ativo_usuario_check">1</ativo_usuario_check>
+                        <id_tbl_usuario name="p_id_tbl_usuario" tag="id_tbl_usuario">hidden-4f44_834f</id_tbl_usuario>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Elit aperiam ut perspiciatis a</nome>
+                        <email name="p_email">Rem laudantium iste elit molli</email>
+                        <senha name="p_senha">Lorem doloremque ipsum volupta</senha>
+                        <perfil name="p_perfil">Doloremque anim ipsum iste eli</perfil>
+                        <ativo_usuario name="p_ativo_usuario" check="true" desc="true">1</ativo_usuario>
+                        <ativo_usuario_check name="p_ativo_usuario_check">1</ativo_usuario_check>
+                        <id_tbl_usuario name="p_id_tbl_usuario" tag="id_tbl_usuario">hidden-b567_ca4d</id_tbl_usuario>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Mollit laudantium totam consec</nome>
+                        <email name="p_email">Iste deserunt iste magna sit</email>
+                        <senha name="p_senha">Laudantium elit magna lorem un</senha>
+                        <perfil name="p_perfil">Unde mollit sit perspiciatis m</perfil>
+                        <ativo_usuario name="p_ativo_usuario" check="true" desc="true">1</ativo_usuario>
+                        <ativo_usuario_check name="p_ativo_usuario_check">1</ativo_usuario_check>
+                        <id_tbl_usuario name="p_id_tbl_usuario" tag="id_tbl_usuario">hidden-8d5b_3f61</id_tbl_usuario>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Ipsum mollit lorem anim deseru</nome>
+                        <email name="p_email">Anim totam perspiciatis anim a</email>
+                        <senha name="p_senha">Labore dolor omnis officia mol</senha>
+                        <perfil name="p_perfil">Voluptatem dolor consectetur i</perfil>
+                        <ativo_usuario name="p_ativo_usuario" check="true" desc="true">1</ativo_usuario>
+                        <ativo_usuario_check name="p_ativo_usuario_check">1</ativo_usuario_check>
+                        <id_tbl_usuario name="p_id_tbl_usuario" tag="id_tbl_usuario">hidden-5e1a_43f4</id_tbl_usuario>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome name="p_nome">Mollit natus amet mollit sed</nome>
+                        <email name="p_email">Mollit aliqua ipsum perspiciat</email>
+                        <senha name="p_senha">Accusantium adipiscing consect</senha>
+                        <perfil name="p_perfil">Sit dolor aliqua deserunt dolo</perfil>
+                        <ativo_usuario name="p_ativo_usuario" check="true" desc="true">1</ativo_usuario>
+                        <ativo_usuario_check name="p_ativo_usuario_check">1</ativo_usuario_check>
+                        <id_tbl_usuario name="p_id_tbl_usuario" tag="id_tbl_usuario">hidden-7168_4849</id_tbl_usuario>
+                    </row>
+                </value>
+                <context-menu>
+                    <item id="button_3875_9a0f" type="specific" code="" class="warning" rel="editar" refresh_components="">
+                        <title>Editar</title>
+                        <app>gestao_de_vendas</app>
+                        <page>Pagina_fornecedor</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/gestao_de_vendas/pagina_fornecedor/Pagina_fornecedor.xml?</parameter>
+                        <target>mpsubmit|refresh</target>
+                        <img>warning|fa-edit</img>
+                        <preview>../images/IGRP/IGRP2.3/app/gestao_de_vendas/pagina_fornecedor/Pagina_fornecedor.xml</preview>
+                    </item>
+                    <item id="button_3a59_88ee" type="specific" code="" flg_transaction="true" class="danger" rel="eliminar" refresh_components="" labelConfirm="Deseja realmente realizar esta operação?">
+                        <title>Eliminar</title>
+                        <app>gestao_de_vendas</app>
+                        <page>Pagina_fornecedor</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/gestao_de_vendas/pagina_fornecedor/Pagina_fornecedor.xml?</parameter>
+                        <target>confirm</target>
+                        <img>danger|fa-trash</img>
+                        <preview>../images/IGRP/IGRP2.3/app/gestao_de_vendas/pagina_fornecedor/Pagina_fornecedor.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

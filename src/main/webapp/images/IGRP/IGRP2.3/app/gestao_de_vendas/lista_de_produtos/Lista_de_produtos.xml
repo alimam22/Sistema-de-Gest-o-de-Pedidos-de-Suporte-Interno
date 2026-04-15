@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/gestao_de_vendas/lista_de_produtos/Lista_de_produtos.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Lista_de_produtos</page>
+    <app>gestao_de_vendas</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_de_vendas.pages</package_db>
+        <package_html>Lista_de_produtos</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=114</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Lista de produtos</title>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="novo_produto" refresh_components="">
+                <title>Novo produto</title>
+                <app>gestao_de_vendas</app>
+                <page>Painel_de_controle</page>
+                <link>index</link>
+                <target>submit_form</target>
+                <img>success|fa-plus-square</img>
+                <preview>../images/IGRP/IGRP2.3/app/gestao_de_vendas/painel_de_controle/Painel_de_controle.xml</preview>
+            </item>
+        </toolsbar_1>
+        <table_1_produto type="table" xml-type="table" title="Lista produto" gen-type="container" gen-group="true">
+            <fields>
+                <nome_produto name="p_nome_produto" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Nome</label>
+                </nome_produto>
+                <preco_produto name="p_preco_produto" type="number" min="" max="" calculation="false" mathcal="" numberformat="" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" total_footer="false" group_in="" java-type="">
+                    <label>Preço</label>
+                </preco_produto>
+                <estoque_produto name="p_estoque_produto" type="number" min="" max="" calculation="false" mathcal="" numberformat="" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" total_footer="false" group_in="" java-type="">
+                    <label>Estoque</label>
+                </estoque_produto>
+                <categoria_produto name="p_categoria_produto" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Categoria</label>
+                </categoria_produto>
+                <id_tbl_produto name="p_id_tbl_produto" type="hidden" maxlength="30" showLabel="true" iskey="true" group_in="" java-type="" tag="id_tbl_produto"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome_produto name="p_nome_produto">Sit sit consectetur perspiciat</nome_produto>
+                        <preco_produto name="p_preco_produto">3</preco_produto>
+                        <estoque_produto name="p_estoque_produto">14</estoque_produto>
+                        <categoria_produto name="p_categoria_produto">Natus elit omnis mollit offici</categoria_produto>
+                        <id_tbl_produto name="p_id_tbl_produto" tag="id_tbl_produto">hidden-695f_0062</id_tbl_produto>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome_produto name="p_nome_produto">Sit natus labore adipiscing un</nome_produto>
+                        <preco_produto name="p_preco_produto">23</preco_produto>
+                        <estoque_produto name="p_estoque_produto">12</estoque_produto>
+                        <categoria_produto name="p_categoria_produto">Ut totam aperiam consectetur u</categoria_produto>
+                        <id_tbl_produto name="p_id_tbl_produto" tag="id_tbl_produto">hidden-6de5_af49</id_tbl_produto>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome_produto name="p_nome_produto">Omnis dolor unde dolor iste</nome_produto>
+                        <preco_produto name="p_preco_produto">18</preco_produto>
+                        <estoque_produto name="p_estoque_produto">13</estoque_produto>
+                        <categoria_produto name="p_categoria_produto">Labore mollit adipiscing persp</categoria_produto>
+                        <id_tbl_produto name="p_id_tbl_produto" tag="id_tbl_produto">hidden-68f2_c42d</id_tbl_produto>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome_produto name="p_nome_produto">Sit consectetur adipiscing des</nome_produto>
+                        <preco_produto name="p_preco_produto">4</preco_produto>
+                        <estoque_produto name="p_estoque_produto">14</estoque_produto>
+                        <categoria_produto name="p_categoria_produto">Laudantium amet iste stract ac</categoria_produto>
+                        <id_tbl_produto name="p_id_tbl_produto" tag="id_tbl_produto">hidden-b4ac_1810</id_tbl_produto>
+                    </row>
+                    <row>
+                        <context-menu>
+                            <param>p1=linha1</param>
+                            <param>p2=linha1</param>
+                        </context-menu>
+                        <nome_produto name="p_nome_produto">Anim totam iste totam consecte</nome_produto>
+                        <preco_produto name="p_preco_produto">7</preco_produto>
+                        <estoque_produto name="p_estoque_produto">25</estoque_produto>
+                        <categoria_produto name="p_categoria_produto">Aperiam iste officia lorem ips</categoria_produto>
+                        <id_tbl_produto name="p_id_tbl_produto" tag="id_tbl_produto">hidden-d83d_864c</id_tbl_produto>
+                    </row>
+                </value>
+                <context-menu>
+                    <item id="button_d10f_e965" type="specific" code="" class="warning" rel="editar" refresh_components="">
+                        <title>Editar</title>
+                        <app>gestao_de_vendas</app>
+                        <page>Lista_de_produtos</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/gestao_de_vendas/lista_de_produtos/Lista_de_produtos.xml?</parameter>
+                        <target>mpsubmit|refresh</target>
+                        <img>warning|fa-edit</img>
+                        <preview>../images/IGRP/IGRP2.3/app/gestao_de_vendas/lista_de_produtos/Lista_de_produtos.xml</preview>
+                    </item>
+                    <item id="button_0fe8_468e" type="specific" code="" class="danger" rel="eliminar" refresh_components="" labelConfirm="Deseja realmente realizar esta operação?">
+                        <title>Eliminar</title>
+                        <app>gestao_de_vendas</app>
+                        <page>Lista_de_produtos</page>
+                        <link>index</link>
+                        <parameter>../images/IGRP/IGRP2.3/app/gestao_de_vendas/lista_de_produtos/Lista_de_produtos.xml?</parameter>
+                        <target>confirm</target>
+                        <img>danger|fa-trash</img>
+                        <preview>../images/IGRP/IGRP2.3/app/gestao_de_vendas/lista_de_produtos/Lista_de_produtos.xml</preview>
+                    </item>
+                </context-menu>
+            </table>
+        </table_1_produto>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

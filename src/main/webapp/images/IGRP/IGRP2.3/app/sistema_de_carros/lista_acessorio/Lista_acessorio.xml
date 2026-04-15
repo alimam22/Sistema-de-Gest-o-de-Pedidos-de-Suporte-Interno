@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/sistema_de_carros/lista_acessorio/Lista_acessorio.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Lista_acessorio</page>
+    <app>sistema_de_carros</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.sistema_de_carros.pages</package_db>
+        <package_html>Lista_acessorio</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=109</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Lista Acessorio</title>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="inserir_acessorio" flg_transaction="true" refresh_components="">
+                <title>Inserir Acessorio</title>
+                <app>sistema_de_carros</app>
+                <page>Parametrizacao_marcas</page>
+                <link>index</link>
+                <target>mpsubmit|refresh</target>
+                <img>info|fa-plus-square</img>
+                <preview>../images/IGRP/IGRP2.3/app/sistema_de_carros/parametrizacao_marcas/Parametrizacao_marcas.xml</preview>
+            </item>
+        </toolsbar_1>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <procurar_marca name="p_procurar_marca" type="select" multiple="false" tags="false" load_service_data="false" domain="" maxlength="250" required="false" change="false" disabled="false" right="false" java-type="" tooltip="false" disable_copy_paste="false">
+                    <label>Procurar Marca</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Option 1</text>
+                            <value>1</value>
+                        </option>
+                        <option>
+                            <text>Option 2</text>
+                            <value>2</value>
+                        </option>
+                        <option>
+                            <text>Option 3</text>
+                            <value>3</value>
+                        </option>
+                        <option>
+                            <text>Option 4</text>
+                            <value>4</value>
+                        </option>
+                    </list>
+                </procurar_marca>
+                <email_de_contacto name="p_email_de_contacto" type="email" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Email de Contacto</label>
+                    <value>zifuhhet@example.com</value>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </email_de_contacto>
+                <hidden name="p_id_solicitacao" type="hidden" maxlength="250" java-type="" tooltip="false" disable_copy_paste="false" tag="id_solicitacao"/>
+            </fields>
+        </form_1>
+        <formlist_1 type="formlist" xml-type="formlist" gen-clean="true" gen-type="container" gen-group="true">
+            <fields>
+                <acessorio name="p_acessorio" type="plaintext" disable_output_escaping="false" html_class="" maxlength="250" right="false" desc="true">
+                    <label>Acessório</label>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </acessorio>
+                <preco name="p_preco" type="number" min="" max="" calculation="false" mathcal="" numberformat="" maxlength="250" required="false" change="false" readonly="true" disabled="false" placeholder="" right="false" java-type="" total_col="false" total_row="false" totalrow="false" desc="true">
+                    <label>Preço</label>
+                </preco>
+                <quantidade name="p_quantidade" type="number" min="" max="" calculation="false" mathcal="" numberformat="" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" right="false" java-type="" total_col="false" total_row="false" totalrow="false" desc="true">
+                    <label>Quantidade</label>
+                </quantidade>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <acessorio name="p_acessorio" desc="true">Unde totam adipiscing rem deserunt</acessorio>
+                        <acessorio_check name="p_acessorio_check">Unde totam adipiscing rem deserunt</acessorio_check>
+                        <preco name="p_preco" desc="true">171</preco>
+                        <preco_check name="p_preco_check">171</preco_check>
+                        <quantidade name="p_quantidade" desc="true">99</quantidade>
+                        <quantidade_check name="p_quantidade_check">99</quantidade_check>
+                    </row>
+                    <row>
+                        <acessorio name="p_acessorio" desc="true">Accusantium ipsum sed magna deserunt</acessorio>
+                        <acessorio_check name="p_acessorio_check">Accusantium ipsum sed magna deserunt</acessorio_check>
+                        <preco name="p_preco" desc="true">183</preco>
+                        <preco_check name="p_preco_check">183</preco_check>
+                        <quantidade name="p_quantidade" desc="true">5</quantidade>
+                        <quantidade_check name="p_quantidade_check">5</quantidade_check>
+                    </row>
+                    <row>
+                        <acessorio name="p_acessorio" desc="true">Perspiciatis officia adipiscing sit omnis</acessorio>
+                        <acessorio_check name="p_acessorio_check">Perspiciatis officia adipiscing sit omnis</acessorio_check>
+                        <preco name="p_preco" desc="true">100</preco>
+                        <preco_check name="p_preco_check">100</preco_check>
+                        <quantidade name="p_quantidade" desc="true">33</quantidade>
+                        <quantidade_check name="p_quantidade_check">33</quantidade_check>
+                    </row>
+                    <row>
+                        <acessorio name="p_acessorio" desc="true">Anim magna totam omnis aperiam</acessorio>
+                        <acessorio_check name="p_acessorio_check">Anim magna totam omnis aperiam</acessorio_check>
+                        <preco name="p_preco" desc="true">55</preco>
+                        <preco_check name="p_preco_check">55</preco_check>
+                        <quantidade name="p_quantidade" desc="true">159</quantidade>
+                        <quantidade_check name="p_quantidade_check">159</quantidade_check>
+                    </row>
+                    <row>
+                        <acessorio name="p_acessorio" desc="true">Unde mollit adipiscing labore totam</acessorio>
+                        <acessorio_check name="p_acessorio_check">Unde mollit adipiscing labore totam</acessorio_check>
+                        <preco name="p_preco" desc="true">11</preco>
+                        <preco_check name="p_preco_check">11</preco_check>
+                        <quantidade name="p_quantidade" desc="true">116</quantidade>
+                        <quantidade_check name="p_quantidade_check">116</quantidade_check>
+                    </row>
+                </value>
+            </table>
+        </formlist_1>
+        <toolsbar_2 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="solicitar" flg_transaction="true" refresh_components="">
+                <title>Solicitar</title>
+                <app>sistema_de_carros</app>
+                <page>Insserir_acessorio</page>
+                <link>index</link>
+                <target>submit</target>
+                <img>purple|fa-bus</img>
+                <preview>../images/IGRP/IGRP2.3/app/sistema_de_carros/insserir_acessorio/Insserir_acessorio.xml</preview>
+            </item>
+        </toolsbar_2>
+    </content>
+    <blockly>
+        <imports>
+            <import type="formlist">Formlist</import>
+            <import type="save_formlist">formlist_1</import>
+            <import type="combo_dao">Combo Dao</import>
+            <import type="dao">TblMarca</import>
+            <import type="dao">TblSolicitacao</import>
+            <import type="dao">TblAcessorio</import>
+            <import type="dao">TblCarro</import>
+            <import type="dao">TblModelo</import>
+        </imports>
+        <xml>
+            <block type="controller" id="controller" x="71" y="30">
+                <statement name="index">
+                    <block type="combo_dao" id="F@jms6UBE[m!bh!Jn7-=" inline="true">
+                        <mutation order="null" operation="null" limit="null" collectors="null" crud="null" statistdrop="null" ajax="null" count="NaN"></mutation>
+                        <field name="selecao">procurar_marca</field>
+                        <field name="dao">TblMarca</field>
+                        <field name="selecionar">TRUE</field>
+                        <statement name="key_val">
+                            <block type="option_dao" id="5;)nH%MT2{Xv!V+H~{)Q" inline="true">
+                                <value name="key_val">
+                                    <block type="get-dao-TblMarca" id="mJ~6Ukt_bU`eOFx0Td4t">
+                                        <mutation hover_type="Integer_PK#::idMarca"></mutation>
+                                        <field name="DAO_FIELD">Integer_PK#::idMarca</field>
+                                    </block>
+                                </value>
+                                <value name="value_val">
+                                    <block type="get-dao-TblMarca" id="%vO91L-EJH==G3k45~cF">
+                                        <mutation hover_type="String::nomeMarca"></mutation>
+                                        <field name="DAO_FIELD">String::nomeMarca</field>
+                                    </block>
+                                </value>
+                            </block>
+                        </statement>
+                        <next>
+                            <block type="formuu_form_1" id="wU(p|r4_B.e;0WwP[|=i" inline="true">
+                                <mutation order="null" operation="null" limit="null" collectors="null" crud="null" statistdrop="null" ajax="null" count="NaN"></mutation>
+                                <field name="dao">TblSolicitacao</field>
+                                <value name="get_pa">
+                                    <block type="core_get_param" id="6oHxAw=~YZ(g+v7(/?AX">
+                                        <field name="param">id_solicitacao</field>
+                                    </block>
+                                </value>
+                                <statement name="value2">
+                                    <block type="model_form_String::procurar_marca" id="SU^NKK,2;pL8wmnCH+T5">
+                                        <value name="value1">
+                                            <block type="get-dao-TblSolicitacao" id="AgoUJCk746q],?97s8`V">
+                                                <mutation hover_type="TblAcessorio_FK#::idAcessorioFk"></mutation>
+                                                <field name="DAO_FIELD">TblAcessorio_FK#::idAcessorioFk</field>
+                                                <value name="dao_rela">
+                                                    <block type="get-dao-TblAcessorio" id="K.jBOUgCXLT5`23PJ~4g">
+                                                        <mutation hover_type="TblCarro_FK#::idCarroFk"></mutation>
+                                                        <field name="DAO_FIELD">TblCarro_FK#::idCarroFk</field>
+                                                        <value name="dao_rela">
+                                                            <block type="get-dao-TblCarro" id="^]6onSa++6u6HgPChPbu">
+                                                                <mutation hover_type="TblModelo_FK#::idModeloFk"></mutation>
+                                                                <field name="DAO_FIELD">TblModelo_FK#::idModeloFk</field>
+                                                                <value name="dao_rela">
+                                                                    <block type="get-dao-TblModelo" id="J5xIi9)=2@;v~|K)^Rmr">
+                                                                        <mutation hover_type="TblMarca_FK#::idMarcaFk"></mutation>
+                                                                        <field name="DAO_FIELD">TblMarca_FK#::idMarcaFk</field>
+                                                                        <value name="dao_rela">
+                                                                            <block type="get-dao-TblMarca" id="Un{UdkC^d?9aNuHvLcZ2">
+                                                                                <mutation hover_type="String::nomeMarca"></mutation>
+                                                                                <field name="DAO_FIELD">String::nomeMarca</field>
+                                                                            </block>
+                                                                        </value>
+                                                                    </block>
+                                                                </value>
+                                                            </block>
+                                                        </value>
+                                                    </block>
+                                                </value>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="model_form_String::email_de_contacto" id="g__W74]mpSX:reYFt_Da">
+                                                <value name="value1">
+                                                    <block type="get-dao-TblSolicitacao" id="`ynmUYAK%x3R|Y[[FVoQ">
+                                                        <mutation hover_type="String::email"></mutation>
+                                                        <field name="DAO_FIELD">String::email</field>
+                                                    </block>
+                                                </value>
+                                                <next>
+                                                    <block type="model_form_String::id_solicitacao" id="g++[*99wARr@#E(nV0)a">
+                                                        <value name="value1">
+                                                            <block type="get-dao-TblSolicitacao" id="M5CEjyd4zW;C`~r:mv`u">
+                                                                <mutation hover_type="Integer_PK#::idSolicitacao"></mutation>
+                                                                <field name="DAO_FIELD">Integer_PK#::idSolicitacao</field>
+                                                            </block>
+                                                        </value>
+                                                        <next>
+                                                            <block type="add_isedit" id="/J3!h42ORJu88*Tg{bMP">
+                                                                <field name="button">solicitar</field>
+                                                            </block>
+                                                        </next>
+                                                    </block>
+                                                </next>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </statement>
+                                <next>
+                                    <block type="forrmlist_formlist_1" id="s[S|Du611hZEpUaT*7Xk" inline="true">
+                                        <mutation order="null" operation="null" limit="null" collectors="null" crud="null" statistdrop="null" ajax="null" count="NaN"></mutation>
+                                        <field name="dao">TblAcessorio</field>
+                                        <statement name="value2">
+                                            <block type="sep_row_acessorio$$String::acessorio" id="8|Ht:`qd_w54@Lnl:ZZp">
+                                                <value name="fields_model">
+                                                    <block type="get-dao-TblAcessorio" id="!U[E2?oI+ud+UZ5-kf|x">
+                                                        <mutation hover_type="String::nomeAcessorio"></mutation>
+                                                        <field name="DAO_FIELD">String::nomeAcessorio</field>
+                                                    </block>
+                                                </value>
+                                                <next>
+                                                    <block type="sep_row_preco$$Integer::preco" id="]oqU,a:}@oy@6op,]!`f">
+                                                        <value name="fields_model">
+                                                            <block type="get-dao-TblAcessorio" id="Fp*i7J#rjJYTgmiOfbp7">
+                                                                <mutation hover_type="Integer::preco"></mutation>
+                                                                <field name="DAO_FIELD">Integer::preco</field>
+                                                            </block>
+                                                        </value>
+                                                        <next>
+                                                            <block type="sep_row_id_row_formlist_1$$String::id_rrow_formlist_1" id="_uY%s|x~`0rlTsj]Q[;A">
+                                                                <value name="fields_model">
+                                                                    <block type="get-dao-TblAcessorio" id="17h}vGn4h66xEUVwMl]h">
+                                                                        <mutation hover_type="Integer_PK#::idAcessorio"></mutation>
+                                                                        <field name="DAO_FIELD">Integer_PK#::idAcessorio</field>
+                                                                    </block>
+                                                                </value>
+                                                            </block>
+                                                        </next>
+                                                    </block>
+                                                </next>
+                                            </block>
+                                        </statement>
+                                    </block>
+                                </next>
+                            </block>
+                        </next>
+                    </block>
+                </statement>
+                <statement name="solicitar">
+                    <block type="save_forlist_formlist_1" id="/x2EBm,!;zsTS@,!f2}V" inline="true">
+                        <field name="dao">TblSolicitacao</field>
+                        <value name="edited">
+                            <block type="get_model" id="^900abO@*Ft1xSvm-9*3">
+                                <field name="get_model">String::id_solicitacao</field>
+                            </block>
+                        </value>
+                        <statement name="value2">
+                            <block type="set-dao-TblSolicitacao" id="th{BFDKx`Ql/4nPaZ5#8" inline="true">
+                                <mutation hover_type="TblAcessorio_FK#::idAcessorioFk"></mutation>
+                                <field name="DAO_FIELD">TblAcessorio_FK#::idAcessorioFk</field>
+                                <value name="value1">
+                                    <block type="get_row_form_formlist_1" id="u_=Lk(mSB(EC!A;dnwNU">
+                                        <field name="get_row_sep">String::acessorio</field>
+                                    </block>
+                                </value>
+                                <next>
+                                    <block type="set-dao-TblSolicitacao" id="5{usO0:wJO^rUV)6c9);" inline="false">
+                                        <mutation hover_type="Integer::quantidade"></mutation>
+                                        <field name="DAO_FIELD">Integer::quantidade</field>
+                                        <value name="value1">
+                                            <block type="get_row_form_formlist_1" id="8Wcp0,kBeIj:i,~B?Fk-">
+                                                <field name="get_row_sep">Integer::quantidade</field>
+                                            </block>
+                                        </value>
+                                        <next>
+                                            <block type="set-dao-TblSolicitacao" id="sSEWPk1+IJT655aIz:RH" inline="false">
+                                                <mutation hover_type="Integer::precoFinal"></mutation>
+                                                <field name="DAO_FIELD">Integer::precoFinal</field>
+                                                <value name="value1">
+                                                    <block type="math_arithmetic" id="Z6%W=_NFKll{GmFzCenR">
+                                                        <field name="OP">MULTIPLY</field>
+                                                        <value name="A">
+                                                            <block type="get_row_form_formlist_1" id="`n-Zozy.(?(dBuP7Xw#Y">
+                                                                <field name="get_row_sep">Integer::quantidade</field>
+                                                            </block>
+                                                        </value>
+                                                        <value name="B">
+                                                            <block type="get_row_form_formlist_1" id="3dE]h`x%zC7,9TL1I5xU">
+                                                                <field name="get_row_sep">Integer::preco</field>
+                                                            </block>
+                                                        </value>
+                                                    </block>
+                                                </value>
+                                                <next>
+                                                    <block type="set-dao-TblSolicitacao" id="(rj@UihrYbZn?%_*9Jz." inline="false">
+                                                        <mutation hover_type="String::email"></mutation>
+                                                        <field name="DAO_FIELD">String::email</field>
+                                                        <value name="value1">
+                                                            <block type="mod_formform_1" id="ig]~Q`Jlq}2%|b_i#.v)">
+                                                                <field name="get_model">String::email_de_contacto</field>
+                                                            </block>
+                                                        </value>
+                                                    </block>
+                                                </next>
+                                            </block>
+                                        </next>
+                                    </block>
+                                </next>
+                            </block>
+                        </statement>
+                    </block>
+                </statement>
+            </block>
+        </xml>
+    </blockly>
+</rows>

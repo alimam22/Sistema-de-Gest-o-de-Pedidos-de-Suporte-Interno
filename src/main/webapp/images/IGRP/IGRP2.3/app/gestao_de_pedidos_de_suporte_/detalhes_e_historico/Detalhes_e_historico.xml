@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/detalhes_e_historico/Detalhes_e_historico.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Detalhes_e_historico</page>
+    <app>gestao_de_pedidos_de_suporte_</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_de_pedidos_de_suporte_.pages</package_db>
+        <package_html>Detalhes_e_historico</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=139</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Detalhes e Histórico</title>
+        <form_1 type="form" xml-type="form" title="Detalhe de pedido" gen-type="container" gen-group="">
+            <fields>
+                <n_do_pedido name="p_n_do_pedido" type="textarea" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Nº do pedido</label>
+                    <value>Doloremque aperiam officia stract adipiscing totam laudantium sit natus labore unde sed natus amet ipsum</value>
+                </n_do_pedido>
+                <data name="p_data" type="textarea" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Data</label>
+                    <value>Officia perspiciatis lorem magna aperiam sit doloremque laudantium perspiciatis aliqua unde ut accusantium ipsum stract</value>
+                </data>
+            </fields>
+        </form_1>
+        <form_2 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <descricao_do_problema name="p_descricao_do_problema" type="textarea" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Descrição do problema</label>
+                    <value>Perspiciatis labore mollit natus lorem totam voluptatem accusantium totam officia adipiscing sit elit iste elit</value>
+                </descricao_do_problema>
+                <departamento name="p_departamento" type="textarea" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Departamento</label>
+                    <value>Stract voluptatem aliqua unde ipsum rem consectetur omnis sed laudantium sit natus laudantium accusantium amet</value>
+                </departamento>
+                <categoria name="p_categoria" type="textarea" maxlength="250" required="false" change="false" readonly="false" disabled="false" disablehtml="true" placeholder="" desclabel="false" right="false" tooltip="false" disable_copy_paste="false">
+                    <label>Categoria</label>
+                    <value>Omnis perspiciatis deserunt labore sit labore sed aliqua aperiam accusantium elit ut laudantium officia doloremque</value>
+                </categoria>
+            </fields>
+        </form_2>
+        <form_3 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields/>
+        </form_3>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="assumir" refresh_components="">
+                <title>Assumir</title>
+                <app>gestao_de_pedidos_de_suporte_</app>
+                <page>Criar_pedido</page>
+                <link>index</link>
+                <target>_blank</target>
+                <img>info|fa-angle-right</img>
+                <preview>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/criar_pedido/Criar_pedido.xml</preview>
+            </item>
+            <item type="specific" code="" rel="resolver" refresh_components="">
+                <title>Resolver</title>
+                <app>gestao_de_pedidos_de_suporte_</app>
+                <page>Detalhes_e_historico</page>
+                <link>index</link>
+                <target>_blank</target>
+                <img>success|fa-angle-right</img>
+                <preview>../images/IGRP/IGRP2.3/app/gestao_de_pedidos_de_suporte_/detalhes_e_historico/Detalhes_e_historico.xml</preview>
+            </item>
+        </toolsbar_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml></xml>
+    </blockly>
+</rows>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/gestao_de_vendas/detalhe_da_venda/Detalhe_da_venda.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Detalhe_da_venda</page>
+    <app>gestao_de_vendas</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_de_vendas.pages</package_db>
+        <package_html>Detalhe_da_venda</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=117</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Detalhe da Venda</title>
+        <table_1 type="table" xml-type="table" title="Detalhe da Venda" gen-type="container" gen-group="true">
+            <fields>
+                <produtos_comprados name="p_produtos_comprados" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Produtos comprados</label>
+                </produtos_comprados>
+                <quantidade name="p_quantidade" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Quantidade</label>
+                </quantidade>
+                <preco name="p_preco" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Preço</label>
+                </preco>
+                <id_tbl_detalha name="p_id_tbl_detalha" type="hidden" maxlength="30" showLabel="true" iskey="false" group_in="" java-type="" tag="id_tbl_detalha"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <produtos_comprados name="p_produtos_comprados">Sed sit rem dolor stract</produtos_comprados>
+                        <quantidade name="p_quantidade">Anim laudantium totam stract l</quantidade>
+                        <preco name="p_preco">Natus rem natus unde labore</preco>
+                        <id_tbl_detalha name="p_id_tbl_detalha" tag="id_tbl_detalha">hidden-1830_bfc9</id_tbl_detalha>
+                    </row>
+                    <row>
+                        <produtos_comprados name="p_produtos_comprados">Doloremque dolor perspiciatis</produtos_comprados>
+                        <quantidade name="p_quantidade">Lorem magna anim aliqua iste</quantidade>
+                        <preco name="p_preco">Deserunt perspiciatis dolor la</preco>
+                        <id_tbl_detalha name="p_id_tbl_detalha" tag="id_tbl_detalha">hidden-38cf_1871</id_tbl_detalha>
+                    </row>
+                    <row>
+                        <produtos_comprados name="p_produtos_comprados">Officia amet mollit officia si</produtos_comprados>
+                        <quantidade name="p_quantidade">Laudantium magna officia iste</quantidade>
+                        <preco name="p_preco">Consectetur adipiscing laudant</preco>
+                        <id_tbl_detalha name="p_id_tbl_detalha" tag="id_tbl_detalha">hidden-8ff0_1f05</id_tbl_detalha>
+                    </row>
+                    <row>
+                        <produtos_comprados name="p_produtos_comprados">Sit anim accusantium adipiscin</produtos_comprados>
+                        <quantidade name="p_quantidade">Aliqua totam sed sit ipsum</quantidade>
+                        <preco name="p_preco">Sit labore adipiscing rem laud</preco>
+                        <id_tbl_detalha name="p_id_tbl_detalha" tag="id_tbl_detalha">hidden-a01b_16d6</id_tbl_detalha>
+                    </row>
+                    <row>
+                        <produtos_comprados name="p_produtos_comprados">Dolor stract amet laudantium o</produtos_comprados>
+                        <quantidade name="p_quantidade">Consectetur deserunt adipiscin</quantidade>
+                        <preco name="p_preco">Sed aliqua voluptatem stract s</preco>
+                        <id_tbl_detalha name="p_id_tbl_detalha" tag="id_tbl_detalha">hidden-e5c9_3e7a</id_tbl_detalha>
+                    </row>
+                </value>
+            </table>
+        </table_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

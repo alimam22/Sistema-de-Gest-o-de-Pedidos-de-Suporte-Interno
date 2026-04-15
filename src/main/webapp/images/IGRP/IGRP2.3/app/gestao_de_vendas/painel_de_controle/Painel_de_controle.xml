@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP/images/IGRP/IGRP2.3/app/gestao_de_vendas/painel_de_controle/Painel_de_controle.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Painel_de_controle</page>
+    <app>gestao_de_vendas</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_de_vendas.pages</package_db>
+        <package_html>Painel_de_controle</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=111</preserve_url>
+    </plsql>
+    <slide-menu file="../images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="../images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Painel de Controle</title>
+        <form_1 type="form" xml-type="form" title="Acesso Rapido" gen-type="container" gen-group="">
+            <fields/>
+            <tools-bar>
+                <item id="button_489c_f8c6" type="form" code="" class="info" rel="adicionar_cliente" refresh_components="">
+                    <title>Adicionar cliente</title>
+                    <app>gestao_de_vendas</app>
+                    <page>Cadastro_de_cliente</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/gestao_de_vendas/cadastro_de_cliente/Cadastro_de_cliente.xml?</parameter>
+                    <target>_blank</target>
+                    <img>info|fa-plus-square</img>
+                    <preview>../images/IGRP/IGRP2.3/app/gestao_de_vendas/cadastro_de_cliente/Cadastro_de_cliente.xml</preview>
+                </item>
+                <item id="button_f2f1_f73e" type="form" code="" class="grey" rel="adicionar_produto" refresh_components="">
+                    <title>Adicionar produto</title>
+                    <app>gestao_de_vendas</app>
+                    <page>Cadastro_de_produto</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/gestao_de_vendas/cadastro_de_produto/Cadastro_de_produto.xml?</parameter>
+                    <target>_blank</target>
+                    <img>grey|fa-plus-square</img>
+                    <preview>../images/IGRP/IGRP2.3/app/gestao_de_vendas/cadastro_de_produto/Cadastro_de_produto.xml</preview>
+                </item>
+                <item id="button_ea2a_8ecb" type="form" code="" class="purple" rel="adicionar_fornecedor" refresh_components="">
+                    <title>Adicionar fornecedor</title>
+                    <app>gestao_de_vendas</app>
+                    <page>Cadastro_de_fornecedor</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/gestao_de_vendas/cadastro_de_fornecedor/Cadastro_de_fornecedor.xml?</parameter>
+                    <target>_blank</target>
+                    <img>purple|fa-plus-square</img>
+                    <preview>../images/IGRP/IGRP2.3/app/gestao_de_vendas/cadastro_de_fornecedor/Cadastro_de_fornecedor.xml</preview>
+                </item>
+                <item id="button_8eab_fd2b" type="form" code="" class="primary" rel="adicionar_usuario" refresh_components="">
+                    <title>Adicionar usuario</title>
+                    <app>gestao_de_vendas</app>
+                    <page>Cadastro_de_usuario</page>
+                    <link>index</link>
+                    <parameter>../images/IGRP/IGRP2.3/app/gestao_de_vendas/cadastro_de_usuario/Cadastro_de_usuario.xml?</parameter>
+                    <target>_blank</target>
+                    <img>primary|fa-plus-square</img>
+                    <preview>../images/IGRP/IGRP2.3/app/gestao_de_vendas/cadastro_de_usuario/Cadastro_de_usuario.xml</preview>
+                </item>
+            </tools-bar>
+        </form_1>
+        <chart_1 type="chart" xml-type="chart" title="Chart" gen-type="container" gen-group="">
+            <caption/>
+            <chart_type>line</chart_type>
+            <xaxys>Eixo de X</xaxys>
+            <yaxys>Eixo de Y</yaxys>
+            <url>#</url>
+            <label>
+                <col>Ano</col>
+                <col>X1</col>
+                <col>X2</col>
+                <col>X3</col>
+                <col>X4</col>
+            </label>
+            <value>
+                <row>
+                    <col>2010</col>
+                    <col>668</col>
+                    <col>379</col>
+                    <col>954</col>
+                    <col>665</col>
+                </row>
+                <row>
+                    <col>2009</col>
+                    <col>281</col>
+                    <col>478</col>
+                    <col>659</col>
+                    <col>850</col>
+                </row>
+                <row>
+                    <col>2015</col>
+                    <col>1010</col>
+                    <col>886</col>
+                    <col>356</col>
+                    <col>671</col>
+                </row>
+            </value>
+            <colors>
+                <col>#eea78e</col>
+                <col>#23e99c</col>
+                <col>#f87ee7</col>
+                <col>#5a5187</col>
+            </colors>
+        </chart_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>
